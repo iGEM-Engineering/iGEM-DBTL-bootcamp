@@ -1,0 +1,104 @@
+LOCUS       BBa_J428092        2520 bp DNA     circular SYN 17-JAN-2024
+DEFINITION  synthetic circular DNA
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+REFERENCE   1  (bases 1 to 2520)
+  AUTHORS   Vinoo Selvarajah
+  TITLE     Direct Submission
+  JOURNAL   Exported Feb 27, 2024 from SnapGene 6.2.2
+            https://www.snapgene.com
+COMMENT     Alias: BBa_J428092
+FEATURES             Location/Qualifiers
+     source          1..2520
+                     /mol_type="other DNA"
+                     /organism="synthetic DNA construct"
+     misc_feature    1..6
+                     /label=BsaI
+     misc_feature    8..11
+                     /label=D
+     terminator      14..142
+                     /label=BBa_B0015
+     terminator      22..93
+                     /label=rrnB T1 terminator
+                     /note="transcription terminator T1 from the E. coli rrnB 
+                     gene"
+     terminator      109..136
+                     /label=T7Te terminator
+                     /note="phage T7 early transcription terminator"
+     misc_feature    143..146
+                     /label=E
+     misc_feature    complement(148..153)
+                     /label=BsaI
+     terminator      325..382
+                     /label=his operon terminator
+                     /note="This putative transcriptin terminator from the E. 
+                     coli his operon has a 2-bp deletion introduced during 
+                     synthesis. Its efficiency has not been determined."
+     primer_bind     complement(458..477)
+                     /label=VR primer binding site
+                     /note="http://parts.igem.org/Part:BBa_G00102"
+     rep_origin      577..1165
+                     /label=ori (pMB1)
+     terminator      complement(1348..1442)
+                     /label=lambda t0 terminator
+                     /note="transcription terminator from phage lambda"
+     CDS             complement(1463..2122)
+                     /codon_start=1
+                     /label=Chloramphenicol resistance
+                     /translation="MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFL
+                     KTVKKNKHKFYPAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSS
+                     LWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANM
+                     DNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA"
+     primer_bind     2234..2253
+                     /label=VF2 primer binding site
+                     /note="http://parts.igem.org/Part:BBa_G00100"
+     terminator      complement(2306..2349)
+                     /label=bacterial terminator
+                     /note="putative bacterial transcription terminator"
+ORIGIN
+        1 ggtctcggct taaccaggca tcaaataaaa cgaaaggctc agtcgaaaga ctgggccttt
+       61 cgttttatct gttgtttgtc ggtgaacgct ctctactaga gtcacactgg ctcaccttcg
+      121 ggtgggcctt tctgcgttta tacgcttgag acctataaac gccaggttgt atccgcattt
+      181 gatgctacca tggatgagtc agcgtcgagc acgcggcatt tattgcatga gtagggttga
+      241 ctaagaaccg ttagatgcct cgctgtacta ataattgtca acagatcgtc aagattagaa
+      301 aatagggttt agtccggcaa tacttccggc aaaaaagggc aaggtgtcac caccctgccc
+      361 tttttcttta aaaccgaaaa gattacttcg cgttatgcag gcttcctcgc tcactgactc
+      421 gctgcgctcg gtcgttcggc tgcggcgagc ggtatcagct cactcaaagg cggtaatacg
+      481 gttatccaca gaatcagggg ataacgcagg aaagaacatg tgagcaaaag gccagcaaaa
+      541 ggccaggaac cgtaaaaagg ccgcgttgct ggcgtttttc cacaggctcc gcccccctga
+      601 cgagcatcac aaaaatcgac gctcaagtca gaggtggcga aacccgacag gactataaag
+      661 ataccaggcg tttccccctg gaagctccct cgtgcgctct cctgttccga ccctgccgct
+      721 taccggatac ctgtccgcct ttctcccttc gggaagcgtg gcgctttctc atagctcacg
+      781 ctgtaggtat ctcagttcgg tgtaggtcgt tcgctccaag ctgggctgtg tgcacgaacc
+      841 ccccgttcag cccgaccgct gcgccttatc cggtaactat cgtcttgagt ccaacccggt
+      901 aagacacgac ttatcgccac tggcagcagc cactggtaac aggattagca gagcgaggta
+      961 tgtaggcggt gctacagagt tcttgaagtg gtggcctaac tacggctaca ctagaagaac
+     1021 agtatttggt atctgcgctc tgctgaagcc agttaccttc ggaaaaagag ttggtagctc
+     1081 ttgatccggc aaacaaacca ccgctggtag cggtggtttt tttgtttgca agcagcagat
+     1141 tacgcgcaga aaaaaaggat ctcaagaaga tcctttgatc ttttctacgg ggtctgacgc
+     1201 tcagtggaac gaaaactcac gttaagggat tttggtcatg agattatcaa aaaggatctt
+     1261 cacctagatc cttttaaatt aaaaatgaag ttttaaatca atctaaagta tatatgagta
+     1321 aacttggtct gacagctcga ggcttggatt ctcaccaata aaaaacgccc ggcggcaacc
+     1381 gagcgttctg aacaaatcca gatggagttc tgaggtcatt actggatcta tcaacaggag
+     1441 tccaagcgag ctcgatatca aattacgccc cgccctgcca ctcatcgcag tactgttgta
+     1501 attcattaag cattctgccg acatggaagc catcacaaac ggcatgatga acctgaatcg
+     1561 ccagcggcat cagcaccttg tcgccttgcg tataatattt gcccatggtg aaaacggggg
+     1621 cgaagaagtt gtccatattg gccacgttta aatcaaaact ggtgaaactc acccagggat
+     1681 tggctgagac gaaaaacata ttctcaataa accctttagg gaaataggcc aggttttcac
+     1741 cgtaacacgc cacatcttgc gaatatatgt gtagaaactg ccggaaatcg tcgtggtatt
+     1801 cactccagag cgatgaaaac gtttcagttt gctcatggaa aacggtgtaa caagggtgaa
+     1861 cactatccca tatcaccagc tcaccgtctt tcattgccat acgaaattcc ggatgagcat
+     1921 tcatcaggcg ggcaagaatg tgaataaagg ccggataaaa cttgtgctta tttttcttta
+     1981 cggtctttaa aaaggccgta atatccagct gaacggtctg gttataggta cattgagcaa
+     2041 ctgactgaaa tgcctcaaaa tgttctttac gatgccattg ggatatatca acggtggtat
+     2101 atccagtgat ttttttctcc attttagctt ccttagctcc tgaaaatctc gataactcaa
+     2161 aaaatacgcc cggtagtgat cttatttcat tatggtgaaa gttggaacct cttacgtgcc
+     2221 cgatcaactc gagtgccacc tgacgtctaa gaaaccatta ttatcatgac attaacctat
+     2281 aaaaataggc gtatcacgag gcagaatttc agataaaaaa aatccttagc tttcgctaag
+     2341 gatgatttct gaacgatgat gctcactctc gggtaccagc attttcggag gttctctaac
+     2401 agtatggata accgtgtttt cactgtgctg cggttaccca tcgcctgaaa tccagttggt
+     2461 gtcaagccat tccctgtcta ggacgccgca tgtagtaaaa catatacatt gctcgggttc
+//
