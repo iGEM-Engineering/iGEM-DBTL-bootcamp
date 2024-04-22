@@ -11,7 +11,7 @@ We have provided all the files and the data that you will need to get started.
 The software tools to do this will be up to you (although we have some guidance on some specific tools). 
 You will be able to check the outputs of your work in the modeling and _in silico_ assembly sections against the validation files we have provided. 
 
-And if you have any questions or issues, you can reach out to us on the [iGEM Global Slack's]() #engineering channel.
+And if you have any questions or issues, you can reach out to us on the [iGEM Global Slack's](https://competition.igem.org/participation/connect#h-join-the-i-gem-global-slack) **#engineering channel**.
 
 ### Outline
 _TBD_
@@ -119,7 +119,7 @@ This is possible because we have clearly defined inputs and processes, which wil
 You will want to export and share your designs, whether for collaboration, publication, or additional workflows.
 
 ### Design Tool Workflows
-- [Benchling](/benchling-design-workflow.md) 
+- [Benchling](/1_design/benchling-design-workflow) 
 - [Kernel from Asimov](kernel)
 
 ## Storing, Sharing, and Presenting your Constructs
