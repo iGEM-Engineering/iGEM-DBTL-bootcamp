@@ -1,5 +1,7 @@
 # Design Module
 
+**The Design Module is currently under development.**
+
 ## Overview
 In this Design Module, you will start by modeling the effect of a set of constitutive promoters on GFP expression. 
 You will then use the software tool of your choice to assemble _in silico_ three GFP reporter constructs with strong, medium, and weak promoter strength.
@@ -10,8 +12,6 @@ You will be repeating some of the key concepts and considerations and applying t
 We have provided all the files and the data that you will need to get started. 
 The software tools to do this will be up to you (although we have some guidance on some specific tools). 
 You will be able to check the outputs of your work in the modeling and _in silico_ assembly sections against the validation files we have provided. 
-
-And if you have any questions or issues, you can reach out to us on the [iGEM Global Slack's](https://competition.igem.org/participation/connect#h-join-the-i-gem-global-slack) **#engineering channel**.
 
 ### Outline
 _TBD_
