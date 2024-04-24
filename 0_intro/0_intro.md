@@ -11,7 +11,7 @@ You even have the general genetic circuit design in mind, so let's start orderin
 They ask how might you actually test the components of your design, what expectations about specificity can we make based on modeling, and how will you generate data that you can share and compare with other groups?
 > 
 > All of these questions might be a bit disappointing, as you're excited to start working in the lab. 
-But there are so many tools and resources available to address these challenges, and the Design > Build > Test > Learn (DBTL) cycle can help you address these in a more systematic way.
+But there are so many tools and resources available to address these challenges, and the Design > Build > Test > Learn (DBTL) cycle can help you address these in a systematic way.
 
 <br /><center><img src="assets/images/iGEM-DBTL-cycle.png" width=30% /></center>
 
@@ -55,12 +55,12 @@ In the [Design Module](/1_design/1_design.md), you will model the effect of cons
 _No lab work is needed!_
 
 #### Build Module
-In the [Build Module](/1_build/1_build.md), you will assemble three GFP reporter constructs in the lab with Golden Gate Assembly. 
+In the [Build Module](/2_build/2_build.md), you will assemble three GFP reporter constructs in the lab with Golden Gate Assembly. 
 You will be introduced and taken through our recommended protocols required to do this. 
 By the end of this module, you will have the physical samples of your constructs.
 
 #### Test Module
-In the [Test Module](/3_test/1_test.md), you will measure GFP expression with a plate reader. 
+In the [Test Module](/3_test/3_test.md), you will measure GFP expression with a plate reader. 
 Using the constructs you assembled (or previous InterLab constructs) you will follow a protocol that will produce calibrated measurements of fluorescence. 
 
 #### Learn Module
