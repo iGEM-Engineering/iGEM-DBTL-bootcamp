@@ -8,7 +8,7 @@ We also recommend exploring and familiarizing yourself with Benchling’s UI bef
 
 ## 1. Create project folder
 Login into Benchling and create a new project folder for the `iGEM Bootcamp`. 
-Create folders within that for `Basic Parts`, `Destination Vector`, `Controls`, and `Assemblies`. 
+Create folders within that for `Basic Parts`, `Plasmid Backbone`, `Controls`, and `Assemblies`. 
 
 <br /><img src="assets/images/workflows/benchling/b-folder-example.png" width=50% />
 
@@ -19,7 +19,7 @@ Create folders within that for `Basic Parts`, `Destination Vector`, `Controls`, 
 Download and unzip the part and plasmid files on your computer. 
 All files you will import will be in the `Part in Backbone` folder.
 
-In Benchling, import the part files into the `Basic Parts` folder, the destination vector file into the `Destination Vector` folder, and the control files into the `Controls` folder. The `Assemblies` folder will be empty for now. 
+In Benchling, import the part files into the `Basic Parts` folder, the plasmid backbone file into the `Plasmid Backbone` folder, and the control files into the `Controls` folder. The `Assemblies` folder will be empty for now. 
 
 1. While in your folder `[+]` >> `DNA/RNA sequence` >> `Import DNA / RNA sequences`.
 <br /><img src="assets/images/workflows/benchling/b-import-menu.png" width=50% />
@@ -36,7 +36,7 @@ Benchling will load the files in, and let you make adjustments.
 
 4. Use the Project navigator to check that all the files are in their respective folders.
     - Basic Parts
-    - Destination Vector
+    - Plasmid Backbone
     - Controls
 
 ### Resources
@@ -69,7 +69,7 @@ While in your folder `[+]` >> `DNA/RNA sequence` >> `Assemble DNA sequences by c
 1. Prepare the **Assembly settings** as follows:
     - Start by naming your assembly record `GFP_constructs_in_pTi`. This will be the name of the _record_ of the _in silico_ assembly, **not** the name of the assemblies (constructs) that are produced.
     - Choose your `Assemblies` folder as the **Location** to save your assembled constructs and the assembly record
-    - Select `5` for **Number of fragment bins** (1 for the Destination Vector, 4 for the basic parts)
+    - Select `5` for **Number of fragment bins** (1 for the plasmid backbone, 4 for the basic parts)
     - Select `Circular` as the **Topology of construct**
     - Select `Golden Gate` as the **Cloning method**, and `BsaI` as the **Type IIS Restriction Enzyme**
 
@@ -79,7 +79,7 @@ While in your folder `[+]` >> `DNA/RNA sequence` >> `Assemble DNA sequences by c
     - **Insert 1** will be `Promoter`, **Insert 2** will be `RBS`, and so on.
     <br /><img src="assets/images/workflows/benchling/b-bin-rename.png" width=25%/>
 
-3. Link your destination vector in the **Backbone Bin**.
+3. Link your plasmid backbone in the **Backbone Bin**.
     - Click on the **+** next to the **0 fragments**, and select **Search for sequences**.
     <br /><img src="assets/images/workflows/benchling/b-backbone-search.png" width=50%/>
     

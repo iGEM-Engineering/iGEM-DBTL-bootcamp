@@ -40,7 +40,6 @@ Each module may have some prerequisite knowledge, but before beginning the DBTL 
 This includes how a constitutive promoter, transcription, translation, etc, works. 
 - how restriction enzyme assembly, and specifically how Golden Gate Assembly works. 
 [Here](https://technology.igem.org/assembly/golden-gate) is a good refresher.
-- some terminology! Terminology can differ across labs, and that can cause confusion when communicating assembly plans, we will have more on that below.
 
 
 ## Structure
@@ -77,7 +76,7 @@ We do recommend starting with the [Design Module](/1_design/1_design.md) though!
 
 ### What exactly am I designing/building/testing/learning?
 You will be assembling constitutively expressing GFP devices as a transcription unit in a plasmid. 
-We have included introductions to the parts (constitutive promoters, RBS, CDS for GFP, and terminator) and the plasmid backbone (destination vector), below. 
+We have included introductions to the parts (constitutive promoters, RBS, CDS for GFP, and terminator) and the destination vector, below. 
 
 ## The Parts (& Plasmid)
 We have provided the parts and their sequences needed to complete the DBTL Bootcamp, both as the **part** itself and as a **part in backbone**. 
@@ -152,15 +151,15 @@ This variant includes a `5’ AA` sequence, that when taken with the `5’` fusi
 
 <hr /> 
 
-### Plasmid backbone with Drop-Out / Destination vector
+### Plasmid backbone / Destination vector
 The pTi plasmid backbone was developed by the [Federici Lab](https://federicilab.org/). 
 It is a Kanamycin-resistant [uLoop](https://academic.oup.com/synbio/article/5/1/ysaa001/5727770) compatible (Golden Gate) plasmid backbone that is similar to the pET28a vector.
 
-The [Reclone](https://reclone.org/) network has some very helpful [documentation and experience](https://forum.reclone.org/t/pti-plasmid-backbone/797/2) on the pTi plasmid backbone.
+The [Reclone](https://reclone.org/) network has some very helpful [documentation and experience](https://forum.reclone.org/t/pti-plasmid-backbone/797/2) on the pTi plasmid.
 
-We have incorporated the pTi plasmid backbone into the Registry as pTi (BBa_J434150) paired with an RFP expressing drop-out (BBa_J434151).
+We have incorporated the pTi plasmid into the Registry as pTi (BBa_J434150) paired with an RFP expressing dropout (BBa_J434151).
 
-| Plasmid Backbone | Drop-out |
+| Plasmid Backbone | Dropout |
 | --- | --- |
 | [BBa_J434150](https://parts.igem.org/Part:BBa_J434150) | [BBa_J434151](https://parts.igem.org/Part:BBa_J434151) |
 
@@ -170,7 +169,7 @@ For the [Build](/1_build/1_build.md) and [Test Module](/1_test/1_test.md), you w
 ## Golden Gate Assembly
 
 For the DBTL Bootcamp, we will be using [Golden Gate Assembly](https://technology.igem.org/assembly/golden-gate). 
-Specifically, the parts and backbone you will be using will have the overhangs (fusion sites) that adhere to the MoClo and [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis) assembly standards for building a transcription unit.
+Specifically, the parts and destination vector you will be using will have the overhangs (fusion sites) that adhere to the MoClo and [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis) assembly standards for building a transcription unit.
 
 <br /><img src="assets/images/MoClo-GGA-Syntax.png" width=50% />
 
@@ -186,9 +185,8 @@ As you look through the figure and table above you will notice that the fusion s
 
 
 
-As an example, `GGAG` and `TACT` is not included in the sequence for the promoter **part** BBa_J23101 (`TTTACAGCTAGCTCAGTCCTAGGTATTATGCTAGC`). 
-
-However when we have the **part in backbone** (promoter_BBa_J23101_in_pSB1C3SA.gb) and have excised it with BsaI, then the **part extract** will be those overhangs flanking BBa_J23101.
+As an example, `GGAG` and `TACT` is not part of the sequence for the promoter BBa_J23101 (`TTTACAGCTAGCTCAGTCCTAGGTATTATGCTAGC`). However it will be the sequence 
+flanking the sequence of BBa_J23101 for the **part in backbone**.
 
 There is an exception here though. The `5’` CDS fusion site (`AATG`) can be considered just `A`, as the start codon (`ATG`) of a CDS will belong to its part sequence but also overlaps with the fusion site.
  
