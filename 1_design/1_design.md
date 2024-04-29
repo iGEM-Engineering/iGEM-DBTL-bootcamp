@@ -1,5 +1,7 @@
 # Design Module
 
+**The Design Module is currently under development.**
+
 ## Overview
 In this Design Module, you will start by modeling the effect of a set of constitutive promoters on GFP expression. 
 You will then use the software tool of your choice to assemble _in silico_ three GFP reporter constructs with strong, medium, and weak promoter strength.
@@ -10,8 +12,6 @@ You will be repeating some of the key concepts and considerations and applying t
 We have provided all the files and the data that you will need to get started. 
 The software tools to do this will be up to you (although we have some guidance on some specific tools). 
 You will be able to check the outputs of your work in the modeling and _in silico_ assembly sections against the validation files we have provided. 
-
-And if you have any questions or issues, you can reach out to us on the [iGEM Global Slack's]() #engineering channel.
 
 ### Outline
 _TBD_
@@ -47,7 +47,7 @@ You will answer some of these questions throughout the bootcamp, including some 
 - The parts we have selected are well-characterized and we will go into more detail about them in the Parts section below.
 - You will model the effect of constitutive promoters on GFP expression
 - You will build these constructs with parts available in the iGEM Distribution Kit. All of the basic parts in the Kit are in a Type IIS Assembly format, so you will be using Golden Gate Assembly. 
-- The destination vector, and the parts you are using have all been designed for and/or tested in _E. coli_. 
+- The plasmid backbone with drop-out, and the parts you are using have all been designed for and/or tested in _E. coli_. 
 - You are building constructs for GFP expression, so you will be testing and measuring them by measuring fluorescence in a plate reader. For controls, we have provided a positive and negative control. And for calibrants, you can learn more about those here!
 
 However, for your project you will likely have different answers to all of these questions. Maybe you are working in _S. cerevisiae_, or you will be using synthesis for your entire constructs. 
@@ -110,7 +110,7 @@ Will there be any issues with the assembly method you will be using?
 Are these parts what they say they are? 
 This may be a manual process, or an automated one.
 3. **Assemble _in silico_:** 
-With your parts and destination vector verified, you will assemble your constructs _in silico_. 
+With your parts and plasmid backbone verified, you will assemble your constructs _in silico_. 
 This will provide insight into what you will actually build during the Build module, and may uncover any issues.  
 4. **Validate your constructs:** 
 You will validate that your _in silico_ assembly sequences are correct. 
@@ -119,7 +119,7 @@ This is possible because we have clearly defined inputs and processes, which wil
 You will want to export and share your designs, whether for collaboration, publication, or additional workflows.
 
 ### Design Tool Workflows
-- [Benchling](/benchling-design-workflow.md) 
+- [Benchling](/1_design/benchling-design-workflow) 
 - [Kernel from Asimov](kernel)
 
 ## Storing, Sharing, and Presenting your Constructs
