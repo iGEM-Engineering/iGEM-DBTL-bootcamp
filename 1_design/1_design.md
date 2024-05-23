@@ -1,4 +1,5 @@
 # Design Module
+[Introduction](/0_intro/0_intro.md) >> [Design](/1_design/1_design.md) >> [Build](/2_build/2_build.md) >> [Test](/3_test/3_test.md) >> [Learn](/4_learn/4_learn.md)
 
 **The Design Module is currently under development.**
 
@@ -14,16 +15,21 @@ The software tools to do this will be up to you (although we have some guidance 
 You will be able to check the outputs of your work in the modeling and _in silico_ assembly sections against the validation files we have provided. 
 
 ### Outline
-_TBD_
+- The design goal
+- Modeling
+- Assemble your constructs in silico
+- Storing, Sharing, and Presenting your Constructs
 
 ### What you will need to know before you start
-_TBD_
+- Anything covered in the [Introduction](/0_intro/0_intro.md)!
+- Familiarity with plasmid maps, specifically those produced from GenBank files. 
 
 ### Resources needed
 1. Computer and internet access
 2. Modeling tool(s): You will be using this to model the behavior of different promoters on GFP expression
 3. Design tool(s): You will be using this to import parts and plasmids, design your constructs, and assemble your constructs
-4. Parts and plasmid files, and associated data sets (provided here)
+4. Parts and plasmid files (provided in this repo [here](/genbank_files/))
+5. Anderson Promoter data sets (provided below)
 
 
 ## The Design goal
@@ -31,10 +37,17 @@ In the Design stage of the DBTL cycle, it helps to outline your design goal, inc
 
 For this bootcamp we have defined the **aim**: to design, and build three GFP reporter constructs and test the effect of constitutive promoter strength on GFP expression.
 
-<img src="https://static.igem.org/websites/technology/2024/dbtl/design/gfp-expression-construct.png" width=50% />
-
 It will always help to *diagram* this process out, starting with some abstraction. 
 By having a diagram that shows the aim, and the steps to get there, you will have a resource that can be used to track your progress and to ensure that all the considerations that were made in the Design phase will be done in the Build and Test phases.
+
+<center>
+<figure>
+<img src="assets/images/transcription-unit-tx-tl.png" width=50% />
+</figure>
+</center>
+
+We will start with a simple diagram of a generalized GFP reporter construct.
+Here we have our transcription unit: the constitutive promoter, rbs, GFP CDS, and terminator, in a plasmid backbone (reminder, we're using [SBOL Visual](https://sbolstandard.org/visual-about/) for representing genetic designs).  
 
 But let us consider some of the **requirements** that need to be addressed to meet your aim, and how those may affect other stages of the DBTL cycle and vice-versa.
 - What are the parts you should use for your constructs? Or what do you have available, and what do you need to procure?
@@ -48,7 +61,7 @@ You will answer some of these questions throughout the bootcamp, including some 
 - You will model the effect of constitutive promoters on GFP expression
 - You will build these constructs with parts available in the iGEM Distribution Kit. All of the basic parts in the Kit are in a Type IIS Assembly format, so you will be using Golden Gate Assembly. 
 - The plasmid backbone with drop-out, and the parts you are using have all been designed for and/or tested in _E. coli_. 
-- You are building constructs for GFP expression, so you will be testing and measuring them by measuring fluorescence in a plate reader. For controls, we have provided a positive and negative control. And for calibrants, you can learn more about those here!
+- You are building constructs for GFP expression, so you will be testing and measuring them by measuring fluorescence in a plate reader. For controls, we have provided a positive and negative control. And for calibrants, you can learn more about those in the Test Module!
 
 However, for your project you will likely have different answers to all of these questions. Maybe you are working in _S. cerevisiae_, or you will be using synthesis for your entire constructs. 
 
@@ -71,8 +84,87 @@ All caught up? You should be able to answer these questions before proceeding fu
 4. How will you test the function of your design?
 5. What will your experimental data look like if the design is working as intended?
 
+## Anderson Promoter Data
+
+Before we start modeling expression, we will look at some previous promoter strength data on the Anderson promoters.
+
+| Anderson Promoter | RFP (AU) | Relative Strength |
+| --- | --- | --- |
+| BBa_J23100 | 2547 | 1.00 |
+| BBa_J23101 | 1791 | 0.70 |
+| BBa_J23106 | 1185 | 0.47 |
+| BBa_J23116 | 396 | 0.16 |
+| BBa_J23117 | 162 | 0.06 |
+
+The data above is a subset of a larger characterization effort by the [2006 Berkeley iGEM Team](https://2006.igem.org/wiki/index.php/University_of_California_Berkeley_2006).
+From this data, you can already see which promoters are the highest (BBa_J23100) and lowest (BBa_J23117) strength.
+
+We will use this data to [model]() the effect of all five promoters on GFP expression, but we should consider and address some important questions!
+
+### What exactly do we mean by promoter strength?
+By promoter strength, we mean the effect on transcription rate: a strong promoter would increase the transcription rate and, presumably, the expression of a protein.
+
+In the data above, promoter strength was measured through RFP fluorescence (AU).
+
+### What does AU mean for the RFP measurements?
+AU stands for an **A**rbitrary **U**nit and it is a relative unit of measurement.
+This works OK when we are only comparing measurements performed in the same experiment, but we are not actually able to compare these measurements from lab to lab.
+
+We will have more on this in our Test Module, but a key thing to consider even before you start your designing is how will you ensure you can share and compare your data.
+
+### What do we know about the experimental context?
+From the [Anderson promoter collection page](https://parts.igem.org/Promoters/Catalog/Anderson), the individual part pages, and some sequence analysis, we know the following:
+- Red fluorescent protein (RFP) was used as the reporter protein to measure expression
+
+- the promoters were measured in the [BBa_J61002](https://parts.igem.org/Part:BBa_J61002) plasmid backbone. 
+    - BBa_J61002 is a modified version of [pSB1A2](https://parts.igem.org/Part:pSB1A2), a high-copy, ampicillin resistant plasmid backbone.
+
+- BBa_J61002 includes an expression cassette. Users clone in their promoter, and then downstream there is an RBS (BBa_B0034), an RFP (BBa_E1010), and a Terminator (BBa_B0015).
+
+- the _E. coli_ TG1 strain was used
+
+### What do we _not_ know about the experimental context?
+Importantly, we also do not know the following (at least readily):
+- how was fluorescence measured? Including what instrument was used?
+- what protocol was used?
+- what controls were used?
+
+
+
+
+
 
 ## Modeling 
+
+A model is a mathematical abstraction (or somplification) that allows us to describe a system.
+
+It gives use a clear idea of the inputs and outputs
+
+It helps us predict the behavior of a systm
+
+And will let us analyze data by comparing real world data to the model.
+
+This is particularly useful to idenity behavior that we may not have considered
+
+
+ use what we know about the Anderson promoters and model their effect on GFP expression.
+
+<center>
+<figure>
+<img src="assets/images/tx-tl-reactions.png" width=50% />
+</figure>
+</center>
+
+<center>
+<figure>
+<img src="assets/images/transcription-unit-tx-tl.png" width=50% />
+</figure>
+</center>
+
+After that, you will select two promoters plus BBa_J23106 (our default) to use in your constructs.
+Our recommendation is to select promoters that would be expected to be higher and lower strength.
+
+Maybe in your project you are working with a protein that _may_ increase cellular burden. You would want to test the optimal level of expression that you can get, so testing expression across a range of promoter strengths would be useful.
 
 ### Validate/check your model
 
@@ -86,10 +178,12 @@ All caught up? You should be able to answer these questions before proceeding fu
 5. How will you test the function of your model?
 6. What will your simulation data look like if the model is working as intended?
 
+### Additional Resources
+- Webinar: [Modeling for SynBio: from ODEs to Gene expression](https://video.igem.org/w/nPrjzXYqVpAxRjCRCx4Mi9)
 
 ## Assemble your constructs _in silico_
 Based on your modeling, you have selected the two promoters (one strong and one weak) along with BBa_J231006, which you will use as your medium strength promoter. 
-You will now assemble constructs _in silico_ for all three. 
+You will now assemble constructs _in silico_ (digitally, in the computer) for all three. 
 At the end of this section, you will have produced your constructs as plasmid maps and be able to validate them against our files.
 
 There are several different tools available to design and assemble your constructs, and many of them have several features beyond assembling DNA _in silico_ (Electronic lab notebooks, modeling, sample tracking, etc). 
@@ -120,7 +214,7 @@ You will want to export and share your designs, whether for collaboration, publi
 
 ### Design Tool Workflows
 - [Benchling](/1_design/benchling-design-workflow) 
-- [Kernel from Asimov](kernel)
+- TBD: Kernel from Asimov
 
 ## Storing, Sharing, and Presenting your Constructs
 
@@ -128,4 +222,6 @@ For the purposes of the iGEM Competition, you must document your parts and const
 But, this is not a tutorial for how to use the iGEM Registry! 
 You should follow the requirements and process for this through the [competition deliverables](https://competition.igem.org/deliverables/part-pages) for part pages.
 
-Once you have followed a workflow and produced and validated your _in silico_ assemblies, you are ready to proceed on to the Build Module. In the Build Module, you will use the part and plasmid samples from the iGEM Distribution Kit, to assemble your constructs in the lab!
+Once you have followed a workflow and produced and validated your _in silico_ assemblies, you are ready to proceed on to the [Build Module](/2_build/2_build.md). 
+
+In the Build Module, you will use the part and plasmid samples from the [iGEM Distribution Kit](https://technology.igem.org/distribution/introduction) to assemble your constructs in the lab, and you will use your _in silico_ assemblies as the reference sequences when you sequence those assemblies.
