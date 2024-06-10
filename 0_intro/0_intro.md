@@ -20,8 +20,11 @@ And the Design > Build > Test > Learn (DBTL) cycle can help you address these in
 </center>
 </figure>
 
-First, what do we mean by a **bootcamp**? 
+<details>
+<summary>What do we mean by a bootcamp?</summary> 
+
 A “bootcamp” is a short, defined set of activities meant to help someone become familiar with or learn how to do larger related activities.
+</details><br />
 
 This iGEM Engineering Bootcamp will help you learn about the Design > Build > Test > Learn ([DBTL](https://technology.igem.org/engineering/introduction#h-the-engineering-cycle)) cycle that is important for engineering biological systems. 
 This should serve as a brief introduction (or possibly refresher) to designing and building genetic circuits. 
@@ -38,15 +41,25 @@ Others though, you may need to look up yourself.
 
 Finally, as you proceed through the Bootcamp, if you have any questions or issues, you can reach out to us on the [iGEM Global Slack's](https://competition.igem.org/participation/connect#h-join-the-i-gem-global-slack) **#engineering channel**.
 
+> **NOTE:** DBTL Bootcamp BETA<br /> 
+This is the Engineering Committee's first bootcamp.
+There may be errors, further guidance needed, and other elements that would improve the documentation here.
+As such, we expect that this document will change over time. 
+We will mark each major revision as a new version.
+
 
 ## What you should know before you start
 Each module may have some prerequisite knowledge, but before beginning the DBTL Bootcamp, you should understand …
 - gene expression in _E. coli_, and a parts-based approach to designing a [transcription unit](https://www.nature.com/scitable/definition/transcription-unit-260/) in a plasmid. 
 This includes how a constitutive promoter, transcription, translation, etc, works. 
-- how restriction enzyme assembly, and specifically how Golden Gate Assembly works. 
-[Here](https://technology.igem.org/assembly/golden-gate) is a good refresher.
+- how restriction enzyme assembly, and specifically how Golden Gate Assembly works. For a refresher, the following may be useful:
+    - [Golden Gate Assembly](https://technology.igem.org/assembly/golden-gate)
+    - [2021 Webinar Series: DNA Assembly Strategies](https://video.igem.org/w/f7BMdpnAfQA4rp1HvS2AeX?start=18m15s)
 - familiarity with [SBOL Visual](https://sbolstandard.org/visual-about/) for genetic design representation.
 - some terminology! Terminology can differ across labs, and that can cause confusion when communicating assembly plans, we recommend having a look at some past work on [this topic](https://easychair.org/publications/preprint_open/kRPr) from the iGEM Engineering Committee.
+- Keeping a good notebook! Make sure to follow best practices and any guidelines from your lab group, but [here](/2_build/tips-notebook.md) are some general tips.
+- **IMPORTANT:** 
+Before you start any work in the lab related to this bootcamp, make sure you have completed ALL of your institution's safety requirements.
 
 
 ## Structure
@@ -225,10 +238,10 @@ We have incorporated the pTi plasmid backbone into the Registry as pTi (BBa_J434
 For the [Design Module](/1_design/1_design.md), you will use the pTi plasmid backbone for _in silico_ assembly. 
 For the [Build](/1_build/1_build.md) and [Test Module](/1_test/1_test.md), you will be assembling and expressing your constructs in the pTi plasmid backbone.  
 
-## Golden Gate Assembly
+## MoClo / iGEM Type IIS
 
 For the DBTL Bootcamp, we will be using [Golden Gate Assembly](https://technology.igem.org/assembly/golden-gate). 
-Specifically, the parts and backbone you will be using will have the overhangs (fusion sites) that adhere to the MoClo and [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis) assembly standards for building a transcription unit.
+Specifically, the parts and backbone you will be using will have the overhangs (fusion sites) that adhere to the Modular Cloning (MoClo) and [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis) assembly standards for building a transcription unit.
 
 <figure>
 <center>
@@ -273,6 +286,7 @@ There is an exception here though. The `5’` CDS fusion site (`AATG`) can be co
 
 ### Hierarchical Assemblies
 
-Finally, Golden Gate Assembly is an extremely powerful assembly technique and can be made more complex with hierarchical assemblies, where you would be able to assemble multiple transcription units to create larger genetic circuits. 
+Finally, Golden Gate Assembly is an extremely powerful assembly technique and can be made more complex with when an GGA-based standard supports hierarchical assemblies, where you would be able to assemble multiple transcription units to create larger genetic circuits. 
 This may be a consideration for your own project which you will need to include in your Design process. 
-But for this bootcamp, all you will need to be prepared for is the above! 
+But for this bootcamp, all you will need to be prepared for is the above!
+

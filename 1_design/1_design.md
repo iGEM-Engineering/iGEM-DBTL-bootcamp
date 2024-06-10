@@ -8,7 +8,7 @@ In this Design Module, you will start by modeling the effect of a set of constit
 You will then use the software tool of your choice to assemble _in silico_ three GFP reporter constructs with strong, medium, and weak promoter strength.
 
 Before you start, you should read through our page on the [Design stage](https://technology.igem.org/engineering/design) of the [DBTL cycle](https://technology.igem.org/engineering/introduction). 
-You will be repeating some of the key concepts and considerations and applying them to this Design Module, but that resource will include more material than is covered here.
+We will be repeating some of the key concepts and considerations and applying them to this Design Module, but that resource will include more material than is covered here.
 
 We have provided all the files and the data that you will need to get started. 
 The software tools to do this will be up to you (although we have some guidance on some specific tools). 
@@ -17,7 +17,7 @@ You will be able to check the outputs of your work in the modeling and _in silic
 ### Outline
 - The design goal
 - Modeling
-- Assemble your constructs in silico
+- Assemble your constructs _in silico_
 - Storing, Sharing, and Presenting your Constructs
 
 ### What you will need to know before you start
@@ -37,7 +37,7 @@ In the Design stage of the DBTL cycle, it helps to outline your design goal, inc
 
 For this bootcamp we have defined the **aim**: to design, and build three GFP reporter constructs and test the effect of constitutive promoter strength on GFP expression.
 
-It will always help to *diagram* this process out, starting with some abstraction. 
+It is always helpful to *diagram* out a process,, starting with some abstraction. 
 By having a diagram that shows the aim, and the steps to get there, you will have a resource that can be used to track your progress and to ensure that all the considerations that were made in the Design phase will be done in the Build and Test phases.
 
 <center>
@@ -50,13 +50,13 @@ We will start with a simple diagram of a generalized GFP reporter construct.
 Here we have our transcription unit: the constitutive promoter, rbs, GFP CDS, and terminator, in a plasmid backbone (reminder, we're using [SBOL Visual](https://sbolstandard.org/visual-about/) for representing genetic designs).  
 
 But let us consider some of the **requirements** that need to be addressed to meet your aim, and how those may affect other stages of the DBTL cycle and vice-versa.
-- What are the parts you should use for your constructs? Or what do you have available, and what do you need to procure?
+- What are the parts you should use for your constructs? What do you have available, and what do you need to procure?
 - How can you model the performance of the desired function and how the parts will work together?
-- How will you build these constructs? Or conversely, how will your build plan influence your designs?
+- How will you build these constructs? How will your build plan influence your designs?
 - What chassis will you be using? Even more specific, what strain you will be using?
 - Once built, how will you test and measure the function of your constructs? What will be your positive and negative controls? 
 
-You will answer some of these questions throughout the bootcamp, including some of the self-imposed constraints we have in place. 
+You will address some of these questions throughout the bootcamp, including some of the self-imposed constraints we have in place. 
 - The parts we have selected are well-characterized and we will go into more detail about them in the Parts section below.
 - You will model the effect of constitutive promoters on GFP expression
 - You will build these constructs with parts available in the iGEM Distribution Kit. All of the basic parts in the Kit are in a Type IIS Assembly format, so you will be using Golden Gate Assembly. 
@@ -67,12 +67,12 @@ However, for your project you will likely have different answers to all of these
 
 
 ### The Design constraints
-As mentioned above, we have some design constraints to keep things simple, as this ensures everyone has access to the same materials, and that you will be able to model and validate your constructs against known products.
-For a summary of these constraints:
+As mentioned above, there are some design constraints to keep things simple, as this ensures everyone has access to the same materials, and that you will be able to model and validate your constructs against known products.
+These constraints include:
 1. **Parts and plasmids:** A selection from the 2024 iGEM Distribution Kit
 2. **Assembly:** Golden Gate Assembly
 3. **Chassis:** _E. coli_ DH5a, DH10b strains are recommended, but use what is available in your lab
-4. **Measurement:** GFP
+4. **Measurement:** GFP fluorescence
 
 If you are feeling adventurous, feel free to go beyond these constraints, but there will not be material to help troubleshoot.
 
@@ -82,11 +82,12 @@ All caught up? You should be able to answer these questions before proceeding fu
 2. What will be the function of your engineered biological system?
 3. How will you build your design?
 4. How will you test the function of your design?
-5. What will your experimental data look like if the design is working as intended?
+5. What will your experimental data look like if the design is working as intended? 
+What will the data look like if the design was built incorrectly?
 
 ## Anderson Promoter Data
 
-Before we start modeling expression, we will look at some previous promoter strength data on the Anderson promoters.
+Before we start modeling expression, we will look at some previous data on the strength of the Anderson promoters.
 
 | Anderson Promoter | RFP (AU) | Relative Strength |
 | --- | --- | --- |

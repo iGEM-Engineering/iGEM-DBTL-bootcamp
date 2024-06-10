@@ -11,13 +11,15 @@ This is all described in the [Introduction](/0_intro/0_intro.md) and in further 
 
 <center>
 <figure>
-<img src="assets/images/GGA-MoClo.png" width=100% />
+<img src="assets/images/GGA-MoClo.png" width=75% />
 </figure>
 </center>
 
 You will use those basic parts, the plasmid backbone with drop-out, and Golden Gate Assembly (GGA) to create a series of transcription units in a backbone. 
 
-Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them.
+Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
+While this module includes a fairly standard workflow to get to this point, it does take 5/6-days with several steps which we have elaborated on in the [Workflow Overview section]().
+
 
 **IMPORTANT:** As with all experimental procedures, preparation is of key importance. 
 Before starting in the lab, read through the entire module: familiarize yourself with the protocols, the materials, and the equipment needed.
@@ -26,17 +28,17 @@ If you are unable to assemble your designed constructs, or have decided not to d
 Instead, you can transform a selection of [Interlab devices]() directly from the Distribution Kit, and use those in the Test Module. 
 _No assembly required!_
 
-
 ### What you will need to know before you start
 - **IMPORTANT:** 
 Before you start any work in the lab, make sure you have completed ALL of your institution's safety requirements.
 - Core concepts & terminology from the [Introduction](/0_intro/0_intro.md) and [Design Module](/1_design/1_design.md).
 - Basic laboratory techniques and familiarity with all the equipment that will be used in the workflow/protocols below.
-- Keeping a good lab notebook! Make sure to follow best practices and any guidelines from your lab group, but [here](/2_build/tips-notebook.md) are some general tips.
+- Keeping a good notebook! Make sure to follow best practices and any guidelines from your lab group, but [here](/2_build/tips-notebook.md) are some general tips.
 
 ## Resources Needed
+The following are the resources needed for the Build Module. 
 
-- Chemically competent _E. coli_ cells, preferable DH5alpha or strains with recA1 and endA1 mutations
+- Chemically competent _E. coli_ cells, preferably DH5alpha or strains with recA1 and endA1 mutations
 - Miniprep DNA extraction kit to isolate plasmid DNA from transformed cells
 - Media: 
     - LB 
@@ -49,25 +51,29 @@ Before you start any work in the lab, make sure you have completed ALL of your i
     - T4 DNA Ligase and associated buffers
     - Optional: BSA + PEG-3350
 - Equipment: 
-    - micropipettes
+    - micropipettes and tips
     - water bath or heat block for transformations
     - Nanodrop, Qubit & reagents, or other device to measure DNA concentration
-    - PCR Machine for GGA
+    - Thermocyler for GGA
 - Other materials
     - plate spreaders / glass beads
     - 14-mL cell culture tubes
     - PCR and microcentrifuge tubes
-    - ice bucket with ice or cold block
+    - ice bucket and ice or cold block
+    - iGEM Distribution Kit (this module uses the 2024 version)
 
-
-
+**Note** that this list is not completely exhaustive as there will be some things that we assume your lab has access to, from small things (lab pens, glassware) to larger ones (-80°C freezer, centrifuge).
+We have also not included quantities, it will be important for you to understand the workflow, read through the protocols, and keep track of that yourself. 
 
 ## Workflow Overview
 The following is a 6-day plan for the Build Module, that will take you from transforming parts from the iGEM Distribution Kit, to assembling your constructs, and finally preparing glycerol stocks for future use. 
 
-Depending on your level of expereience and/or available time, you may be able to combine the Day 4 work (transform assembly reaction) with Day 3, to shorten this workflow to 5 days.
+You or your lab may have your preferred protocols (and workflow) for all of the steps in this plan, so feel free to use those. 
+However, we have also included recommended protocols and tips from iGEM and the iGEM Engineering Committee, which in case of issues, we will be more adept at providing troubleshooting help for.
 
-- **Day 0**
+Depending on your level of experience and/or available time, you may be able to combine the Day 4 work (transform assembly reaction) with Day 3, to shorten this workflow to 5 days.
+
+- **Day 0** (Before you start)
     - Competent cells
     - Antibiotic stocks
 - **Day 1**
@@ -77,8 +83,6 @@ Depending on your level of expereience and/or available time, you may be able to
 - **Day 3**
     - Make glycerol stocks
     - Make minipreps
-        - Quantify plasmids
-    - Setup assembly reaction
 - **Day 4**
     - Transform assembly reaction
 - **Day 5**
@@ -95,16 +99,13 @@ Note: This plan does not include time for the following:
 
 ***IMPORTANT:** All parts from the distribution kit MUST first be transformed into competent cells. 
 Once these cells are growing, you can make glycerol stocks and miniprep the plasmids from overnight cultures. 
-These miniprepped plasmids are what you will use for GGA reactions. 
-DO NOT use DNA from the distribution kit directly in a GGA reaction.
+These miniprepped plasmids are what you will use for the assembly reactions. 
+DO NOT use DNA from the distribution kit directly in an assembly reaction.
 
 
 ## Day 0
-### On competent cells
-In order to replicate copies of your plasmids, you will need to insert the plasmids into _E. coli_ cells. 
-Specially prepared cells, **competent cells**, can be _transformed_, a process by which foreign DNA (the plasmid DNA of your constructs) will be taken into the cells.
-
-There are two general types of competent _E. coli_ cells: chemically competent and electrocompetent. 
+### Competent cells
+There are two general types of [competent _E. coli_ cells](https://en.wikipedia.org/wiki/Transformation_(genetics)#Bacterial): chemically competent and electrocompetent. 
 Electrocompetent cells require an electroporator which you may not have access to in your lab. 
 So for this bootcamp, we will cover making and using chemically competent cells, since you only need a heated water bath or heat block to transform the plasmids into your cells. 
 
@@ -117,11 +118,19 @@ If you are unable to purchase competent cells, we have provided a protocol below
 - [Preparing Competent Cells](/protocol-preparing-competent-cells.md)
 - [Competent Cell Efficiency](/protocol-competent-cell-efficiency.md)
 
+#### Additional Resources
+- [Bacterial Transformation (Addgene)](https://www.addgene.org/protocols/bacterial-transformation/)
+
 ### Antibiotic stocks
-Most labs typically make stocks of a 1000x concentration of common antibiotics which are filter-sterilized through a 0.2µm syringe filter, aliquoted and stored in the freezer. 
-This makes it easy to dilute in the LB media. 
-For example, if you are setting up a 4 mL culture for a single plasmid then you would use 4 µL (1/1000) of the antibiotic. 
-You can make 10mL, run it through a filter with a syringe and divide into 0.5-1 mL aliquots and freeze.
+For this bootcamp (the Build and Test modules) you will need chloramphenicol and kanamycin antibiotic stocks.
+You will be adding those to LB liquid media and LB agar.
+
+Most labs typically make stocks of a 1000x concentration of common antibiotics which are filter-sterilized through a 0.22µm syringe filter, aliquoted and stored in the freezer. 
+
+For example, you might make 10mL at stock concentration, run it through a filter with a syringe and divide into 0.5-1 mL aliquots and freeze.
+Then when setting up a 4 mL culture for a single plasmid you would use 4 µL of the stock antibiotic in 4 mL of LB media to achieve a working concentration of 1/1000. 
+
+
 
 | Antibiotic | Stock conc. (mg/mL) | Working conc.	(µg/mL) | Dilution | Solvent |
 | --- | --- | --- | --- | --- |
@@ -137,24 +146,31 @@ Adapted from the Barrick Lab's [Antibiotic concentrations and stock solutions](h
 
 The following table contains the locations, and basic information for the parts and plasmid backbone you will need to transform from the [2024 iGEM Distribution Kit](https://technology.igem.org/distribution/handbook).
 
+<center>
+<figure>
+<img src="assets/images/distribution-kit-transformations.png" width=75% />
+</figure>
+</center>
+
+
 From this you will be doing **eight** transformations, as you do not need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
 
-| BBa_ name | desc | part type | Plasmid Backbone | AbR | Total Plasmid length (bp) | Plate | Well |
+| BBa_ name | description | part type | Plasmid Backbone | AbR | Total Plasmid length (bp) | Plate | Well |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| BBa_I20270 | Positive control | device | pSB1C3 | CmR | size | | |
-| BBa_J23100 | Anderson promoter | promoter | pSB1C5SA | CmR | size | | |
-| BBa_J23101 | Anderson promoter | promoter | pSB1C3SA | CmR | size | | |
-| BBa_J23106 | Anderson promoter | promoter | pSB1C3SA | CmR | size | | |
-| BBa_J23116 | Anderson promoter | promoter | pSB1C5SA | CmR | size | | |
-| BBa_J23117 | Anderson promoter | promoter | pSB1C3SA | CmR | size | | |
-| BBa_J428038 | BBa_B0034 Type IIS variant | rbs | pSB1C5SB | CmR | size | | |
-| BBa_J119040 | BBa_E0040 Type IIS variant | cds | pSB1C5C | CmR | size | | |
-| BBa_J428092 | BBa_B0015 Type IIS variant | terminator | pSB1C5SD | CmR | size | | |
-| BBa_J434151 | pTi plasmid backbone with RFP drop-out | plasmid backbone | BBa_J434150 | KanR | size | | |
+| BBa_I20270 | Positive control | device | pSB1C3 | CmR | 5337 | 1 | 17L |
+| BBa_J23100 | Anderson promoter | promoter | pSB1C5SA | CmR | 2424 | 1 | 5A |
+| BBa_J23101 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 | 1 | 18A |
+| BBa_J23106 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 | 1 | 18C |
+| BBa_J23116 | Anderson promoter | promoter | pSB1C5SA | CmR | 2424 | 1 | 5K |
+| BBa_J23117 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 | 1 | 18E |
+| BBa_J428038 | BBa_B0034 Type IIS variant | rbs | pSB1C5SB | CmR | 2411 | 1 | 19I |
+| BBa_J119040 | BBa_E0040 Type IIS variant | cds | pSB1C5C | CmR | 2766 | 1 | 17J |
+| BBa_J428092 | BBa_B0015 Type IIS variant | terminator | pSB1C5SD | CmR | 2520 | 1 | 1C |
+| BBa_J434151 | pTi plasmid backbone with RFP drop-out | plasmid backbone | BBa_J434150 | KanR | 5484 | 1 | 19B |
 
 _KanR = kanamycin resistant, CmR = chloramphenicol resistant_
 
-Key things to know: 
+**Key things to know:** 
 - which three promoters did you select for your _in silico_ assemblies?
 - the antibiotic resistances of the plasmid backbones, as these will be the antiobiotic stocks you need: kanamycin and chloramphenicol
 - the sizes in bp of the plasmids, as we will use this to calculate the molar concentration for the [assembly reaction]().
@@ -171,38 +187,55 @@ That's because we will use the pTi plasmid backbone with RFP drop-out as our neg
 #### Protocols
 - [Distribution Kit Transformations](/protocol-distribution-transformation.md)
 
-
+#### Additional Resources
+- [Bacterial Transformation (Addgene)](https://www.addgene.org/protocols/bacterial-transformation/)
 
 ## Day 2
 ### Pick colonies and inoculate overnight cultures
 If your transformations were successful, you will have colonies to pick from!
 
-For each of your transofmrations pick a single colony, and grow overnight in LB broth with the appropriate antibiotic.
-With the exception of your plasmid backbone with drop-out (RFP) and the positive control (GFP), none of your colonies should be fluorescent.
+**Note:** With the exception of the pTi plasmid backbone with drop-out (RFP) and the BBa_I20270 positive control (GFP), none of your transformations should have fluorescent colonies.
 
-Typically we use 3mL culture media in 14 mL snap cap tubes (rather than screw cap tubes) for microbiological work to allow air infiltration for growth in a shaking incubator. 
+Beforehand, set up the culture tubes with LB media with the appropriate antibiotic. We recommend the following:
+-  Grow two colonies (so two tubes) for each transformed plasmid in case of a problem with the overnight culture or low yield.
+- Use 14 mL snap cap tubes or cover the tubes with sterile aluminum foil, rather than screw cap tubes, as you want to allow for air exchange when growing in a shaking incubator.
+- Pre-label all your tubes, with the part/plasmid and the antibiotic
+- Each tube should have 2-4 mL of LB media, but for this workflow we will use 4 mL.
 
-We recommend growing 2 colonies from each plasmid in case of a problem with the overnight culture or low yield 
+<br />
 
-Note that all but one plasmid in this Bootcamp uses chloramphenicol. 
-The receiving vector uses kanamycin. 
-See [here]() for how to make antibiotic stocks. 
+| Antibiotic | # of Plasmids | # of Tubes (2x per plasmid) | LB Media needed |
+| --- | --- | --- | --- |
+| Chloramphenicol | 7 | 14 | 56 mL |
+| Kanamycin | 1 | 2 | 8 mL |
 
-You can calculate how much total media that you need for all of your plasmids and create a master mix with the antibiotic in, for example, a 50 mL screw cap tube then distribute that to the individual 14 mL tubes.
+<br />
 
-Due to time (and resource cost) we have not included a step here for sequence confirming these transformants. 
-This is always good practice though. 
-Mistakes and mutations happen!
+For the inoculations:
+- Pick a single colony with a sterile toothpick or pipette tip, drop in to the appropriately labeled tube, and cover.
+- Incubate your inoculated cultures at 37°C for 16 hr in a shaking incubator. Do not grow more than 16 hours as this may reduce yields when extracting DNA.
 
+The following day (after 16hrs), the cultures should be cloudy.
+Measuring the OD600 of your culture is always good practice, and will also help troubleshoot if you have issues with minipreps and glycerol stocks.
+
+#### Additional Resources
+- [Inoculating a Liquid Bacterial Culture (Addgene)](https://www.addgene.org/protocols/inoculate-bacterial-culture/)
 
 
 ## Day 3
 ### Make glycerol stocks
-Glycerol stocks are used to freeze a sample of your E. coli cells that have been transformed with your plasmid of interest. This allows you to save a sample in the -80°C and then later revive the cells by growing them up on agar plates to get fresh colonies whenever you need to get more plasmid DNA out of the cells. 
+You will need to make glycerol stocks of your transformed _E. coli_ with plasmids for long-term storage.
+This allows you to save a sample in your -80°C freezer. You can revive the cells by growing them up on agar plates to pick fresh colonies whenever you need to get more plasmid DNA. 
 
-In order to make this frozen sample of cells, you will need to add a cryoprotectant to your sample of cells to be frozen. We are using 80% glycerol. The standard amount to add of this cryoprotectant is one-fourth the volume of your cell culture. This gives a final concentration of 16% glycerol. 
+When using your glycerol stock keep it on dry ice. 
+Do not let it unthaw. 
+Too many freeze and thaw cycles will degrade its usability and may introduce more mutations.
 
 #### Protocols
+- [Glycerol Stock Protocol]()
+
+#### Additional Resources
+- [Creating Bacterial Glycerol Stocks (Addgene)](https://www.addgene.org/protocols/create-glycerol-stock/)
 
 ### Make minipreps
 Plasmid DNA can be extracted from _E. coli_ cells at different scales. 
@@ -213,6 +246,9 @@ All modern plasmid extraction methods/kits use a three step procedure for creati
 We have some tips on this process, but you should adhere to the protocols of the kit that you are using.
 
 Plasmid DNA can then be stored long term at -20°C. 
+
+**Important:** Due to time (and resource cost) we have not included a step here for sequence confirming these transformants. 
+This is always good practice though: mistakes and mutations happen!
 
 **Examples of miniprep kits:**
 - Qiagen Spin Miniprep Kit
@@ -225,9 +261,9 @@ Plasmid DNA can then be stored long term at -20°C.
 - [Miniprep Tips]()
 
 
-### Quantify Plamid preps
+### Quantify Plasmid preps
 In order to perform an assembly reaction you must know the exact molar concentration of your parts in plasmid and the plasmid backbone with dropout. 
-You want to have equal-molar amounts of all parts as an imbalance can reduce the yield of correctly assembled colonies upon transformation. 
+You want to have equal-molar amounts of all parts in plasmid as an imbalance can reduce the yield of correctly assembled colonies upon transformation.
 
 UV absorbance is one of the most common ways to quantify DNA. 
 Fluorometry is more sensitive, allowing measurement of nanogram quantities of DNA. 
@@ -240,20 +276,39 @@ Follow the instructions for the instrument you will be using to quantify your pl
 - UV/Visible spectrophotometer with UV-transparent quartz cuvettes.
 - Fluorimetry (Qubit, DeNovix, etc.)
 
+#### Additional Resources
+- [DNA Quantification & Spectrophotometer Tips (Addgene)](https://www.addgene.org/protocols/dna-quantification/)
+
+### Set up assembly reaction
+Before you start your assembly make sure that you have all of your plasmids prepared and the DNA quantified using the methods listed above.
+
+As mentioned you want to have equal-molar amounts of all parts in plasmid in an assembly reaction. You can use the following equation or an [online calculator](https://nebiocalculator.neb.com/#!/dsdnaamt) to calculate this. 
+
+> moles dsDNA (mol) = mass of dsDNA (g)/((length of dsDNA (bp) x 615.96 g/mol/bp) + 36.04 g/mol)
+
+You will need to know the length of the dsDNA (bp), which we have included in the Distribution Location table from [Day 1](). 
+Note, this is the total plasmid size (bp) not just the size of the part by itself.
+
+You should start by making 50nM stock solutions of your parts and plasmids.
 
 
-### Setup assembly reaction
+For the assembly reactions, we recommend using 25 fmol for each part in plasmid, and half as much (12.5 fmol) for the plasmid backbone with drop-out, to reduce religation.
+
+
+| BBa_ name | description | part type | Plasmid Backbone | Total Plasmid length (bp) |
+| --- | --- | --- | --- | --- |
+| BBa_J23106 | Anderson promoter | promoter | pSB1C3SA | 2467 |
+
 #### Protocols
-
+- [Golden Gate Assembly (Bennett Lab)](https://wiki.rice.edu/confluence/display/BIODESIGN/Golden+Gate+Assembly)
 
 ## Day 4
 ### Transform assembly reaction
 Once you have your assembly reactions, you can transform them into your competent cells.
-The protocol we recommend below has some differences compared to the [distribution kit transformations protocol](/protocol-distribution-transformation.md).
+The protocol we recommend below has some key differences compared to the [distribution kit transformations protocol](/protocol-distribution-transformation.md).
 
 #### Protocols
 - [Assembly Reaction Transformations](/protocol-assembly-transformation.md)
-
 
 
 ## Day 5
@@ -271,11 +326,10 @@ These overnight cultures will be used on Day 6, to perform minipep plasmid DNA e
 
 
 ## Day 6
-### Make glycerol stocks
+### Make glycerol stocks and miniprep your constructs
+Read through the documentation from Day 3 if you need to!
 
-#### Protocols
-
-### Miniprep and confirm plasmid sequences
+### Confirm plasmid sequences
 Mutations and mistakes happen!
 For your own project, you should always confirm the sequence of your constructs so you know that no mutations/errors/mistakes have arisen.
 
@@ -290,7 +344,7 @@ For sequence alignment, you will use the GenBank files for your _in silico_ asse
 
 However plasmid sequencing can be expensive, so you may want to restriction map your individual clones beforehand and select one or two clones for sequencing. 
 
-## Interlab Devices
+## Build Alternative: Interlab Devices
 
 ### Workflow Overview
 - **Day 1**
