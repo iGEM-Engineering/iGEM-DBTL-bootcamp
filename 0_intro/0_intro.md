@@ -1,8 +1,7 @@
 # Introduction to the DBTL Bootcamp
 [Introduction](/0_intro/0_intro.md) >> [Design](/1_design/1_design.md) >> [Build](/2_build/2_build.md) >> [Test](/3_test/3_test.md) >> [Learn](/4_learn/4_learn.md)
 
-**The Introduction is currently under development.**
-
+> **An iGEM Story:**
 > You're brainstorming iGEM project ideas with your team and 
 you're excited to voice a novel synthetic biology approach to detect early-stage cancers! 
 You already have some of the DNA parts you would need, and you can synthesize the rest. 
@@ -39,10 +38,10 @@ You will need to have some knowledge in advance, seek more information yourself,
 Some of this we will cover in sections like _prerequisite knowledge_, and linking to additional resources. 
 Others though, you may need to look up yourself.
 
-Finally, as you proceed through the Bootcamp, if you have any questions or issues, you can reach out to us on the [iGEM Global Slack's](https://competition.igem.org/participation/connect#h-join-the-i-gem-global-slack) **#engineering channel**.
+Finally, as you proceed through the Bootcamp, if you have any questions or issues, you can reach out to us on the [iGEM Global Slack's](https://competition.igem.org/participation/connect#h-join-the-i-gem-global-slack) **#competition-engineering** channel.
 
 > **NOTE:** DBTL Bootcamp BETA<br /> 
-This is the Engineering Committee's first bootcamp.
+This is the Engineering Committee's first bootcamp!
 There may be errors, further guidance needed, and other elements that would improve the documentation here.
 As such, we expect that this document will change over time. 
 We will mark each major revision as a new version.
@@ -71,7 +70,7 @@ And the parts, plasmids, and fluorescence calibrants are all in your [2024 Distr
 
 ### What will you do in each module?
 #### Design Module
-In the [Design Module](/1_design/1_design.md), you will model the effect of constitutive promoter strength on GFP expression, and use design tools to _in silico_ assemble three GFP constructs using Golden Gate Assembly (GGA).
+In the [Design Module](/1_design/1_design.md), you will model the level of GFP being expressed from a constitutive promoter and use design tools to _in silico_ assemble three GFP constructs using Golden Gate Assembly (GGA).
 _No lab work is needed!_
 
 #### Build Module
@@ -98,16 +97,16 @@ We do recommend starting with the [Design Module](/1_design/1_design.md) though!
 
 <center>
 <figure>
-<img src="assets/images/transcription-unit.png" width=50% />
+<img src="assets/images/transcription-unit-labeled.png" width=50% />
 <figcaption>
-<i>A simplified diagram of the kind of transcription units you will be building: promoter, rbs, cds, terminator, in a plasmid backbone. 
+<i>A simplified diagram of the kind of transcription units you will be building: promoter, ribosome binding site (rbs), coding sequence (cds), terminator, in a plasmid backbone. 
 The diagram uses <a href="https://sbolstandard.org/visual-about/">SBOL Visual</a> glyphs.</i>
 </figcaption>
 </figure>
 </center>
 
 You will be assembling constitutively expressing GFP devices as a transcription unit in a plasmid. 
-We have included introductions to the parts (constitutive promoters, RBS, CDS for GFP, and terminator) and the plasmid backbone (destination vector), below. 
+We have included introductions to the parts: constitutive promoters, ribosome binding site (RBS), coding sequence (CDS) for GFP, and terminator, and the plasmid backbone (destination vector). 
 
 ## The Parts (& Plasmid)
 We have provided the parts and their sequences needed to complete the DBTL Bootcamp, both as the **part** itself and as a **part in backbone**. 
@@ -119,6 +118,24 @@ We have ensured that everything is correct for these sequences and their associa
 - _Is the part's sequence documented correctly?_
 - _Will the sequence work for the assembly approach you have chosen?_
 - _Is the sample of this part fully sequence confirmed?_
+
+### Design Considerations
+You will see **Design Considerations** for some of the parts below. 
+These sections are included to highlight the genetic design choices that were made for designing these parts for this bootcamp. 
+These are added so you can think about the design choices you may need to make for your genetic devices.
+
+<hr />
+
+### Plasmid Backbone: pSB1C3 and pSB1C5
+
+When we describe a part in a complete plasmid as either a physical sample or _in silico_ representation, we will reference this as a **part in plasmid backbone** (or part in backbone for short).
+
+All of the basic parts used in this bootcamp will be in the [pSB1C3](https://parts.igem.org/Part:pSB1C5SA) series of backbone or its derivative, pSB1C5.
+These are high-copy Chloramphenicol resistant plasmid backbones, with widespread usage in iGEM.
+
+#### What's the difference?
+The only difference between the pSB1C3 and pSB1C5 is that the pSB1C3 series maintains the BioBrick prefix and suffix.
+For the purposes of this bootcamp, this is not useful (or usable) as we will be using Golden Gate Assembly.
 
 <hr />
 
@@ -133,10 +150,10 @@ We will be using a subset of _five_ of these Anderson promoters.
 | Part Name | Plasmid Backbone |
 | --- | --- |
 | [BBa_J23100](https://parts.igem.org/Part:BBa_J23100) | [pSB1C5SA](https://parts.igem.org/Part:pSB1C5SA) |
-| [BBa_J23101](https://parts.igem.org/Part:BBa_J23101) | [pSB1C5SA](https://parts.igem.org/Part:pSB1C5SA) |
-| [BBa_J23106](https://parts.igem.org/Part:BBa_J23106) | [pSB1C5SA](https://parts.igem.org/Part:pSB1C5SA) |
+| [BBa_J23101](https://parts.igem.org/Part:BBa_J23101) | [pSB1C3SA](https://parts.igem.org/Part:pSB1C3SA) |
+| [BBa_J23106](https://parts.igem.org/Part:BBa_J23106) | [pSB1C3SA](https://parts.igem.org/Part:pSB1C3SA) |
 | [BBa_J23116](https://parts.igem.org/Part:BBa_J23116) | [pSB1C5SA](https://parts.igem.org/Part:pSB1C5SA) |
-| [BBa_J23117](https://parts.igem.org/Part:BBa_J23117) | [pSB1C5SA](https://parts.igem.org/Part:pSB1C5SA) |
+| [BBa_J23117](https://parts.igem.org/Part:BBa_J23117) | [pSB1C3SA](https://parts.igem.org/Part:pSB1C3SA) |
 
 </center>
 
@@ -146,7 +163,7 @@ These five promoters have been used in previous [InterLaboratory studies](https:
 <hr />
 
 ### RBS
-The RBS you will be using is a variant of [BBa_B0034](https://parts.igem.org/Part:BBa_B0034), BBa_J428038. 
+The ribsome binding site (RBS) you will be using is a variant of [BBa_B0034](https://parts.igem.org/Part:BBa_B0034), BBa_J428038. 
 
 <center>
 
@@ -156,6 +173,7 @@ The RBS you will be using is a variant of [BBa_B0034](https://parts.igem.org/Par
 
 </center>
 
+#### Design Considerations
 A key difference here is that BBa_J428038 also includes an extra 6bp downstream (see diagram below).
 Along with the Type IIS fusion site for CDS parts (`AATG`), this will create a 8bp spacer between the [Shine-Dalgarno](https://en.wikipedia.org/wiki/Shine%E2%80%93Dalgarno_sequence) sequence and the `ATG`.
 
@@ -174,23 +192,20 @@ These extra bases are meant to mimic a BBa_B0034 assembled with BioBrick RFC 10 
 <hr />
 
 ### CDS: Green Fluorescent Protein
-The green fluorescent protein (GFP) you will be using is a Type IIS variant of [BBa_E0040](https://parts.igem.org/Part:BBa_E0040), BBa_J119040. 
+The green fluorescent protein (GFP) coding sequence (CDS) you will be using is a Type IIS variant of [BBa_E0040](https://parts.igem.org/Part:BBa_E0040), BBa_J119040. 
 
 <center>
 
 | Part Name | Plasmid Backbone |
 | --- | --- |
-| [BBa_J119040](https://parts.igem.org/Part:BBa_J119040) | [pSB1C5SC](https://parts.igem.org/Part:pSB1C5SC) |
+| [BBa_J119040](https://parts.igem.org/Part:BBa_J119040) | [pSB1C5C](https://parts.igem.org/Part:pSB1C5C) |
 
 </center>
 
-
+#### Design Considerations
 [BBa_E0040](https://parts.igem.org/Part:BBa_E0040) is the most commonly used GFP in the Registry. 
 However, it contains a BsaI site within its sequence which makes it incompatible with the iGEM Type IIS assembly standard. 
 The variant you are using, BBa_J119040, has a single base pair substitution (base 648) to remove the BsaI site by changing a `C` to a `T`.
-
-
-[BBa_K2656022](https://parts.igem.org/Part:BBa_K2656022) is essentially the same part and has more documentation, but it includes the full `5’` fusion site for CDS parts (`AATG`), so we will be referring to BBa_J119040 as it is sequence-specific.
 
 <hr />
 
@@ -205,8 +220,13 @@ The terminator you will be using is a variant of [BBa_B0015](https://parts.igem.
 
 </center>
 
+#### Design Considerations
+
 [BBa_B0015](https://parts.igem.org/Part:BBa_B0015) is the most used terminator in the Registry. 
 This variant includes a `5’ AA` sequence, that when taken with the `5’` fusion site for terminators (`GCTT`) would create a stop codon preceding the terminator (`5' GCT TAA BBa_B0015`).
+
+While the CDS we will be using, [BBa_J119040](https://parts.igem.org/Part:BBa_J119040), has a stop codon (two in fact!), some Type IIS assembly schemes or samples, may not have the stop codon at the end of the CDS sequence.
+This design allows this terminator to include a stop codon in those cases.
 
 <hr /> 
 
@@ -238,6 +258,18 @@ We have incorporated the pTi plasmid backbone into the Registry as pTi (BBa_J434
 For the [Design Module](/1_design/1_design.md), you will use the pTi plasmid backbone for _in silico_ assembly. 
 For the [Build](/1_build/1_build.md) and [Test Module](/1_test/1_test.md), you will be assembling and expressing your constructs in the pTi plasmid backbone.  
 
+### Example Transcription Unit
+
+<center>
+<figure>
+<img src="assets/images/transcription-unit-part-labeled.png" width=50% />
+<figcaption>
+<i>An updated diagram of the transcription unit you will be building, now with part  names (BBa_). You will only be varying the promoter for your constructs, so the last two digits of BBa_J231XX will depend on your choice of Anderson promoters.</i>
+</figcaption>
+</figure>
+</center>
+
+
 ## MoClo / iGEM Type IIS
 
 For the DBTL Bootcamp, we will be using [Golden Gate Assembly](https://technology.igem.org/assembly/golden-gate). 
@@ -260,11 +292,15 @@ Specifically, the parts and backbone you will be using will have the overhangs (
 
 </center>
 
+### Fusion Sites
+
 As you look through the figure and table above you will notice that the fusion sites flank the part, but do not belong to the part itself. 
 
 **As an example**, `GGAG` and `TACT` are not included in the sequence for the promoter **part** BBa_J23101 (`TTTACAGCTAGCTCAGTCCTAGGTATTATGCTAGC`). 
 
 However when we have the **part in backbone** (promoter_BBa_J23101_in_pSB1C3SA.gb) and have excised it with BsaI, then the **part extract** will be those overhangs flanking BBa_J23101.
+
+#### CDS Fusion Site: AATG
 
 There is an exception here though. The `5’` CDS fusion site (`AATG`) can be considered just `A`, as the start codon (`ATG`) of a CDS will belong to its part sequence but also overlaps with the fusion site.
 
@@ -284,9 +320,26 @@ There is an exception here though. The `5’` CDS fusion site (`AATG`) can be co
 > - the `A` that is `5'` of the `ATG` fusion site in `[AATG]` is **NOT** included in the sequence of BBa_J119040
 > - the `3'` fusion site [GCTT] is **NOT** included in the sequence of BBa_J119040
 
+<hr /> 
+
+### Transcription Unit Assembled
+
+<center>
+<figure>
+<img src="assets/images/transcription-unit-fusion-sites.png" width=75% />
+<figcaption>
+<i>Visual representation for an assembled transcription unit, along with the scars formed by the fusion sites.</i>
+</figcaption>
+</figure>
+</center>
+
+When assembled, those fusion sites that flank a part sequence will become *scars*, artefacts of the assembly reaction.
+In visual representations these are usually not included, but we have provided the above diagram to show their location in a typical transcription unit.
+
+<hr /> 
+
 ### Hierarchical Assemblies
 
 Finally, Golden Gate Assembly is an extremely powerful assembly technique and can be made more complex with when an GGA-based standard supports hierarchical assemblies, where you would be able to assemble multiple transcription units to create larger genetic circuits. 
 This may be a consideration for your own project which you will need to include in your Design process. 
 But for this bootcamp, all you will need to be prepared for is the above!
-
