@@ -188,13 +188,15 @@ This is invaluable for training purposes and for explaining concepts to stakehol
 
 ### Getting started: Biochemical reactions
 
+Constuitive gene expression is the simplest gene expression to model: at all times gene expression is on at the same rate (this is of course an oversimplification to reality, but that's part of modeling!). 
+
 <center>
 <figure>
 <img src="assets/images/transcription-unit-k.png" width=50% />
 </figure>
 </center>
 
-Lets start with our initial diagram of our device!
+Lets start with our initial diagram of our device.
 The key reactions here are: 
 - **Transcription:** the constuitive promoter will drive transcription of a gene (an rbs and _gfp_ coding region), producing mRNA at a constant rate, which we'll define as (k<sub>1</sub>)
 - **Translation:** the mRNA will then be translated to produce the GFP protein at a constant rate, which we'll define as (k<sub>2</sub>)
@@ -211,7 +213,8 @@ Of course, there are some complexities here that we have ignored here for the si
 These may include parameters like the stability/burden of the plasmid and device, the availability of RNA polymerases and ribosomes, and even cell division.
 
 ### ODEs and Law of Mass Action
-We will be using [ordinary differential equations](https://en.wikipedia.org/wiki/Ordinary_differential_equation) (ODEs) to model our system and applying the [law of mass action](https://en.wikipedia.org/wiki/Law_of_mass_action), which states that the rate of a reaction is proportional to the product of the concentrations of the reactants, to our ODE. 
+We will be using [ordinary differential equations](https://en.wikipedia.org/wiki/Ordinary_differential_equation) (ODEs) to model our system and applying the [law of mass action](https://en.wikipedia.org/wiki/Law_of_mass_action) ([webinar](https://www.youtube.com/watch?v=ph5iYWwXsPw&t=359s)), which states that the rate of a reaction is proportional to the product of the concentrations of the reactants, to our ODE. 
+
 This allows us to predict how the concentration of a molecular species like our mRNA and protein changes over time. 
 
 
@@ -223,23 +226,28 @@ This allows us to predict how the concentration of a molecular species like our 
 </figure>
 </center>
 
-We will start with a derivative for the rate of change of mRNA over time.
-This will be denoted as: 
+We have our reactant, $Gene$, that will be transcribed into our product, $mRNA$, at a reaction rate $k_{1}$.
+
+In this case our $Gene$ is a constant which will be defined by the copy number of the plasmid.
+
+Since we are modeling constiuitive expression, we can define $k_{1}$ as the transcription rate regulated by the promoter: specifically, the promoter's ability to recruit RNA polymerase to start transcription.
+This is tightly related to the sequence of the promoter, so once we have our model, if we want to increase $k_{1}$ we would use a strong promoter, and to decrease $k_{1}$ we would use a weak one.
+
+We denote the derivative for the rate of change of mRNA over time as: 
 $$\frac{d[mRNA]}{dt}$$
 
 And, we have our: 
-- reactants: Gene
-- reaction rate: k<sub>1</sub> 
-- product: mRNA
+- reactant: $Gene$
+- reaction rate: $k_{1}$
+- product: $mRNA$
 
 $$
 \frac{d[mRNA]}{dt} = k_{1}{[Gene]}
 $$
-The rate of change of mRNA over time is proportional to the reaction rate (k<sub>1</sub>) and the amount of genes we have. In this case our gene is a constant which will be defined by the copy number of the plasmid.
+In simple terms, the rate of change of mRNA over time is proportional to the transcription rate ($k_{1}$) and the amount of genes we have.
 
-> 
 
-We also know that there is a degradation of the mRNA, which is happening at rate (d<sub>1</sub>) to the amount of mRNA.
+We also know that there is a degradation of the mRNA, which is happening at rate ($d_{1}$) to the concentration of mRNA.
 
 <center>
 <figure>
@@ -251,20 +259,11 @@ $$
 \frac{d[mRNA]}{dt} = k_{1}{[Gene]} - d_{1}{[mRNA]}
 $$
 
+The rate of degradation is a negative term, and with that consideration we have: the rate of change of mRNA over time is proportional to the transcription rate ($k_{1}$) of genes minus the degradation rate ($d_{1}$) of the current concentraton of mRNA.
+
 #### Translation and Protein degradation
 
-Similarly, we will do the same for modeling protein synthesis. We will start with a derivative for the rate of change of GFP protein over time.
-This will be denoted as: 
-$$\frac{d[Protein]}{dt}$$
-
-And, we have our:
-- reactants: mRNA
-- reaction rate: k<sub>2</sub>
-- product: Protein
-
-And subsequently a degradation of that protein
-- reactants: Protein
-- degradation rate: d<sub>2</sub>
+Similarly, we will do the same for modeling protein synthesis.
 
 <center>
 <figure>
@@ -272,9 +271,30 @@ And subsequently a degradation of that protein
 </figure>
 </center>
 
+We have the $mRNA$ that will be translated into $Protein$, at rate $k_{2}$.
+
+We can define $k_{2}$ as the translation rate regulated by the ribsome binding site (rbs): specifically, the rbs's ability to recruit ribsomes for translation.
+Like a constiuitive promoter, this is tightly related to the sequence of the rbs.
+While we are not varying rbs strength in this bootcamp, once we have our model, if we want to increase $k_{2}$ we would use a strong rbs, and to decrease $k_{2}$ we would use a weak one.
+
+We will start with a derivative for the rate of change of GFP protein over time.
+This will be denoted as: 
+$$\frac{d[Protein]}{dt}$$
+
+And, we have our: 
+- reactant: $mRNA$
+- reaction rate: $k_{2}$
+- product: $Protein$
+
+And subsequently a degradation of that protein
+- reactants: $Protein$
+- degradation rate: $d_{2}$
+
 $$
 \frac{d[Protein]}{dt} = k_{2}{[mRNA]} - d_{2}{[Protein]}
 $$
+
+The rate of change of protein over time is proportional to the translation rate ($k_{2}$) of mRNA minus the degradation rate ($d_{2}$) of the current concentraton of protein.
 
 #### Our system
 
@@ -294,9 +314,26 @@ $$
 \frac{d[Protein]}{dt} = k_{2}{[mRNA]} - d_{2}{[Protein]}
 $$
 
-### Validate/check your model
+### Using your model
+We can use the model with some parameters and states and write a script to graph its behavior. 
+You can see an example of this from a [previous iGEM webinar](https://youtu.be/K0P1KVk_hDo?si=5K72owA1k8SNi9u7&t=1046), from which we will also pull some parameters and states.
 
-### Storing, Sharing, and Presenting
+States / Initial Conditions
+- gene (copy number of plasmid )= 17
+- mRNA = 0
+- Protein = 0
+
+Parameters
+- k1 (transcription rate) = 1.19
+- d1 (mRNA degradation rate) = log(2)/3
+- k2 (translation rate) = 8.23
+- d2 (protein degradation rate) = 0.02
+
+<center>
+<figure>
+<img src="assets/images/model-graph.png" width=100% />
+</figure>
+</center>
 
 ### Knowledge check
 1. What is the purpose of your model?
