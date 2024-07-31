@@ -87,7 +87,7 @@ What will the data look like if the design was built incorrectly?
 
 ## Anderson Promoter Data
 
-Before we start modeling expression, we will look at some previous data on the strength of the Anderson promoters.
+Before we start modeling GFP expression, we will look at some previous data on the strength of the Anderson promoters.
 
 | Anderson Promoter | RFP (AU) | Relative Strength |
 | --- | --- | --- |
@@ -137,39 +137,203 @@ Importantly, we also do not know the following (at least readily):
 
 ## Modeling 
 
-A model is a mathematical abstraction (or somplification) that allows us to describe a system.
+>**Note:** In this section, we will not delve too deep into the mathematics of modeling, instead we will demonstrate why modeling is important and useful. We have linked to some additional resources below that will cover modeling more extensively.
 
-It gives use a clear idea of the inputs and outputs
+A model is a mathematical abstraction (or simplification) that allows us to describe a system.
 
-It helps us predict the behavior of a systm
+Modeling our devices will demonstrate that we have a clear understanding of its inputs and outputs, and help us predict its behavior.
+Additionally, when we have real world data, we can compare that to the model, and potentially identify behavior that we may not have considered.
 
-And will let us analyze data by comparing real world data to the model.
+### Why you should model first
+First lets see why you should consider modeling as the first step in the design stage:
 
-This is particularly useful to idenity behavior that we may not have considered
+- **Predictive Insights:** 
+Modeling provides predictive insights into how a biological system will behave under various conditions. 
+By simulating different scenarios, researchers can anticipate potential outcomes, reducing time and resources spent on ineffective designs. 
+This foresight is crucial for developing robust and reliable genetic circuits.
+- **Cost Efficiency:** 
+Simulating different scenarios in a model allows researchers to identify the most promising designs before using any physical resources. 
+This approach minimizes the costs associated with experimental trials, as fewer iterations are needed to achieve the desired outcome. Consequently, it accelerates the development process while conserving resources.
+- **Risk Mitigation:** 
+Models help in identifying potential risks and biosecurity concerns associated with a construct before it is physically built. 
+Early detection of these issues is vital for ensuring safety and compliance with regulatory standards, protecting both the environment and public health.
+- **Optimization:** 
+Through modeling, multiple variables can be adjusted and tested quickly and efficiently. This capability allows for the optimization of genetic constructs for desired traits without the need for extensive physical experimentation. 
+Models can refine design parameters to achieve the best performance with minimal experimental trials.
+- **Understanding System Dynamics:** 
+Mathematical models provide insights into the dynamic behavior of biological systems, such as gene expression patterns, protein interactions, and metabolic fluxes. 
+Understanding these dynamics is crucial for designing systems that behave predictably under different conditions. 
+For instance, models can identify critical parameters that control system stability and robustness, guiding the design of more reliable genetic circuits.
+- **Hypothesis Testing:** 
+Models serve as a platform for testing hypotheses about how biological systems function. 
+Researchers can explore the effects of modifying specific components or interactions within the system, gaining a deeper understanding of the underlying biology. 
+This iterative process of hypothesis testing and refinement is essential for advancing knowledge and improving system designs.
+- **Scenario Analysis:** 
+Through simulation, models enable the exploration of various "what-if" scenarios. 
+Researchers can examine the potential impact of different genetic modifications, environmental conditions, or system perturbations. 
+This capability is invaluable for stress-testing designs and ensuring that they perform robustly under a wide range of conditions.
+- **Guided Experimentation:** 
+Mathematical models can guide the experimental design by identifying key variables and suggesting optimal experimental conditions. 
+This guidance helps to focus experimental efforts on the most informative and impactful tests, improving the efficiency and effectiveness of the experimental phase.
+- **Standardization and Reproducibility:** 
+Incorporating mathematical models promotes standardization and reproducibility in synthetic biology research. 
+Models provide a clear, quantitative description of system designs and expected behaviors, facilitating communication and collaboration among researchers. 
+Standardized models also serve as a reference for reproducing experiments and verifying results across different laboratories.
+- **Understanding Complex Interactions:** 
+Biological systems often involve complex interactions that can be difficult to predict without a computational model. 
+Modeling helps in understanding these interactions and the dynamics of the system, which is essential for designing effective constructs.
+- **Educational Tool:** 
+Models serve as excellent educational tools, providing a visual and interactive way to understand and manipulate biological systems. 
+This is invaluable for training purposes and for explaining concepts to stakeholders, enhancing both educational outcomes and stakeholder engagement.
 
+### Getting started: Biochemical reactions
 
- use what we know about the Anderson promoters and model their effect on GFP expression.
+Constuitive gene expression is the simplest gene expression to model: at all times gene expression is on at the same rate (this is of course an oversimplification to reality, but that's part of modeling!). 
 
 <center>
 <figure>
-<img src="assets/images/tx-tl-reactions.png" width=50% />
+<img src="assets/images/transcription-unit-k.png" width=50% />
 </figure>
 </center>
+
+Lets start with our initial diagram of our device.
+The key reactions here are: 
+- **Transcription:** the constuitive promoter will drive transcription of a gene (an rbs and _gfp_ coding region), producing mRNA at a constant rate, which we'll define as (k<sub>1</sub>)
+- **Translation:** the mRNA will then be translated to produce the GFP protein at a constant rate, which we'll define as (k<sub>2</sub>)
+
+Finally, we also know that there is some rate of degradation, both for the mRNAs and proteins, which we will define as (d<sub>1</sub>) and (d<sub>2</sub>), respectively.
 
 <center>
 <figure>
-<img src="assets/images/transcription-unit-tx-tl.png" width=50% />
+<img src="assets/images/transcription-unit-k-d.png" width=50% />
 </figure>
 </center>
 
-After that, you will select two promoters plus BBa_J23106 (our default) to use in your constructs.
-Our recommendation is to select promoters that would be expected to be higher and lower strength.
+Of course, there are some complexities here that we have ignored here for the simplicity of our model. 
+These may include parameters like the stability/burden of the plasmid and device, the availability of RNA polymerases and ribosomes, and even cell division.
 
-Maybe in your project you are working with a protein that _may_ increase cellular burden. You would want to test the optimal level of expression that you can get, so testing expression across a range of promoter strengths would be useful.
+### ODEs and Law of Mass Action
+We will be using [ordinary differential equations](https://en.wikipedia.org/wiki/Ordinary_differential_equation) (ODEs) to model our system and applying the [law of mass action](https://en.wikipedia.org/wiki/Law_of_mass_action) ([webinar](https://www.youtube.com/watch?v=ph5iYWwXsPw&t=359s)), which states that the rate of a reaction is proportional to the product of the concentrations of the reactants, to our ODE. 
 
-### Validate/check your model
+This allows us to predict how the concentration of a molecular species like our mRNA and protein changes over time. 
 
-### Storing, Sharing, and Presenting
+
+#### Transcription and mRNA degradation
+
+<center>
+<figure>
+<img src="assets/images/tx-reaction.png" width=30% />
+</figure>
+</center>
+
+We have our reactant, $Gene$, that will be transcribed into our product, $mRNA$, at a reaction rate $k_{1}$.
+
+In this case our $Gene$ is a constant which will be defined by the copy number of the plasmid.
+
+Since we are modeling constiuitive expression, we can define $k_{1}$ as the transcription rate regulated by the promoter: specifically, the promoter's ability to recruit RNA polymerase to start transcription.
+This is tightly related to the sequence of the promoter, so once we have our model, if we want to increase $k_{1}$ we would use a strong promoter, and to decrease $k_{1}$ we would use a weak one.
+
+We denote the derivative for the rate of change of mRNA over time as: 
+$$\frac{d[mRNA]}{dt}$$
+
+And, we have our: 
+- reactant: $Gene$
+- reaction rate: $k_{1}$
+- product: $mRNA$
+
+$$
+\frac{d[mRNA]}{dt} = k_{1}{[Gene]}
+$$
+In simple terms, the rate of change of mRNA over time is proportional to the transcription rate ($k_{1}$) and the amount of genes we have.
+
+
+We also know that there is a degradation of the mRNA, which is happening at rate ($d_{1}$) to the concentration of mRNA.
+
+<center>
+<figure>
+<img src="assets/images/tx-reaction-d.png" width=30% />
+</figure>
+</center>
+
+$$
+\frac{d[mRNA]}{dt} = k_{1}{[Gene]} - d_{1}{[mRNA]}
+$$
+
+The rate of degradation is a negative term, and with that consideration we have: the rate of change of mRNA over time is proportional to the transcription rate ($k_{1}$) of genes minus the degradation rate ($d_{1}$) of the current concentraton of mRNA.
+
+#### Translation and Protein degradation
+
+Similarly, we will do the same for modeling protein synthesis.
+
+<center>
+<figure>
+<img src="assets/images/tl-reaction-d.png" width=30% />
+</figure>
+</center>
+
+We have the $mRNA$ that will be translated into $Protein$, at rate $k_{2}$.
+
+We can define $k_{2}$ as the translation rate regulated by the ribsome binding site (rbs): specifically, the rbs's ability to recruit ribsomes for translation.
+Like a constiuitive promoter, this is tightly related to the sequence of the rbs.
+While we are not varying rbs strength in this bootcamp, once we have our model, if we want to increase $k_{2}$ we would use a strong rbs, and to decrease $k_{2}$ we would use a weak one.
+
+We will start with a derivative for the rate of change of GFP protein over time.
+This will be denoted as: 
+$$\frac{d[Protein]}{dt}$$
+
+And, we have our: 
+- reactant: $mRNA$
+- reaction rate: $k_{2}$
+- product: $Protein$
+
+And subsequently a degradation of that protein
+- reactants: $Protein$
+- degradation rate: $d_{2}$
+
+$$
+\frac{d[Protein]}{dt} = k_{2}{[mRNA]} - d_{2}{[Protein]}
+$$
+
+The rate of change of protein over time is proportional to the translation rate ($k_{2}$) of mRNA minus the degradation rate ($d_{2}$) of the current concentraton of protein.
+
+#### Our system
+
+Altogether, we can model our system as follows:
+
+<center>
+<figure>
+<img src="assets/images/tx-tl-reaction.png" width=50% />
+</figure>
+</center>
+
+$$
+\frac{d[mRNA]}{dt} = k_{1}{[Gene]} - d_{1}{[mRNA]}
+$$
+
+$$
+\frac{d[Protein]}{dt} = k_{2}{[mRNA]} - d_{2}{[Protein]}
+$$
+
+### Using your model
+We can use the model with some parameters and states and write a script to graph its behavior. 
+You can see an example of this from a [previous iGEM webinar](https://youtu.be/K0P1KVk_hDo?si=5K72owA1k8SNi9u7&t=1046), from which we will also pull some parameters and states.
+
+States / Initial Conditions
+- gene (copy number of plasmid )= 17
+- mRNA = 0
+- Protein = 0
+
+Parameters
+- k1 (transcription rate) = 1.19
+- d1 (mRNA degradation rate) = log(2)/3
+- k2 (translation rate) = 8.23
+- d2 (protein degradation rate) = 0.02
+
+<center>
+<figure>
+<img src="assets/images/model-graph.png" width=100% />
+</figure>
+</center>
 
 ### Knowledge check
 1. What is the purpose of your model?

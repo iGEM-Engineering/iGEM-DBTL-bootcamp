@@ -98,6 +98,7 @@ Additionally, we will explore Hill functions and explain the effects of paramete
 
 #### [Getting Started](https://video.igem.org/w/m9VKWPEbvHpMtRH8MCh7kW)
 You have defined your project and now you need to start planning and designing your genetic engineering approach. 
+
 Seems like a daunting task! In this webinar we will cover “what you need to consider before starting to clone '': we will give an overview on available databases to identify relevant genes and coding sequences as well as we will give advice on a good cloning strategy and available assembly methods.
 
 ##### Details

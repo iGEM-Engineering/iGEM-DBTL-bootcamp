@@ -11,18 +11,19 @@ This is all described in the [Introduction](/0_intro/0_intro.md) and in further 
 
 <center>
 <figure>
-<img src="assets/images/GGA-MoClo.png" width=75% />
+<img src="assets/images/GGA-MoClo.png" width=100% />
 </figure>
 </center>
 
-You will use those basic parts, the plasmid backbone with drop-out, and Golden Gate Assembly (GGA) to create a series of transcription units in a backbone. 
+You will use those basic parts, the plasmid backbone with drop-out, and Golden Gate Assembly (GGA) to create a series of transcription units in a backbone. Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
 
-Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
 While this module includes a fairly standard workflow to get to this point, it does take 5/6-days with several steps which we have elaborated on in the [Workflow Overview section]().
 
 
 **IMPORTANT:** As with all experimental procedures, preparation is of key importance. 
 Before starting in the lab, read through the entire module: familiarize yourself with the protocols, the materials, and the equipment needed.
+
+### Can't Build? Don't worry!
 
 If you are unable to assemble your designed constructs, or have decided not to do the Build Module, you can (mostly) skip this module. 
 Instead, you can transform a selection of [Interlab devices]() directly from the Distribution Kit, and use those in the Test Module. 
@@ -41,8 +42,8 @@ The following are the resources needed for the Build Module.
 - Chemically competent _E. coli_ cells, preferably DH5alpha or strains with recA1 and endA1 mutations
 - Miniprep DNA extraction kit to isolate plasmid DNA from transformed cells
 - Media: 
-    - LB 
-    - SOC 
+    - LB broth
+    - SOC broth
     - LB agar plates
     - Kanamycin and chloramphenicol antibiotic stocks
     - 80% sterile glycerol.
@@ -63,7 +64,7 @@ The following are the resources needed for the Build Module.
     - iGEM Distribution Kit (this module uses the 2024 version)
 
 **Note** that this list is not completely exhaustive as there will be some things that we assume your lab has access to, from small things (lab pens, glassware) to larger ones (-80°C freezer, centrifuge).
-We have also not included quantities, it will be important for you to understand the workflow, read through the protocols, and keep track of that yourself. 
+We have also not included quantities, it will be important for you to understand the workflow, read through the protocols, and keep track of those yourself. 
 
 ## Workflow Overview
 The following is a 6-day plan for the Build Module, that will take you from transforming parts from the iGEM Distribution Kit, to assembling your constructs, and finally preparing glycerol stocks for future use. 
@@ -75,7 +76,7 @@ Depending on your level of experience and/or available time, you may be able to 
 
 - **Day 0** (Before you start)
     - Competent cells
-    - Antibiotic stocks
+    - Antibiotic stocks and media
 - **Day 1**
     - Transform plasmids from Distribution Kit*
 - **Day 2**
@@ -104,6 +105,9 @@ DO NOT use DNA from the distribution kit directly in an assembly reaction.
 
 
 ## Day 0
+Day 0 includes materials and reagents that you will need before you start.
+It is quite common to have these already in accesible in the lab, but you should make sure you have enough to complete the Build module.
+
 ### Competent cells
 There are two general types of [competent _E. coli_ cells](https://en.wikipedia.org/wiki/Transformation_(genetics)#Bacterial): chemically competent and electrocompetent. 
 Electrocompetent cells require an electroporator which you may not have access to in your lab. 
@@ -112,6 +116,7 @@ So for this bootcamp, we will cover making and using chemically competent cells,
 For chemically competent cells, you can either purchase these cells from a vendor or make them in the lab.
 Vendors will often sell a range of competent cells for different purposes and transformation efficiencies. 
 These commercial competent cells are validated so it can make troubleshooting easier, but they are an added expense. 
+
 If you are unable to purchase competent cells, we have provided a protocol below so you can make your own cells and test their efficiency. 
 
 #### Protocols
@@ -121,7 +126,7 @@ If you are unable to purchase competent cells, we have provided a protocol below
 #### Additional Resources
 - [Bacterial Transformation (Addgene)](https://www.addgene.org/protocols/bacterial-transformation/)
 
-### Antibiotic stocks
+### Antibiotic stocks and media
 For this bootcamp (the Build and Test modules) you will need chloramphenicol and kanamycin antibiotic stocks.
 You will be adding those to LB liquid media and LB agar.
 
@@ -153,7 +158,7 @@ The following table contains the locations, and basic information for the parts 
 </center>
 
 
-From this you will be doing **eight** transformations, as you do not need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
+From this you will be doing **eight** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
 
 | BBa_ name | description | part type | Plasmid Backbone | AbR | Total Plasmid length (bp) | Plate | Well |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -355,3 +360,48 @@ However plasmid sequencing can be expensive, so you may want to restriction map 
     - Make glycerol stocks
     - Miniprep plasmids
     - Confirm plasmid sequences
+
+## Day 1
+### Transform plasmids from Distribution Kit
+
+The following table contains the locations, and basic information for the Interlab Devices you will need to transform from the [2024 iGEM Distribution Kit](https://technology.igem.org/distribution/handbook).
+
+For this Bootcamp we specifically selected parts (or variants of parts) that were used in these Interlab devices.
+They will all use the same Anderson promoter set that you selected from in the Design Module, so you can choose the Interlab Devices you would like to transform based on your promoter choice.
+
+However, these constructs will differ from the ones you _in silico_ assembled in the Design Module, as they were assembled with BioBrick assembly into the pSB1C3 plasmid backbone.
+
+From this you will be doing **five** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
+
+| BBa_ name | description | part type | Plasmid Backbone | AbR | Total Plasmid length (bp) | Plate | Well |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| BBa_I20270 | Positive control | device | pSB1C3 | CmR | 5337 | 1 | 17L |
+| BBa_J23100 | Anderson promoter | promoter | pSB1C3 | CmR | 2424 | 1 | 5A |
+| BBa_J23101 | Anderson promoter | promoter | pSB1C3 | CmR | 2467 | 1 | 18A |
+| BBa_J23106 | Anderson promoter | promoter | pSB1C3 | CmR | 2467 | 1 | 18C |
+| BBa_J23116 | Anderson promoter | promoter | pSB1C3 | CmR | 2424 | 1 | 5K |
+| BBa_J23117 | Anderson promoter | promoter | pSB1C3 | CmR | 2467 | 1 | 18E |
+| BBa_J428038 | BBa_B0034 Type IIS variant | rbs | pSB1C3 | CmR | 2411 | 1 | 19I |
+| BBa_J119040 | BBa_E0040 Type IIS variant | cds | pSB1C5C | CmR | 2766 | 1 | 17J |
+| BBa_J428092 | BBa_B0015 Type IIS variant | terminator | pSB1C5SD | CmR | 2520 | 1 | 1C |
+
+
+_CmR = chloramphenicol resistant_
+
+**Key things to know:** 
+- the antibiotic resistances of the plasmid backbones, as these will be the antiobiotic stocks you need: chloramphenicol
+- there is an estimated 1-2 ng of DNA in each distribution kit well, so if you are using our recommended protocol, assume that you are transforming with 100-200 pg/µL. 
+
+Lastly, you may have noticed that there are positive and negative controls in the table.
+These devices, BBa_I20270 in pSB1C3, has been used as controls in past Interlabs.
+We will not be using this as a control for transformations or assembly, but as a control for the [Test Module]() experiment. 
+We will be transforming it now, so you will not need to do that later.
+
+You may also have noticed that there is not a negative control listed.
+That's because we will use the pTi plasmid backbone with RFP drop-out as our negative control in the Test Module.
+
+#### Protocols
+- [Distribution Kit Transformations](/protocol-distribution-transformation.md)
+
+#### Additional Resources
+- [Bacterial Transformation (Addgene)](https://www.addgene.org/protocols/bacterial-transformation/)
