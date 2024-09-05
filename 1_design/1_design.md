@@ -188,7 +188,8 @@ This is invaluable for training purposes and for explaining concepts to stakehol
 
 ### Getting started: Biochemical reactions
 
-Constuitive gene expression is the simplest gene expression to model: at all times gene expression is on at the same rate (this is of course an oversimplification to reality, but that's part of modeling!). 
+Constuitive gene expression is the simplest gene expression to model. 
+At all times gene expression is on at the same rate (this is of course an oversimplification to reality, but that's part of modeling!). 
 
 <center>
 <figure>
@@ -201,13 +202,13 @@ The key reactions here are:
 - **Transcription:** the constuitive promoter will drive transcription of a gene (an rbs and _gfp_ coding region), producing mRNA at a constant rate, which we'll define as (k<sub>1</sub>)
 - **Translation:** the mRNA will then be translated to produce the GFP protein at a constant rate, which we'll define as (k<sub>2</sub>)
 
-Finally, we also know that there is some rate of degradation, both for the mRNAs and proteins, which we will define as (d<sub>1</sub>) and (d<sub>2</sub>), respectively.
-
 <center>
 <figure>
 <img src="assets/images/transcription-unit-k-d.png" width=50% />
 </figure>
 </center>
+
+Finally, we also know that there is some rate of degradation, both for the mRNAs and proteins, which we will define as (d<sub>1</sub>) and (d<sub>2</sub>), respectively.
 
 Of course, there are some complexities here that we have ignored here for the simplicity of our model. 
 These may include parameters like the stability/burden of the plasmid and device, the availability of RNA polymerases and ribosomes, and even cell division.
@@ -216,6 +217,8 @@ These may include parameters like the stability/burden of the plasmid and device
 We will be using [ordinary differential equations](https://en.wikipedia.org/wiki/Ordinary_differential_equation) (ODEs) to model our system and applying the [law of mass action](https://en.wikipedia.org/wiki/Law_of_mass_action) ([webinar](https://www.youtube.com/watch?v=ph5iYWwXsPw&t=359s)), which states that the rate of a reaction is proportional to the product of the concentrations of the reactants, to our ODE. 
 
 This allows us to predict how the concentration of a molecular species like our mRNA and protein changes over time. 
+
+We will take our diagram from the previous section, break it down by reaction (transcription and translation), and write a simple mathematical model for each reaction.
 
 
 #### Transcription and mRNA degradation
@@ -329,11 +332,51 @@ Parameters
 - k2 (translation rate) = 8.23
 - d2 (protein degradation rate) = 0.02
 
+
 <center>
 <figure>
 <img src="assets/images/model-graph.png" width=100% />
 </figure>
 </center>
+
+### Modeling (and selecting) your promoters
+We will use the same parameters and states as our example above, but now we can use our initial promoter strength data to model the behavior of all of our Anderson promoters.
+
+States / Initial Conditions
+- gene (copy number of plasmid )= 17
+- mRNA = 0
+- Protein = 0
+
+Parameters
+- k1 (transcription rate) = _see table_
+- d1 (mRNA degradation rate) = log(2)/3
+- k2 (translation rate) = 8.23
+- d2 (protein degradation rate) = 0.02
+
+For our k1 values, we will use the relative strength of our promoters :
+
+| Anderson Promoter | RFP (AU) | Relative Strength |
+| --- | --- | --- |
+| BBa_J23100 | 2547 | 1.00 |
+| BBa_J23101 | 1791 | 0.70 |
+| BBa_J23106 | 1185 | 0.47 |
+| BBa_J23116 | 396 | 0.16 |
+| BBa_J23117 | 162 | 0.06 |
+
+<center>
+<figure>
+<img src="assets/images/model-graph-all-promoters.png" width=100% />
+</figure>
+</center>
+
+Based on the model output, you can select our strong, medium, and weak strength promoters.
+You can select any of the three, but we recommend selecting BBa_J23106 as your medium strength promoter, and then based on that, selecting your preferred strong and weak promoters.
+
+With your selection, you can now proceed to the next step, assembling your constructs _in silico_.
+
+From our Test and Learn Modules we will be able to compare the real world data from our constructs to see how closely they fit our model. 
+Keep in mind that we will be measuring fluoresence (protein expression) and not the rate of mRNA transcription nor the copy number of our plasmid.
+
 
 ### Knowledge check
 1. What is the purpose of your model?
@@ -345,6 +388,7 @@ Parameters
 
 ### Additional Resources
 - Webinar: [Modeling for SynBio: from ODEs to Gene expression](https://video.igem.org/w/nPrjzXYqVpAxRjCRCx4Mi9)
+- [R script for the ODE](const_expression_ODE.R)
 
 ## Assemble your constructs _in silico_
 Based on your modeling, you have selected the two promoters (one strong and one weak) along with BBa_J231006, which you will use as your medium strength promoter. 
