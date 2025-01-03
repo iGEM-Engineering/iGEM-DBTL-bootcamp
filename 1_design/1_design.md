@@ -111,7 +111,7 @@ In the data above, promoter strength was measured through RFP fluorescence (AU).
 AU stands for an **A**rbitrary **U**nit and it is a relative unit of measurement.
 This works OK when we are only comparing measurements performed in the same experiment, but we are not actually able to compare these measurements from lab to lab.
 
-We will have more on this in our Test Module, but a key thing to consider even before you start your designing is how you will ensure you can share and compare your data.
+We will have more on this in our [Test Module](/3_test/3_test.md), but a key thing to consider even before you start your designing is how you will ensure you can share and compare your data.
 
 ### What do we know about the experimental context?
 From the [Anderson promoter collection page](https://parts.igem.org/Promoters/Catalog/Anderson), the individual part pages, and some sequence analysis, we know the following:
@@ -130,6 +130,8 @@ Importantly, we also do not know the following (at least readily):
 - What protocol was used?
 - What controls were used?
 
+A standard protocol that is widely used and easy to cite, would be beneficial in this case. We will have more on this in our [Test Module](/3_test/3_test.md)
+.
 
 
 
