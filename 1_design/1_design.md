@@ -37,7 +37,7 @@ In the Design stage of the DBTL cycle, it helps to outline your design goal, inc
 
 For this bootcamp we have defined the **aim**: to design, and build three GFP reporter constructs and test the effect of constitutive promoter strength on GFP expression.
 
-It is always helpful to *diagram* out a process,, starting with some abstraction. 
+It is always helpful to *diagram* out this process, starting with some abstraction. 
 By having a diagram that shows the aim, and the steps to get there, you will have a resource that can be used to track your progress and to ensure that all the considerations that were made in the Design phase will be done in the Build and Test phases.
 
 <center>
@@ -53,17 +53,17 @@ But let us consider some of the **requirements** that need to be addressed to me
 - What are the parts you should use for your constructs? What do you have available, and what do you need to procure?
 - How can you model the performance of the desired function and how the parts will work together?
 - How will you build these constructs? How will your build plan influence your designs?
-- What chassis will you be using? Even more specific, what strain you will be using?
+- What chassis will you be using? Even more specific, what strain will you use?
 - Once built, how will you test and measure the function of your constructs? What will be your positive and negative controls? 
 
 You will address some of these questions throughout the bootcamp, including some of the self-imposed constraints we have in place. 
 - The parts we have selected are well-characterized and we will go into more detail about them in the Parts section below.
-- You will model the effect of constitutive promoters on GFP expression
+- You will model the effect of constitutive promoters on GFP expression.
 - You will build these constructs with parts available in the iGEM Distribution Kit. All of the basic parts in the Kit are in a Type IIS Assembly format, so you will be using Golden Gate Assembly. 
 - The plasmid backbone with drop-out, and the parts you are using have all been designed for and/or tested in _E. coli_. 
 - You are building constructs for GFP expression, so you will be testing and measuring them by measuring fluorescence in a plate reader. For controls, we have provided a positive and negative control. And for calibrants, you can learn more about those in the Test Module!
 
-However, for your project you will likely have different answers to all of these questions. Maybe you are working in _S. cerevisiae_, or you will be using synthesis for your entire constructs. 
+However, for your project, you will likely have different answers to all of these questions. Maybe you are working in _S. cerevisiae_, or you will be using synthesis for your entire constructs. 
 
 
 ### The Design constraints
@@ -111,25 +111,27 @@ In the data above, promoter strength was measured through RFP fluorescence (AU).
 AU stands for an **A**rbitrary **U**nit and it is a relative unit of measurement.
 This works OK when we are only comparing measurements performed in the same experiment, but we are not actually able to compare these measurements from lab to lab.
 
-We will have more on this in our Test Module, but a key thing to consider even before you start your designing is how will you ensure you can share and compare your data.
+We will have more on this in our [Test Module](/3_test/3_test.md), but a key thing to consider even before you start your designing is how you will ensure you can share and compare your data.
 
 ### What do we know about the experimental context?
 From the [Anderson promoter collection page](https://parts.igem.org/Promoters/Catalog/Anderson), the individual part pages, and some sequence analysis, we know the following:
-- Red fluorescent protein (RFP) was used as the reporter protein to measure expression
+- Red fluorescent protein (RFP) was used as the reporter protein to measure expression.
 
-- the promoters were measured in the [BBa_J61002](https://parts.igem.org/Part:BBa_J61002) plasmid backbone. 
-    - BBa_J61002 is a modified version of [pSB1A2](https://parts.igem.org/Part:pSB1A2), a high-copy, ampicillin resistant plasmid backbone.
+- The promoters were measured in the [BBa_J61002](https://parts.igem.org/Part:BBa_J61002) plasmid backbone. 
+    - BBa_J61002 is a modified version of [pSB1A2](https://parts.igem.org/Part:pSB1A2), a high-copy, ampicillin-resistant plasmid backbone.
 
 - BBa_J61002 includes an expression cassette. Users clone in their promoter, and then downstream there is an RBS (BBa_B0034), an RFP (BBa_E1010), and a Terminator (BBa_B0015).
 
-- the _E. coli_ TG1 strain was used
+- The _E. coli_ TG1 strain was used
 
 ### What do we _not_ know about the experimental context?
 Importantly, we also do not know the following (at least readily):
-- how was fluorescence measured? Including what instrument was used?
-- what protocol was used?
-- what controls were used?
+- How was fluorescence measured? Including, what instrument was used?
+- What protocol was used?
+- What controls were used?
 
+A standard protocol that is widely used and easy to cite, would be beneficial in this case. We will have more on this in our [Test Module](/3_test/3_test.md)
+.
 
 
 
@@ -141,55 +143,34 @@ Importantly, we also do not know the following (at least readily):
 
 A model is a mathematical abstraction (or simplification) that allows us to describe a system.
 
-Modeling our devices will demonstrate that we have a clear understanding of its inputs and outputs, and help us predict its behavior.
-Additionally, when we have real world data, we can compare that to the model, and potentially identify behavior that we may not have considered.
+Modeling our devices will demonstrate that we have a clear understanding of their inputs and outputs, and help us predict their behavior.
+Additionally, when we have real-world data, we can compare that to the model, and potentially identify behavior that we may not have considered.
 
 ### Why you should model first
-First lets see why you should consider modeling as the first step in the design stage:
+First let's see just some of the reasons why modeling is a great first step in the design stage:
 
-- **Predictive Insights:** 
-Modeling provides predictive insights into how a biological system will behave under various conditions. 
-By simulating different scenarios, researchers can anticipate potential outcomes, reducing time and resources spent on ineffective designs. 
-This foresight is crucial for developing robust and reliable genetic circuits.
-- **Cost Efficiency:** 
-Simulating different scenarios in a model allows researchers to identify the most promising designs before using any physical resources. 
-This approach minimizes the costs associated with experimental trials, as fewer iterations are needed to achieve the desired outcome. Consequently, it accelerates the development process while conserving resources.
-- **Risk Mitigation:** 
-Models help in identifying potential risks and biosecurity concerns associated with a construct before it is physically built. 
-Early detection of these issues is vital for ensuring safety and compliance with regulatory standards, protecting both the environment and public health.
-- **Optimization:** 
-Through modeling, multiple variables can be adjusted and tested quickly and efficiently. This capability allows for the optimization of genetic constructs for desired traits without the need for extensive physical experimentation. 
-Models can refine design parameters to achieve the best performance with minimal experimental trials.
-- **Understanding System Dynamics:** 
-Mathematical models provide insights into the dynamic behavior of biological systems, such as gene expression patterns, protein interactions, and metabolic fluxes. 
-Understanding these dynamics is crucial for designing systems that behave predictably under different conditions. 
-For instance, models can identify critical parameters that control system stability and robustness, guiding the design of more reliable genetic circuits.
-- **Hypothesis Testing:** 
-Models serve as a platform for testing hypotheses about how biological systems function. 
-Researchers can explore the effects of modifying specific components or interactions within the system, gaining a deeper understanding of the underlying biology. 
-This iterative process of hypothesis testing and refinement is essential for advancing knowledge and improving system designs.
-- **Scenario Analysis:** 
-Through simulation, models enable the exploration of various "what-if" scenarios. 
-Researchers can examine the potential impact of different genetic modifications, environmental conditions, or system perturbations. 
-This capability is invaluable for stress-testing designs and ensuring that they perform robustly under a wide range of conditions.
-- **Guided Experimentation:** 
-Mathematical models can guide the experimental design by identifying key variables and suggesting optimal experimental conditions. 
-This guidance helps to focus experimental efforts on the most informative and impactful tests, improving the efficiency and effectiveness of the experimental phase.
+- **Predictive Insights and Optimization:** 
+Models simulate how a biological system will behave under various conditions. 
+Synthetic biologists can adjust and test multiple variables quickly to simulate different scenarios and anticipate potential outcomes. 
+This allows for optimizing genetic constructs for desired traits, and reduces the time and resources spent on less effective designs and experimentation.
+- **Understanding Complex and Dynamic Systems:** 
+Models provide insights into the complex and dynamic behavior of biological systems, such as gene expression patterns, protein interactions, and metabolic fluxes. 
+Understanding these sometimes complex dynamics is crucial for designing systems that behave predictably across different conditions.
+Hypothesis Testing and Guided Experimentation: Models enable researchers to test hypotheses by modifying specific components and interactions, helping to design experiments that focus on key variables and optimal conditions, improving the efficiency of the experimental phase.
+- **Hypothesis Testing and Guided Experimentation:** 
+Models allow for testing hypotheses about how biological systems function. 
+Synthetic biologists can explore the effects of modifying specific components or interactions within the system, gaining a deeper understanding of the underlying biology.
+This process can also identify key variables and suggest optimal experimental conditions, which aids in experimental design that focuses on the most informative and impactful tests, improving the efficiency and effectiveness of the experimental phase.
 - **Standardization and Reproducibility:** 
-Incorporating mathematical models promotes standardization and reproducibility in synthetic biology research. 
-Models provide a clear, quantitative description of system designs and expected behaviors, facilitating communication and collaboration among researchers. 
+Models provide a clear, quantitative description of system designs and expected behaviors, which are easy to communicate. 
 Standardized models also serve as a reference for reproducing experiments and verifying results across different laboratories.
-- **Understanding Complex Interactions:** 
-Biological systems often involve complex interactions that can be difficult to predict without a computational model. 
-Modeling helps in understanding these interactions and the dynamics of the system, which is essential for designing effective constructs.
 - **Educational Tool:** 
 Models serve as excellent educational tools, providing a visual and interactive way to understand and manipulate biological systems. 
-This is invaluable for training purposes and for explaining concepts to stakeholders, enhancing both educational outcomes and stakeholder engagement.
 
 ### Getting started: Biochemical reactions
 
-Constuitive gene expression is the simplest gene expression to model. 
-At all times gene expression is on at the same rate (this is of course an oversimplification to reality, but that's part of modeling!). 
+Constitutive gene expression is the simplest gene expression to model. 
+At all times gene expression is on at the same rate (this is of course an oversimplification of reality, but that's part of modeling!). 
 
 <center>
 <figure>
@@ -197,9 +178,9 @@ At all times gene expression is on at the same rate (this is of course an oversi
 </figure>
 </center>
 
-Lets start with our initial diagram of our device.
+Let's start with our initial diagram of our device.
 The key reactions here are: 
-- **Transcription:** the constuitive promoter will drive transcription of a gene (an rbs and _gfp_ coding region), producing mRNA at a constant rate, which we'll define as (k<sub>1</sub>)
+- **Transcription:** the constitutive promoter will drive transcription of a gene (an rbs and _gfp_ coding region), producing mRNA at a constant rate, which we'll define as (k<sub>1</sub>)
 - **Translation:** the mRNA will then be translated to produce the GFP protein at a constant rate, which we'll define as (k<sub>2</sub>)
 
 <center>
@@ -233,7 +214,7 @@ We have our reactant, $Gene$, that will be transcribed into our product, $mRNA$,
 
 In this case our $Gene$ is a constant which will be defined by the copy number of the plasmid.
 
-Since we are modeling constiuitive expression, we can define $k_{1}$ as the transcription rate regulated by the promoter: specifically, the promoter's ability to recruit RNA polymerase to start transcription.
+Since we are modeling constitutive expression, we can define $k_{1}$ as the transcription rate regulated by the promoter: specifically, the promoter's ability to recruit RNA polymerase to start transcription.
 This is tightly related to the sequence of the promoter, so once we have our model, if we want to increase $k_{1}$ we would use a strong promoter, and to decrease $k_{1}$ we would use a weak one.
 
 We denote the derivative for the rate of change of mRNA over time as: 
@@ -262,7 +243,7 @@ $$
 \frac{d[mRNA]}{dt} = k_{1}{[Gene]} - d_{1}{[mRNA]}
 $$
 
-The rate of degradation is a negative term, and with that consideration we have: the rate of change of mRNA over time is proportional to the transcription rate ($k_{1}$) of genes minus the degradation rate ($d_{1}$) of the current concentraton of mRNA.
+The rate of degradation is a negative term, and with that consideration we have: the rate of change of mRNA over time is proportional to the transcription rate ($k_{1}$) of genes minus the degradation rate ($d_{1}$) of the current concentration of mRNA.
 
 #### Translation and Protein degradation
 
@@ -276,8 +257,8 @@ Similarly, we will do the same for modeling protein synthesis.
 
 We have the $mRNA$ that will be translated into $Protein$, at rate $k_{2}$.
 
-We can define $k_{2}$ as the translation rate regulated by the ribsome binding site (rbs): specifically, the rbs's ability to recruit ribsomes for translation.
-Like a constiuitive promoter, this is tightly related to the sequence of the rbs.
+We can define $k_{2}$ as the translation rate regulated by the ribosome binding site (rbs): specifically, the rbs's ability to recruit ribosomes for translation.
+Like a constitutive promoter, this is tightly related to the sequence of the rbs.
 While we are not varying rbs strength in this bootcamp, once we have our model, if we want to increase $k_{2}$ we would use a strong rbs, and to decrease $k_{2}$ we would use a weak one.
 
 We will start with a derivative for the rate of change of GFP protein over time.
@@ -297,7 +278,7 @@ $$
 \frac{d[Protein]}{dt} = k_{2}{[mRNA]} - d_{2}{[Protein]}
 $$
 
-The rate of change of protein over time is proportional to the translation rate ($k_{2}$) of mRNA minus the degradation rate ($d_{2}$) of the current concentraton of protein.
+The rate of change of protein over time is proportional to the translation rate ($k_{2}$) of mRNA minus the degradation rate ($d_{2}$) of the current concentration of protein.
 
 #### Our system
 
@@ -369,13 +350,16 @@ For our k1 values, we will use the relative strength of our promoters :
 </figure>
 </center>
 
-Based on the model output, you can select our strong, medium, and weak strength promoters.
-You can select any of the three, but we recommend selecting BBa_J23106 as your medium strength promoter, and then based on that, selecting your preferred strong and weak promoters.
+> We have an interactive version of the model as a [shiny app](https://dbtlbootcamp.shinyapps.io/con_exp/).
+We have pre-populated the values for parameters and states, but you can choose different ones to see how the output changes. **Note:** This app is currently in a draft state, and subject to change.
+
+Based on the model output, you can select your strong, medium, and weak strength promoters.
+While you can select any of the three, we recommend selecting BBa_J23106 as your medium strength promoter, and then selecting your preferred strong and weak promoters.
 
 With your selection, you can now proceed to the next step, assembling your constructs _in silico_.
 
 From our Test and Learn Modules we will be able to compare the real world data from our constructs to see how closely they fit our model. 
-Keep in mind that we will be measuring fluoresence (protein expression) and not the rate of mRNA transcription nor the copy number of our plasmid.
+Keep in mind that we will be measuring fluorescence (protein expression) and not the rate of mRNA transcription nor the copy number of our plasmid.
 
 
 ### Knowledge check
@@ -423,7 +407,8 @@ You will want to export and share your designs, whether for collaboration, publi
 
 ### Design Tool Workflows
 - [Benchling](/1_design/benchling-design-workflow) 
-- TBD: Kernel from Asimov
+- Kernel from [Asimov](https://www.asimov.com/): While not dedicated to this DBTL Bootcamp, Asimov has a Kernel [webinar](https://video.igem.org/w/mYnmcrQjQJxJtyf1kzT1KW), _Mastering genetic design, a case study with Kernel_, that covers this topic, and would enable you to create these constructs _in silico_.
+- Open source option (TBD)
 
 ## Storing, Sharing, and Presenting your Constructs
 
