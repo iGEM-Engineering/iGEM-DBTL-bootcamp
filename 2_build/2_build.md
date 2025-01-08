@@ -345,7 +345,7 @@ Sequencing will usually involve:
 3. receiving data back and using a sequence alignment tool
 
 If possible, we encourage you to use sequencing to confirm the constructs you have assembled for this bootcamp.
-For sequence alignment, you will use the GenBank files for your _in silico_ assemblies from the Design Module.
+For sequence alignment, you will use the [GenBank files](../genbank_files/part%20in%20backbone/Validation/) for your _in silico_ assemblies.
 
 However plasmid sequencing can be expensive, so you may want to restriction map your individual clones beforehand and select one or two clones for sequencing. 
 

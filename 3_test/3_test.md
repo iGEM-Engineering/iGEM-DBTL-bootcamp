@@ -109,43 +109,45 @@ From previous modules, we already know the following about our experimental desi
 - Our goal is to generate data that is shareable and comparable.
 
 ### The Controls
+With a **negative control**, a non-GFP expressing plasmid in _E. coli_, we can establish a baseline of fluorescence in _E. coli_, as this will account for background fluorescence in the cells and other noise.
+This negative control should also be similar to our other constructs to account for similar burden placed on the cell through origin of replication, resistance, promoter, etc.
 
+With a **positive control**, a known GFP expressing plasmid in _E. coli_, we can ensure our experimental setup (experimental conditions, instrument, etc) can detect GFP.
+The positive control should also provide robust GFP expression and have been measured previously, as it can provide a reference to interpret the relative strength of GFP expression in experimental samples.
 
 ### High-throughput
 
-To properly characterize our constructs, we need a robust enough data set for it to be statistically signigicant.
-With several constructs, we will want to test a few colonies from each, and have a few technical replicates.
+To properly characterize our constructs, we need a sufficiently robust data set to achieve statistical significance. For each construct, we plan to test a few colonies and include a few technical replicates:
 
-That would be 5 constructs * 3 colonies each * 4 technical replicates = **60 samples!**
-And that is for just one time-point!
+**5 constructs × 3 colonies each × 4 technical replicates = 60 samples**
+And that is just for one time point! 
 
-You can see how the number of samples we need to measure can increase dramatically, so we should have a high-throughput way of measuring OD and fluorescence for these samples.
+As you can see, the number of samples and measurements increases quickly with additional constructs, replicates, conditions, or time points.
+Your projects will likely exceed this number of samples in a single 
+To manage this scale efficiently, we need a high-throughput method for measuring OD and fluorescence. 
 
-A plate reader will let us do that, and they are common in most academic labs, or shared equipment between labs.
+Plate readers are well-suited for this purpose. They are commonly available in most academic labs or as shared equipment between labs.
 
-### Fluoresence
-If you were to measure a well of cell culture for fluoresnce, you would get a reading of arbritrary values of total fluoresnce, in that well. But you wouldn't actually know the amount of fluorescent molecules, in this case proteins, by
 
-With a negative control, you would at least be able to measure an account for background fluoresnce of E. coli cells. 
-First, teams were asked to complete a series of calibration measurements by measuring LUDOX and water, and also making a standard curve of both fluorescein and silica microspheres. Next, each team transformed the plasmid devices into E. coli and selected transformants on chloramphenicol plates. 
+### Fluorescence
+If you were to measure the fluorescence of a well of cell culture, you would obtain an arbitrary value representing total fluorescence in that well. 
+But you would not know the amount (or estimate) of fluorescent molecules (proteins, in this case)
 
-#### The Calibrant
-With a calibrant like fluorescein we can create a solution with a known concentration, a known number of fluorescein molecules per well. 
-The number of molecules per arbitrary fluorescence unit can then be estimated by dividing the expected number of molecules in each well by the measured fluorescence for the well; a similar computation can be made for concentration.
-The NanoCym 950 nm monodisperse silica nanoparticles (microspheres, for short) are similar in size and optical properties to bacterial cells. 
-Therefore one microsphere is approximately equal to one bacterial cell, and if we have a known quanitity of microspheres in solution, we can use those as a calibrant for optical density/bacterial cell count.
+With a calibrant like **fluorescein** we can create a solution with a known concentration, a known number of fluorescein molecules per well. 
+The number of molecules per arbitrary fluorescence unit can then be estimated by dividing the expected number of molecules in each well by the measured fluorescence for the well.
+
 
 ### Optical Density
 When we take our measurements of fluorescence we want to ensure that we have similar concentrations of cells in each sample.
 Optical density at a wavelength of 600 nm (OD600) is common measurement for estimating the number of cells in a culture. 
 With a plate reader these OD measurements are quick, cheap, simple, and high-throughput.
 
-However, OD600 measurements do not actually provide a direct measure of cell count. 
-So if we want to compare cell counts between experiments, we need a calibration protocol, with a comparison to a reference material.
+However, OD600 measurements do not provide a direct measure of cell count. 
+So to compare cell counts between experiments, we need a calibration protocol with a reference material.
 
-#### The Calibrant
-The NanoCym 950 nm monodisperse silica nanoparticles (microspheres, for short) are similar in size and optical properties to bacterial cells. 
-Therefore one microsphere is approximately equal to one bacterial cell, and if we have a known quanitity of microspheres in solution, we can use those as a calibrant for optical density/bacterial cell count.
+The NanoCym 950 nm monodisperse **silica nanoparticles** (**microspheres**, for short) are similar in size and optical properties to bacterial cells.
+With a known quanitity of microspheres in solution, we can create a standard curve that will serve as a calibrant for optical density/bacterial cell count.
+This allows the conversion of OD600 measurements into an estimated equivalent number of cells.
 
 ### Knowledge Check
 
@@ -163,33 +165,6 @@ Your design and build specifications will both influence and be influenced by th
 - What are the physical units of your measurements? Are your units arbitrary, relative, or absolute?
 - What sort of controls can you use to determine whether your experimental protocols are working correctly?
     - What data will you generate to determine whether your experiment ran correctly?
-
-## Calibration Protocol
-
-Before any experiment, your team must perform the GFP calibration protocol. 
-This protocol only needs to be completed once. 
-It entails making stocks and working solutions, making and measuring serial dilutions of the GFP calibrant dye and the particle calibrant.
-
-- Calibration Protocol
-- Protocol Datasheet: interlab-2023-calibration.xlsx
-
-The calibrants you need (and provided by iGEM headquarters within the 2024 Distribution Kit) are:
-- Fluorescein Sodium Salt - green fluorescent calibrant (Dried down. Resuspend in 1mL PBS 1X to get the stock solution at 100uM)
-- Monodisperse Silica Nanoparticles - optical density/bacterial cell count calibrant (850 uL solution in Water per tube, 3e9 beads/mL)
-
-Monodisperse Silica Nanoparticles
-
-The NanoCym 950 nm monodisperse silica nanoparticles (microspheres, for short) are a calibrant for optical density/bacterial cell count. The microspheres are similar in size and optical properties to bacterial cells, and therefore one microsphere is approximately equal to one bacterial cell. By creating a serial dilution with known numbers of silica microspheres, a standard curve of number of microspheres against OD readings can be produced.
-
-However, these microspheres can aggregate (see picture) and may be difficult to completely resuspend in solution. Prior to aliquoting into the calibration plate, the tube of microspheres must be vortexed for 30 seconds, as noted in the calibration protocol. If however, you still notice any aggregates we recommend sonication of the tube. If you have questions about this process or issues, please contact interlab (at) igem (dot) org.
-Image of microsphere aggregation in the calibrant tube
-An aggregation of microspheres at the bottom of the tube (see arrow). This tube will need vortexing, or if the aggregate persists, sonication.
-Culture Dilutions
-
-As part of the following Interlab experiments, your team will need to grow cultures overnight and then dilute those cultures to a known OD 600nm absorbance. Please follow the directions that each protocol has laid out, and we have also provided this spreadsheet to help calculate those dilutions.
-- culture-dilution-calculator-template.xlsx
-
-
 
 
 ## Resources Needed
@@ -209,24 +184,70 @@ The following are the resources needed for the Test Module.
     - 14-mL cell culture tubes
     - ice bucket and ice or cold block
     - iGEM Fluorescence Measurement Kit (this module uses the 2024 version)
+        - Fluorescein Sodium Salt
+        - Monodisperse Silica Nanoparticle
 
 **Note** that this list is not completely exhaustive as there will be some things that we assume your lab has access to, from small things (lab pens, glassware) to larger ones (-80°C freezer, centrifuge).
 We have also not included quantities, it will be important for you to understand the workflow, read through the protocols, and keep track of those yourself. 
 
 ## Workflow Overview
+There are two protocols associated with this Test Module, 
+- the [Calibration Protocol](/protocol-calibration-fluorescein.md) and 
+- the [Cell Fluorescence Protocol](/protocol-cell-fluorescence.md). 
+
+Additionally, each of these protocols has a corresponding datasheet, in which you will enter your results.
+
+The cell fluorescence protocol requires two overnight incubations, one for streaking of glycerols, and one for growth of liquid culture.
+
+You will be able to do the calibration protocol in parallel on any of those days, as long as it is done before any of the cell fluorescence measurements.
+
+Unlike the Build Module, we will break this workflow down by protocol instead of day, but we have our recommended schedule breakdown below. 
+
+### Recommended 2-day plan
 The following is a 2-day plan for the Test Module that will take you from growing up your cells to preparing your plate reader plates.
-
-Please follow the protocols (and workflow) exactly as specified.
-Variations to the protocols will mean that you will not be able to compare your data to others, as the experimental conditions may have changed.
-
 - **Day 0** (Before you start)
     - Streak from glycerols for single colonies
 - **Day 1**
-    - Pick colonies and inoculate overnight cultures
     - Perform calibration protocol with plate reader
+    - Pick colonies and inoculate overnight cultures
 - **Day 2**
     - Dilute overnight cultures to known OD
     - Plate cultures and measure on plate reader
+
+## Calibration Protocol
+
+Before your experiment, you must perform the GFP calibration protocol. 
+This protocol only needs to be completed once. 
+It entails making stocks and working solutions, making and measuring serial dilutions of the GFP calibrant dye and the particle calibrant.
+
+- [Calibration Protocol](/protocol-calibration-fluorescein.md)
+
+The calibrants you need (and provided by iGEM headquarters within the Distribution Kit) are:
+- Fluorescein Sodium Salt - green fluorescent calibrant (Dried down. Resuspend in 1mL PBS 1X to get the stock solution at 100uM)
+- Monodisperse Silica Nanoparticles - optical density/bacterial cell count calibrant (850 uL solution in Water per tube, 3e9 beads/mL)
+
+Once you've completed the calibration protocol
+
+
+## Cell Fluorescence Protocol
+
+In this protocol you will be measuring optical density and fluorescence of your constructs in cells.
+This is a multi-day protocol, and as such the protcol is broken down into days.
+
+- **Day 0**
+    - Streak from glycerols for single colonies
+- **Day 1**
+    - Pick colonies and inoculate overnight cultures
+- **Day 2**
+    - Dilute overnight cultures to known OD
+    - Plate cultures and measure on plate reader
+
+
+Culture Dilutions
+
+As part of the following Interlab experiments, your team will need to grow cultures overnight and then dilute those cultures to a known OD 600nm absorbance. Please follow the directions that each protocol has laid out, and we have also provided this spreadsheet to help calculate those dilutions.
+- culture-dilution-calculator-template.xlsx
+
 
 ## Data validation
 

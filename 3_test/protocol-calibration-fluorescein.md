@@ -3,8 +3,9 @@
 ## Overview
 Plate readers report fluorescence values in arbitrary units that vary widely from instrument to instrument. 
 Therefore, absolute fluorescence values cannot be directly compared from one instrument to another. 
-In order to compare fluorescence output of biological devices, it is necessary to create a standard fluorescence curve. 
-This variant of the protocol uses two replicates of three colors of dye, plus beads. 
+
+In order to compare fluorescence output of biological devices, it is necessary to create a standard fluorescence curve, and in order to calculate per cell fluorescence, it is necessary to create a standard curve of particle concentration. 
+
 Adapted from:
 - https://dx.doi.org/10.17504/protocols.io.bht7j6rn
 - https://dx.doi.org/10.17504/protocols.io.6zrhf56.
@@ -18,11 +19,10 @@ You must also use the same settings (e.g., filters or excitation and emission wa
 If you do not use the same plates, volumes, and settings, the measurements cannot be calibrated properly.
 
 ## Protocol in short
-You will use the fluorescein calibrant dye and the silica nanoparticles to perform serial dilutions from a known initial concentration. 
-First, you will put 200uL of each solution in the first column of the plate, and then you will aspirate 100uL and drop them into the corresponding well of the next column. 
-After that you will mix each well by pipetting up and down three times, and then you will transfer again 100uL into the well in the next column. 
-Repeating this until the 11th column and discarding those last 100uL. 
-Finally, you will fill all the wells to a total volume of 200uL with either water of PBS when appropriate. 
+1. You will use the fluorescein calibrant dye and the silica nanoparticles to perform serial dilutions from a known initial concentration.
+2. First, you will put 200uL of each solution in the first column of the plate, and then you will aspirate 100uL and drop them into the corresponding well of the next column. 
+3. After that you will mix each well by pipetting up and down three times, and then you will transfer again 100uL into the well in the next column. Repeating this until the 11th column and discarding those last 100uL. 
+4. Finally, you will fill all the wells to a total volume of 200uL with either water of PBS when appropriate. 
 This step ensures that we have the same volume in the wells for calibration and for your experiments.
 
 ## Protocol Materials
