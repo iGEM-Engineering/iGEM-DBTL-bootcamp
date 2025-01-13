@@ -33,7 +33,7 @@ This step ensures that we have the same volume in the wells for calibration and 
 
 *Sulforhodamine 101 may be mislabelled as Texas Red in your kit
 
-### Materials provided by the you
+### Materials provided by you
 - Water, sterile-filtered, BioReagent, suitable for cell culture
 - Phosphate Buffered Saline (PBS) 1X (pH 7.4)
 - 96 well plate black with transparent flat bottom
