@@ -4,7 +4,8 @@
 
 ## Overview
 
-In this Test Module, you will use the GFP constructs you have [designed](/1_design/1_design.md) and [assembled](/2_build/2_build.md) to measure fluorescence using a standard protocol, calibrants, and a plate reader. This module will also introduce good measurement practices, experimental design principles, and key questions to consider before proceeding to the Test stage of your project.
+In this Test Module, you will use the GFP constructs you have [designed](/1_design/1_design.md) and [assembled](/2_build/2_build.md) to measure fluorescence using a standard protocol, calibrants, and a plate reader. 
+This module will also introduce good measurement practices, experimental design principles, and key questions to consider before proceeding to the Test stage of your project.
 
 **Alternative Options**
 - **If you have skipped or could not complete the Design and/or Build Module and have not assembled the GFP constructs, you can still participate in the Test Module!** 
@@ -136,6 +137,7 @@ But you would not know the amount (or estimate) of fluorescent molecules (protei
 With a calibrant like **fluorescein** we can create a solution with a known concentration, a known number of fluorescein molecules per well. 
 The number of molecules per arbitrary fluorescence unit can then be estimated by dividing the expected number of molecules in each well by the measured fluorescence for the well.
 
+> Note: We are using fluorescein as a calibrant for green fluorescence since our constructs use GFP, but we also have recommendations for calibrants for red and blue fluorescence.
 
 ### Optical Density
 When we take our measurements of fluorescence we want to ensure that we have similar concentrations of cells in each sample.
@@ -171,14 +173,14 @@ Your design and build specifications will both influence and be influenced by th
 The following are the resources needed for the Test Module. 
 
 - Glycerol stocks of...
-    - Your assembled constructs from the Build Module (or Interlab devices from here)
+    - Your assembled constructs from the Build Module (or Interlab devices from [here]())
     - The positive and negative controls 
 - Media: 
     - LB agar plates
     - LB media
     - Kanamycin and chloramphenicol antibiotic stocks
 - Equipment: 
-    - plate reader 
+    - plate reader able to measure absorbance at 600nm and fluorescence
     - micropipettes and tips
 - Other materials
     - 14-mL cell culture tubes
@@ -197,9 +199,8 @@ There are two protocols associated with this Test Module,
 
 Additionally, each of these protocols has a corresponding datasheet, in which you will enter your results.
 
-The cell fluorescence protocol requires two overnight incubations, one for streaking of glycerols, and one for growth of liquid culture.
-
-You will be able to do the calibration protocol in parallel on any of those days, as long as it is done before any of the cell fluorescence measurements.
+The **cell fluorescence protocol** requires two overnight incubations, one for streaking of glycerols, and one for growth of liquid culture.
+You can do the **calibration protocol** in parallel on any of those days, as long as it is done before any of the cell fluorescence measurements.
 
 Unlike the Build Module, we will break this workflow down by protocol instead of day, but we have our recommended schedule breakdown below. 
 
@@ -212,44 +213,76 @@ The following is a 2-day plan for the Test Module that will take you from growin
     - Pick colonies and inoculate overnight cultures
 - **Day 2**
     - Dilute overnight cultures to known OD
-    - Plate cultures and measure on plate reader
+    - Plate cultures and measure on plate reader for 0 hr reading
+    - Plate cultures and measure on plate reader for 6 hr reading
 
 ## Calibration Protocol
 
-Before your experiment, you must perform the GFP calibration protocol. 
+Before starting the experiment, you must complete the Calibration Report and Protocol.
 This protocol only needs to be completed once. 
-It entails making stocks and working solutions, making and measuring serial dilutions of the GFP calibrant dye and the particle calibrant.
+It involves preparing stock and working solutions, creating serial dilutions of the GFP calibrant dye and microspheres calibrant, and measuring their properties.
+The report is needed to record your instrument and also track your protocol.
 
 - [Calibration Protocol](/protocol-calibration-fluorescein.md)
+- [Calibration Protocol Report]()
 
 The calibrants you need (and provided by iGEM headquarters within the Distribution Kit) are:
-- Fluorescein Sodium Salt - green fluorescent calibrant (Dried down. Resuspend in 1mL PBS 1X to get the stock solution at 100uM)
-- Monodisperse Silica Nanoparticles - optical density/bacterial cell count calibrant (850 uL solution in Water per tube, 3e9 beads/mL)
+- **Fluorescein Sodium Salt** - green fluorescent calibrant (Dried down. Resuspend in 1mL PBS 1X to get the stock solution at 100uM)
+- **Monodisperse Silica Nanoparticles** - optical density/bacterial cell count calibrant (850 uL solution in Water per tube, 3e9 beads/mL)
 
-Once you've completed the calibration protocol
+Once you have completed the calibration protocol, enter the data into the [datasheet-calibration.xlsx](./datasheet-calibration.xlsx).
 
+### Data Validation
+After completing the calibration protocol, evaluate the data against the following criteria to ensure it meets the required quality standards. 
+These checks help identify major errors in protocol execution or reporting.
+
+- [ ] Water measurements have a lower OD than microsphere measurements
+- [ ] Water OD measurements are not negative
+- [ ] Fluorescein fluorescence measurements generally decreases with increasing dilution
+- [ ] Microsphere absorbance measurements generally decreases with increasing dilution
+- [ ] PBS-only fluorescence measurements are not negative.
+- [ ] All replicates are present for every sample
+- **Saturation (Low & High) ?**
+- **Dilution Levels ?**
+
+If your data meets all of the above criteria, then you can 
 
 ## Cell Fluorescence Protocol
 
-In this protocol you will be measuring optical density and fluorescence of your constructs in cells.
-This is a multi-day protocol, and as such the protcol is broken down into days.
+In this protocol you will measure the optical density and fluorescence of your constructs in cells.
+This is a multi-day protocol.
 
-- **Day 0**
-    - Streak from glycerols for single colonies
-- **Day 1**
-    - Pick colonies and inoculate overnight cultures
-- **Day 2**
-    - Dilute overnight cultures to known OD
-    - Plate cultures and measure on plate reader
+> You must also use the
+same settings (e.g., filters or excitation and emission wavelengths) that you used in your
+calibration measurements. If you do not use the same type of plates, volumes, and
+settings, the measurements will not be valid.
 
 
-Culture Dilutions
+- [Cell Fluorescence Protocol](/protocol-cell-fluorescence.md)
 
-As part of the following Interlab experiments, your team will need to grow cultures overnight and then dilute those cultures to a known OD 600nm absorbance. Please follow the directions that each protocol has laid out, and we have also provided this spreadsheet to help calculate those dilutions.
+You will grow cultures overnight and then dilute those cultures to a known OD 600nm absorbance. 
 - culture-dilution-calculator-template.xlsx
 
+Once you've completed the protocol, you will enter the data into the [datasheet-cell-fluorescence.xlsx](./datasheet-cell-fluorescence.xlsx).
 
-## Data validation
+- [calculator-cuture-dilution.xlsx](./calculator-culture-dilution.xlsx)
+
+### Data validation
+
+The criteria are:
+- Cell sample fluorescence measurements are within the range covered by fluorescein samples (calibrant data).
+- Positive control is brighter than negative control at 6 hours and also greater than zero
+- At least half of cell sample ODs increase significantly from 0 hours to 6 hours (i.e., cells are generally
+alive and growing)
+- Fluorescence/OD measurements for constructs at 6 hours span at least a 10-fold range (i.e., there
+is at least some significant variability in fluorescence expression)
+- All replicates are present for every sample.
+
+
+
+## Data conversion
+
+
 
 ## Data analysis
 

@@ -68,7 +68,7 @@ They are now ready to be used.
 
 <center>
 <figure>
-<img src="assets/images/microsphere-aggregate.jpg" width=50% />
+<img src="./assets/protocol-calibration/images/microsphere-aggregate.jpg" width=50% />
 <figcaption>
 Pictured: An aggregation of microspheres at the bottom of the tube. Vortex this tube. If the aggregate persists after vortexing then sonicate. 
 </figcaption>
@@ -94,7 +94,7 @@ For each of the ten steps transfer 100uL from the initial column into the next o
 This can be performed with a 8-channel pipette easily or with a single channel pipette.
 <center>
 <figure>
-<img src="assets/images/calibration-dilution.png" width=100% />
+<img src="./assets/protocol-calibration/images/calibration-dilution.png" width=100% />
 <figcaption>
 Pictured: Serial dilution of fluorescein in 96well plate. 
 </figcaption>
@@ -125,8 +125,6 @@ Pictured: Final plate, with serial dilutions of fluorescein and the silica nanop
 
 18. Measure NanoCym 950nm monodisperse silica nanoparticles absorbance of calibration plate (wells G1:G12 and H1:H12) at 600.0nm.
 
-19. Import data for fluorescein fluorescence and absorbance measurements into the [provided Excel file]().
+19. Import data for fluorescein fluorescence and absorbance measurements into the [provided Excel file](./datasheet-calibration.xlsx).
 
 **Note:** If your equipment does not have the exact wavelengths of bandpass wavelengths, choose the nearest one and take note.
-
-Protocol version: 4.0
