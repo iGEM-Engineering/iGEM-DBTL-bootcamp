@@ -8,11 +8,11 @@ In this Design Module, you will start by modeling the effect of a set of constit
 You will then use the software tool of your choice to assemble _in silico_ three GFP reporter constructs with strong, medium, and weak promoter strength.
 
 Before you start, you should read through our page on the [Design stage](https://technology.igem.org/engineering/design) of the [DBTL cycle](https://technology.igem.org/engineering/introduction). 
-We will be repeating some of the key concepts and considerations and applying them to this Design Module, but that resource will include more material than is covered here.
+We will repeat some of the key concepts and considerations and apply them to this Design Module, but that resource will include more material than is covered here.
 
 We have provided all the files and the data that you will need to get started. 
 The software tools to do this will be up to you (although we have some guidance on some specific tools). 
-You will be able to check the outputs of your work in the modeling and _in silico_ assembly sections against the validation files we have provided. 
+You can check the outputs of your work in the modeling and _in silico_ assembly sections against the validation files we have provided. 
 
 ### Outline
 - The design goal
@@ -26,8 +26,8 @@ You will be able to check the outputs of your work in the modeling and _in silic
 
 ### Resources needed
 1. Computer and internet access
-2. Modeling tool(s): You will be using this to model the behavior of different promoters on GFP expression
-3. Design tool(s): You will be using this to import parts and plasmids, design your constructs, and assemble your constructs
+2. Modeling tool(s): You will use this to model the behavior of different promoters on GFP expression
+3. Design tool(s): You will use this to import parts and plasmids, design your constructs, and assemble your constructs
 4. Parts and plasmid files (provided in this repo [here](/genbank_files/))
 5. Anderson Promoter data sets (provided below)
 
@@ -59,17 +59,17 @@ But let us consider some of the **requirements** that need to be addressed to me
 You will address some of these questions throughout the bootcamp, including some of the self-imposed constraints we have in place. 
 - The parts we have selected are well-characterized and we will go into more detail about them in the Parts section below.
 - You will model the effect of constitutive promoters on GFP expression.
-- You will build these constructs with parts available in the iGEM Distribution Kit. All of the basic parts in the Kit are in a Type IIS Assembly format, so you will be using Golden Gate Assembly. 
+- You will build these constructs with parts available in the iGEM Distribution Kit. All of the basic parts in the Kit are in a Type IIS Assembly format, so you will use Golden Gate Assembly. 
 - The plasmid backbone with drop-out, and the parts you are using have all been designed for and/or tested in _E. coli_. 
-- You are building constructs for GFP expression, so you will be testing and measuring them by measuring fluorescence in a plate reader. For controls, we have provided a positive and negative control. And for calibrants, you can learn more about those in the Test Module!
+- You are building constructs for GFP expression, so you will test them by measuring fluorescence in a plate reader. For controls, we have provided a positive and negative control. And for calibrants, you can learn more about those in the Test Module!
 
-However, for your project, you will likely have different answers to all of these questions. Maybe you are working in _S. cerevisiae_, or you will be using synthesis for your entire constructs. 
+However, for your project, you will likely have different answers to all of these questions. Maybe you are working in _S. cerevisiae_, or you will use synthesis for your entire constructs. 
 
 
 ### The Design constraints
-As mentioned above, there are some design constraints to keep things simple, as this ensures everyone has access to the same materials, and that you will be able to model and validate your constructs against known products.
+As mentioned above, there are some design constraints to keep things simple, as this ensures everyone has access to the same materials, and that you can model and validate your constructs against known products.
 These constraints include:
-1. **Parts and plasmids:** A selection from the 2024 iGEM Distribution Kit
+1. **Parts and plasmids:** A selection from the iGEM Distribution Kit
 2. **Assembly:** Golden Gate Assembly
 3. **Chassis:** _E. coli_ DH5a, DH10b strains are recommended, but use what is available in your lab
 4. **Measurement:** GFP fluorescence
@@ -195,7 +195,7 @@ Of course, there are some complexities here that we have ignored here for the si
 These may include parameters like the stability/burden of the plasmid and device, the availability of RNA polymerases and ribosomes, and even cell division.
 
 ### ODEs and Law of Mass Action
-We will be using [ordinary differential equations](https://en.wikipedia.org/wiki/Ordinary_differential_equation) (ODEs) to model our system and applying the [law of mass action](https://en.wikipedia.org/wiki/Law_of_mass_action) ([webinar](https://www.youtube.com/watch?v=ph5iYWwXsPw&t=359s)), which states that the rate of a reaction is proportional to the product of the concentrations of the reactants, to our ODE. 
+We will use [ordinary differential equations](https://en.wikipedia.org/wiki/Ordinary_differential_equation) (ODEs) to model our system and applying the [law of mass action](https://en.wikipedia.org/wiki/Law_of_mass_action) ([webinar](https://www.youtube.com/watch?v=ph5iYWwXsPw&t=359s)), which states that the rate of a reaction is proportional to the product of the concentrations of the reactants, to our ODE. 
 
 This allows us to predict how the concentration of a molecular species like our mRNA and protein changes over time. 
 
@@ -358,8 +358,8 @@ While you can select any of the three, we recommend selecting BBa_J23106 as your
 
 With your selection, you can now proceed to the next step, assembling your constructs _in silico_.
 
-From our Test and Learn Modules we will be able to compare the real world data from our constructs to see how closely they fit our model. 
-Keep in mind that we will be measuring fluorescence (protein expression) and not the rate of mRNA transcription nor the copy number of our plasmid.
+From our Test and Learn Modules we can compare the real world data from our constructs to see how closely they fit our model. 
+Keep in mind that we will measure fluorescence (protein expression) and not the rate of mRNA transcription nor the copy number of our plasmid.
 
 
 ### Knowledge check
@@ -392,8 +392,8 @@ We have generalized the guidance into the following steps:
 No matter what design tool you are using, you will need to tell it what parts (and information) you want to use. 
 This may include uploading genbank files of your parts/plasmids, using an API that links directly to a database, or a spreadsheet!
 2. **Part verification:** 
-Once you have selected the parts/plasmids you will be using, you will verify everything is correct. 
-Will there be any issues with the assembly method you will be using? 
+Once you have selected the parts/plasmids you will use, you will verify everything is correct. 
+Will there be any issues with the assembly method you will use? 
 Are these parts what they say they are? 
 This may be a manual process, or an automated one.
 3. **Assemble _in silico_:** 
@@ -416,6 +416,7 @@ For the purposes of the iGEM Competition, you must document your parts and const
 But, this is not a tutorial for how to use the iGEM Registry! 
 You should follow the requirements and process for this through the [competition deliverables](https://competition.igem.org/deliverables/part-pages) for part pages.
 
+## Build Module
 Once you have followed a workflow and produced and validated your _in silico_ assemblies, you are ready to proceed on to the [Build Module](/2_build/2_build.md). 
 
 In the Build Module, you will use the part and plasmid samples from the [iGEM Distribution Kit](https://technology.igem.org/distribution/introduction) to assemble your constructs in the lab, and you will use your _in silico_ assemblies as the reference sequences when you sequence those assemblies.

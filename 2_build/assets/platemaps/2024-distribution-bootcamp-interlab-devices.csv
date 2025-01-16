@@ -1,0 +1,9 @@
+﻿BBa_ name,Promoter,description,part type,Plasmid Backbone,AbR,Total Plasmid length (bp),Distribution,Plate,Well
+BBa_I20270,BBa_J23151,Interlab 2018 Positive Control,device,pSB1C3,CmR,2989,2024 Distribution,1,11A
+BBa_J364000,BBa_J23101,Interlab 2018 Test Device 1,device,pSB1C3,CmR,2988,2024 Distribution,1,11C
+BBa_J364001,BBa_J23106,Interlab 2018 Test Device 2,device,pSB1C3,CmR,2988,2024 Distribution,1,11E
+BBa_J364002,BBa_J23117,Interlab 2018 Test Device 3,device,pSB1C3,CmR,2988,2024 Distribution,1,11G
+BBa_J364007,BBa_J23100,Interlab 2018 Test Device 4,device,pSB1C3,CmR,2988,2024 Distribution,1,11I
+BBa_J364008,BBa_J23104,Interlab 2018 Test Device 5,device,pSB1C3,CmR,2988,2024 Distribution,1,11K
+BBa_J364009,BBa_J23116,Interlab 2018 Test Device 6,device,pSB1C3,CmR,2988,2024 Distribution,1,11M
+BBa_J428100,BBa_J23101,Interlab_NegC (luxR),device,pSB1C3,CmR,3145,2024 Distribution,1,13M

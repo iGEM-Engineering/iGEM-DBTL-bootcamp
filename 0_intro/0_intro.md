@@ -66,7 +66,7 @@ Each stage of the DBTL cycle has been separated into modules.
 These modules are interconnected, for example, the output of your Design Module, will be the input for your Build Module. 
 But you will also be able to use each module independently. 
 We have provided all the files and the data that you will need to get started for each module in this repo. 
-And the parts, plasmids, and fluorescence calibrants are all in your [2024 Distribution Kit](https://technology.igem.org/distribution/handbook)!
+And the parts, plasmids, and fluorescence calibrants are all in the [iGEM Distribution Kit](https://technology.igem.org/distribution/handbook)!
 
 ### What will you do in each module?
 #### Design Module
@@ -99,18 +99,18 @@ We do recommend starting with the [Design Module](/1_design/1_design.md) though!
 <figure>
 <img src="assets/images/transcription-unit-labeled.png" width=50% />
 <figcaption>
-<i>A simplified diagram of the kind of transcription units you will be building: promoter, ribosome binding site (rbs), coding sequence (cds), terminator, in a plasmid backbone. 
+<i>A simplified diagram of the kind of transcription units you will build: promoter, ribosome binding site (rbs), coding sequence (cds), terminator, in a plasmid backbone. 
 The diagram uses <a href="https://sbolstandard.org/visual-about/">SBOL Visual</a> glyphs.</i>
 </figcaption>
 </figure>
 </center>
 
-You will be assembling constitutively expressing GFP devices as a transcription unit in a plasmid. 
+You will assemble constitutively expressing GFP devices as a transcription unit in a plasmid. 
 We have included introductions to the parts: constitutive promoters, ribosome binding site (RBS), coding sequence (CDS) for GFP, and terminator, and the plasmid backbone (destination vector). 
 
 ## The Parts (& Plasmid)
 We have provided the parts and their sequences needed to complete the DBTL Bootcamp, both as the **part** itself and as a **part in backbone**. 
-These have all been added to the [iGEM Registry](https://parts.igem.org/) (Registry for short), so we have included links to their respective part pages. We will be using the [SBOL visual standard](https://sbolstandard.org/visual-about/) for representing designs, singular parts, and even interactions.
+These have all been added to the [iGEM Registry](https://parts.igem.org/) (Registry for short), so we have included links to their respective part pages. We will use the [SBOL visual standard](https://sbolstandard.org/visual-about/) for representing designs, singular parts, and even interactions.
 
 Here we will go over the function, constraints, and considerations related to these. 
 
@@ -135,7 +135,7 @@ These are high-copy Chloramphenicol resistant plasmid backbones, with widespread
 
 #### What's the difference?
 The only difference between the pSB1C3 and pSB1C5 is that the pSB1C3 series maintains the BioBrick prefix and suffix.
-For the purposes of this bootcamp, this is not useful (or usable) as we will be using Golden Gate Assembly.
+For the purposes of this bootcamp, this is not useful (or usable) as we will use Golden Gate Assembly.
 
 <hr />
 
@@ -143,7 +143,7 @@ For the purposes of this bootcamp, this is not useful (or usable) as we will be 
 The [Anderson promoter collection](https://parts.igem.org/Promoters/Catalog/Anderson) is a set of constitutive σ70 transcriptional promoters for protein expression in _E. coli_. 
 Numerous iGEM teams and academic studies have included the Anderson promoters, and they are some of the most used and well-characterized parts in the Registry.
 
-We will be using a subset of _five_ of these Anderson promoters.
+We will use a subset of _five_ of these Anderson promoters.
 
 <center>
 
@@ -163,7 +163,7 @@ These five promoters have been used in previous [InterLaboratory studies](https:
 <hr />
 
 ### RBS
-The ribsome binding site (RBS) you will be using is a variant of [BBa_B0034](https://parts.igem.org/Part:BBa_B0034), BBa_J428038. 
+The ribsome binding site (RBS) you will use is a variant of [BBa_B0034](https://parts.igem.org/Part:BBa_B0034), BBa_J428038. 
 
 <center>
 
@@ -192,7 +192,7 @@ These extra bases are meant to mimic a BBa_B0034 assembled with BioBrick RFC 10 
 <hr />
 
 ### CDS: Green Fluorescent Protein
-The green fluorescent protein (GFP) coding sequence (CDS) you will be using is a Type IIS variant of [BBa_E0040](https://parts.igem.org/Part:BBa_E0040), BBa_J119040. 
+The green fluorescent protein (GFP) coding sequence (CDS) you will use is a Type IIS variant of [BBa_E0040](https://parts.igem.org/Part:BBa_E0040), BBa_J119040. 
 
 <center>
 
@@ -210,7 +210,7 @@ The variant you are using, BBa_J119040, has a single base pair substitution (bas
 <hr />
 
 ### Terminator
-The terminator you will be using is a variant of [BBa_B0015](https://parts.igem.org/Part:BBa_B0015), BBa_J428092.
+The terminator you will use is a variant of [BBa_B0015](https://parts.igem.org/Part:BBa_B0015), BBa_J428092.
 
 <center>
 
@@ -225,7 +225,7 @@ The terminator you will be using is a variant of [BBa_B0015](https://parts.igem.
 [BBa_B0015](https://parts.igem.org/Part:BBa_B0015) is the most used terminator in the Registry. 
 This variant includes a `5’ AA` sequence, that when taken with the `5’` fusion site for terminators (`GCTT`) would create a stop codon preceding the terminator (`5' GCT TAA BBa_B0015`).
 
-While the CDS we will be using, [BBa_J119040](https://parts.igem.org/Part:BBa_J119040), has a stop codon (two in fact!), some Type IIS assembly schemes or samples, may not have the stop codon at the end of the CDS sequence.
+While the CDS we will use, [BBa_J119040](https://parts.igem.org/Part:BBa_J119040), has a stop codon (two in fact!), some Type IIS assembly schemes or samples, may not have the stop codon at the end of the CDS sequence.
 This design allows this terminator to include a stop codon in those cases.
 
 <hr /> 
@@ -256,7 +256,7 @@ We have incorporated the pTi plasmid backbone into the Registry as pTi (BBa_J434
 </center>
 
 For the [Design Module](/1_design/1_design.md), you will use the pTi plasmid backbone for _in silico_ assembly. 
-For the [Build](/1_build/1_build.md) and [Test Module](/1_test/1_test.md), you will be assembling and expressing your constructs in the pTi plasmid backbone.  
+For the [Build](/1_build/1_build.md) and [Test Module](/1_test/1_test.md), you will assemble and express your constructs in the pTi plasmid backbone.  
 
 ### Example Transcription Unit
 
@@ -264,7 +264,7 @@ For the [Build](/1_build/1_build.md) and [Test Module](/1_test/1_test.md), you w
 <figure>
 <img src="assets/images/transcription-unit-part-labeled.png" width=50% />
 <figcaption>
-<i>An updated diagram of the transcription unit you will be building, now with part  names (BBa_). You will only be varying the promoter for your constructs, so the last two digits of BBa_J231XX will depend on your choice of Anderson promoters.</i>
+<i>An updated diagram of the transcription unit you will build, now with part  names (BBa_). You will only be varying the promoter for your constructs, so the last two digits of BBa_J231XX will depend on your choice of Anderson promoters.</i>
 </figcaption>
 </figure>
 </center>
@@ -272,8 +272,8 @@ For the [Build](/1_build/1_build.md) and [Test Module](/1_test/1_test.md), you w
 
 ## MoClo / iGEM Type IIS
 
-For the DBTL Bootcamp, we will be using [Golden Gate Assembly](https://technology.igem.org/assembly/golden-gate). 
-Specifically, the parts and backbone you will be using will have the overhangs (fusion sites) that adhere to the Modular Cloning (MoClo) and [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis) assembly standards for building a transcription unit.
+For the DBTL Bootcamp, we will use [Golden Gate Assembly](https://technology.igem.org/assembly/golden-gate). 
+Specifically, the parts and backbone you will use have the overhangs (fusion sites) that adhere to the Modular Cloning (MoClo) and [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis) assembly standards for building a transcription unit.
 
 <figure>
 <center>
@@ -298,7 +298,7 @@ As you look through the figure and table above you will notice that the fusion s
 
 **As an example**, `GGAG` and `TACT` are not included in the sequence for the promoter **part** BBa_J23101 (`TTTACAGCTAGCTCAGTCCTAGGTATTATGCTAGC`). 
 
-However when we have the **part in backbone** (promoter_BBa_J23101_in_pSB1C3SA.gb) and have excised it with BsaI, then the **part extract** will be those overhangs flanking BBa_J23101.
+However when we have the **part in backbone** (promoter_BBa_J23101_in_pSB1C3SA.gb) and have excised it with BsaI, then the **part extract** will include those overhangs flanking BBa_J23101.
 
 #### CDS Fusion Site: AATG
 

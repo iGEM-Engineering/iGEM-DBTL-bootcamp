@@ -87,7 +87,7 @@ Take the appropriate volume from the Intermediate Dilutions and read the absorba
 10. Prepare 15 new 50mL tubes for the final dilutions. 
 Label these new tubes with a similar convention as previously used, as follows: i.e., Construct Name, Colony #, Final Dilution.
 
-11. Use the [calculator-cuture-dilution.xlsx](./calculator-culture-dilution.xlsx) or another method to calculate the appropriate volumes for dilution. 
+11. Use the [calculator-cuture-dilution.xlsx](./assets/protocol-cell-fluorescence/calculator-culture-dilution.xlsx) or another method to calculate the appropriate volumes for dilution. 
 Input the measured OD600 from Step 9 into the calculator to find the required culture and media volumes. 
 For example, to prepare a 12mL dilution at 0.02 OD600 from a culture at 0.38 OD600, mix 631.58 µL of culture (from the Intermediate Dilution) with 11368.42uL of LB broth + Kan media.
 
@@ -172,7 +172,7 @@ These are the blanks.
     2. Fluorescence (green) with an excitation wavelength of 488.0nm, an emission wavelength of 530.0nm, and a 30.0nm bandpass.
 
 ### Importing Experimental Data
-22. Import data into the [datasheet-cell-fluorescence.xlsx](./datasheet-cell-fluorescence.xlsx), including:
+22. Import data into the [datasheet-cell-fluorescence.xlsx](./assets/protocol-cell-fluorescence/datasheet-cell-fluorescence.xlsx), including:
     - 0 hr time point absorbance measurements of Plate 1,
     - 0 hr time point green fluorescence measurements of Plate 1,
     - 6 hr time point absorbance measurements of Plate 2,

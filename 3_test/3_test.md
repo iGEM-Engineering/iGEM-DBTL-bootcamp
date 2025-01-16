@@ -173,7 +173,7 @@ Your design and build specifications will both influence and be influenced by th
 The following are the resources needed for the Test Module. 
 
 - Glycerol stocks of...
-    - Your assembled constructs from the Build Module (or Interlab devices from [here]())
+    - Your assembled constructs from the [Build Module](/2_build/2_build.md) (or Interlab devices from [here](/2_build/2_build.md#build-alternative-interlab-devices))
     - The positive and negative controls 
 - Media: 
     - LB agar plates
@@ -230,7 +230,7 @@ The calibrants you need (and provided by iGEM headquarters within the Distributi
 - **Fluorescein Sodium Salt** - green fluorescent calibrant (Dried down. Resuspend in 1mL PBS 1X to get the stock solution at 100uM)
 - **Monodisperse Silica Nanoparticles** - optical density/bacterial cell count calibrant (850 uL solution in Water per tube, 3e9 beads/mL)
 
-Once you have completed the calibration protocol, enter the data into the [datasheet-calibration.xlsx](./datasheet-calibration.xlsx).
+Once you have completed the calibration protocol, enter the data into the [datasheet-calibration.xlsx](./assets/protocol-calibration/datasheet-calibration.xlsx).
 
 ### Data Validation
 After completing the calibration protocol, evaluate the data against the following criteria to ensure it meets the required quality standards. 
@@ -252,20 +252,19 @@ If your data meets all of the above criteria, then you can
 In this protocol you will measure the optical density and fluorescence of your constructs in cells.
 This is a multi-day protocol.
 
+You will grow cultures overnight and then dilute those cultures to a known OD 600nm absorbance.
+These will be aliquoted into a 96-well plate for the 0hr timepoint, with the remaining diluted culture grown for 6 hours. 
+The 6hr culture will be aliquoted into a second 96-well plate for the 6hr timepoint. 
+For each plate you will measure fluorescence and absorbance.
+
 > You must also use the
 same settings (e.g., filters or excitation and emission wavelengths) that you used in your
 calibration measurements. If you do not use the same type of plates, volumes, and
 settings, the measurements will not be valid.
 
-
 - [Cell Fluorescence Protocol](/protocol-cell-fluorescence.md)
 
-You will grow cultures overnight and then dilute those cultures to a known OD 600nm absorbance. 
-- culture-dilution-calculator-template.xlsx
-
-Once you've completed the protocol, you will enter the data into the [datasheet-cell-fluorescence.xlsx](./datasheet-cell-fluorescence.xlsx).
-
-- [calculator-cuture-dilution.xlsx](./calculator-culture-dilution.xlsx)
+Once you've completed the protocol, you will enter the data into the [datasheet-cell-fluorescence.xlsx](./assets/protocol-cell-fluorescence/datasheet-cell-fluorescence.xlsx).
 
 ### Data validation
 
