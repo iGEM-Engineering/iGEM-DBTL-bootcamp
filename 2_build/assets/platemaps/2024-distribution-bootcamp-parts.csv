@@ -1,0 +1,11 @@
+﻿BBa_ name,description,part type,Plasmid Backbone,AbR,Total Plasmid length (bp),Distribution,Plate,Well
+BBa_I20270,Positive control,device,pSB1C3,CmR,5337,2024 Distribution,1,17L
+BBa_J23100,Anderson promoter,promoter,pSB1C5SA,CmR,2424,2024 Distribution,1,5A
+BBa_J23101,Anderson promoter,promoter,pSB1C3SA,CmR,2467,2024 Distribution,1,18A
+BBa_J23106,Anderson promoter,promoter,pSB1C3SA,CmR,2467,2024 Distribution,1,18C
+BBa_J23116,Anderson promoter,promoter,pSB1C5SA,CmR,2424,2024 Distribution,1,5K
+BBa_J23117,Anderson promoter,promoter,pSB1C3SA,CmR,2467,2024 Distribution,1,18E
+BBa_J428038,BBa_B0034 Type IIS variant,rbs,pSB1C5SB,CmR,2411,2024 Distribution,1,19I
+BBa_J119040,BBa_E0040 Type IIS variant,cds,pSB1C5C,CmR,2766,2024 Distribution,1,17J
+BBa_J428092,BBa_B0015 Type IIS variant,terminator,pSB1C5SD,CmR,2520,2024 Distribution,1,1C
+BBa_J434151,pTi plasmid backbone with RFP drop-out,plasmid backbone,BBa_J434150,KanR,5484,2024 Distribution,1,19B

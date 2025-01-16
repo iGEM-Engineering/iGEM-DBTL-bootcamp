@@ -125,6 +125,6 @@ Pictured: Final plate, with serial dilutions of fluorescein and the silica nanop
 
 18. Measure NanoCym 950nm monodisperse silica nanoparticles absorbance of calibration plate (wells G1:G12 and H1:H12) at 600.0nm.
 
-19. Import data for fluorescein fluorescence and absorbance measurements into the [provided Excel file](./datasheet-calibration.xlsx).
+19. Import data for fluorescein fluorescence and absorbance measurements into the [datasheet-calibration.xlsx](./assets/protocol-calibration/datasheet-calibration.xlsx).
 
 **Note:** If your equipment does not have the exact wavelengths of bandpass wavelengths, choose the nearest one and take note.

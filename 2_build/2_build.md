@@ -17,7 +17,7 @@ This is all described in the [Introduction](/0_intro/0_intro.md) and in further 
 
 You will use those basic parts, the plasmid backbone with drop-out, and Golden Gate Assembly (GGA) to create a series of transcription units in a backbone. Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
 
-While this module includes a fairly standard workflow to get to this point, it does take 5/6-days with several steps which we have elaborated on in the [Workflow Overview section]().
+While this module includes a fairly standard workflow to get to this point, it does take 5/6-days with several steps which we have elaborated on in the [Workflow Overview section](#workflow-overview).
 
 
 **IMPORTANT:** As with all experimental procedures, preparation is of key importance. 
@@ -26,14 +26,14 @@ Before starting in the lab, read through the entire module: familiarize yourself
 ### Can't Build? Don't worry!
 
 If you are unable to assemble your designed constructs, or have decided not to do the Build Module, you can (mostly) skip this module. 
-Instead, you can transform a selection of [Interlab devices]() directly from the Distribution Kit, and use those in the Test Module. 
+Instead, you can transform a selection of [Interlab devices](#build-alternative-interlab-devices) directly from the Distribution Kit, and use those in the [Test Module](/3_test/3_test.md). 
 _No assembly required!_
 
 ### What you will need to know before you start
 - **IMPORTANT:** 
 Before you start any work in the lab, make sure you have completed ALL of your institution's safety requirements.
 - Core concepts & terminology from the [Introduction](/0_intro/0_intro.md) and [Design Module](/1_design/1_design.md).
-- Basic laboratory techniques and familiarity with all the equipment that will be used in the workflow/protocols below.
+- Basic laboratory techniques and familiarity with all the equipment that are used in the workflow/protocols below.
 - Keeping a good notebook! Make sure to follow best practices and any guidelines from your lab group, but [here](/2_build/tips-notebook.md) are some general tips.
 
 ## Resources Needed
@@ -61,35 +61,35 @@ The following are the resources needed for the Build Module.
     - 14-mL cell culture tubes
     - PCR and microcentrifuge tubes
     - ice bucket and ice or cold block
-    - iGEM Distribution Kit (this module uses the 2024 version)
+    - iGEM Distribution Kit
 
-**Note** that this list is not completely exhaustive as there will be some things that we assume your lab has access to, from small things (lab pens, glassware) to larger ones (-80°C freezer, centrifuge).
-We have also not included quantities, it will be important for you to understand the workflow, read through the protocols, and keep track of those yourself. 
+**Note** that this list is not completely exhaustive as there are some things that we assume your lab has access to, from small things (lab pens, glassware) to larger ones (-80°C freezer, centrifuge).
+We have also not included quantities, it is important for you to understand the workflow, read through the protocols, and keep track of those yourself. 
 
 ## Workflow Overview
 The following is a 6-day plan for the Build Module, that will take you from transforming parts from the iGEM Distribution Kit, to assembling your constructs, and finally preparing glycerol stocks for future use. 
 
 You or your lab may have your preferred protocols (and workflow) for all of the steps in this plan, so feel free to use those. 
-However, we have also included recommended protocols and tips from iGEM and the iGEM Engineering Committee, which in case of issues, we will be more adept at providing troubleshooting help for.
+However, we have also included recommended protocols and tips from iGEM and the iGEM Engineering Committee, which in case of issues, we are more adept at providing troubleshooting help for.
 
 Depending on your level of experience and/or available time, you may be able to combine the Day 4 work (transform assembly reaction) with Day 3, to shorten this workflow to 5 days.
 
-- **Day 0** (Before you start)
+- **[Day 0](#day-0)** (Before you start)
     - Competent cells
     - Antibiotic stocks and media
-- **Day 1**
+- **[Day 1](#day-1)**
     - Transform plasmids from Distribution Kit*
-- **Day 2**
+- **[Day 2](#day-2)**
     - Pick colonies and inoculate overnight cultures
-- **Day 3**
+- **[Day 3](#day-3)**
     - Make glycerol stocks
     - Make minipreps
-- **Day 4**
+- **[Day 4](#day-4)**
     - Transform assembly reaction
-- **Day 5**
+- **[Day 5](#day-5)**
     - Screen colonies 
     - Select GFP-positive colonies and inoculate overnight cultures
-- **Day 6**
+- **[Day 6](#day-6)**
     - Make glycerol stocks
     - Miniprep plasmids
     - Confirm plasmid sequences
@@ -128,7 +128,7 @@ If you are unable to purchase competent cells, we have provided a protocol below
 
 ### Antibiotic stocks and media
 For this bootcamp (the Build and Test modules) you will need chloramphenicol and kanamycin antibiotic stocks.
-You will be adding those to LB liquid media and LB agar.
+You will add those to LB liquid media and LB agar.
 
 Most labs typically make stocks of a 1000x concentration of common antibiotics which are filter-sterilized through a 0.22µm syringe filter, aliquoted and stored in the freezer. 
 
@@ -149,7 +149,7 @@ Adapted from the Barrick Lab's [Antibiotic concentrations and stock solutions](h
 ## Day 1
 ### Transform plasmids from Distribution Kit
 
-The following table contains the locations, and basic information for the parts and plasmid backbone you will need to transform from the [2024 iGEM Distribution Kit](https://technology.igem.org/distribution/handbook).
+The following table contains the basic information for the parts and plasmid backbone you will need to transform from the [iGEM Distribution Kit](https://technology.igem.org/distribution/handbook).
 
 <center>
 <figure>
@@ -158,33 +158,42 @@ The following table contains the locations, and basic information for the parts 
 </center>
 
 
-From this you will be doing **eight** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
+From this list you will do **eight** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
 
-| BBa_ name | description | part type | Plasmid Backbone | AbR | Total Plasmid length (bp) | Plate | Well |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| BBa_I20270 | Positive control | device | pSB1C3 | CmR | 5337 | 1 | 17L |
-| BBa_J23100 | Anderson promoter | promoter | pSB1C5SA | CmR | 2424 | 1 | 5A |
-| BBa_J23101 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 | 1 | 18A |
-| BBa_J23106 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 | 1 | 18C |
-| BBa_J23116 | Anderson promoter | promoter | pSB1C5SA | CmR | 2424 | 1 | 5K |
-| BBa_J23117 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 | 1 | 18E |
-| BBa_J428038 | BBa_B0034 Type IIS variant | rbs | pSB1C5SB | CmR | 2411 | 1 | 19I |
-| BBa_J119040 | BBa_E0040 Type IIS variant | cds | pSB1C5C | CmR | 2766 | 1 | 17J |
-| BBa_J428092 | BBa_B0015 Type IIS variant | terminator | pSB1C5SD | CmR | 2520 | 1 | 1C |
-| BBa_J434151 | pTi plasmid backbone with RFP drop-out | plasmid backbone | BBa_J434150 | KanR | 5484 | 1 | 19B |
+**Transform**
+- 3 Anderson Promoters
+- the rbs, cds, and terminator
+- the Positive and Negative Controls
+
+| BBa_ name | description | part type | Plasmid Backbone | AbR | Total Plasmid length (bp) |
+| --- | --- | --- | --- | --- | --- |
+| BBa_I20270 | Positive control | device | pSB1C3 | CmR | 5337 |
+| BBa_J23100 | Anderson promoter | promoter | pSB1C5SA | CmR | 2424 |
+| BBa_J23101 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 |
+| BBa_J23106 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 |
+| BBa_J23116 | Anderson promoter | promoter | pSB1C5SA | CmR | 2424 |
+| BBa_J23117 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 |
+| BBa_J428038 | BBa_B0034 Type IIS variant | rbs | pSB1C5SB | CmR | 2411 |
+| BBa_J119040 | BBa_E0040 Type IIS variant | cds | pSB1C5C | CmR | 2766 |
+| BBa_J428092 | BBa_B0015 Type IIS variant | terminator | pSB1C5SD | CmR | 2520 |
+| BBa_J434151 | pTi plasmid backbone with RFP drop-out (and negative control) | plasmid backbone | BBa_J434150 | KanR | 5484 |
 
 _KanR = kanamycin resistant, CmR = chloramphenicol resistant_
 
+These are all available in the following iGEM Distributions, and we have included their locations as separate csv files:
+- [2024 Distribution Locations](./assets/platemaps/2024-distribution-bootcamp-parts.csv)
+- 2025 Distribution (TBD)
+
 **Key things to know:** 
 - which three promoters did you select for your _in silico_ assemblies?
-- the antibiotic resistances of the plasmid backbones, as these will be the antiobiotic stocks you need: kanamycin and chloramphenicol
+- the antibiotic resistances of the plasmid backbones, as these are the antiobiotic stocks you need: kanamycin and chloramphenicol
 - the sizes in bp of the plasmids, as we will use this to calculate the molar concentration for the [assembly reaction]().
 - there is an estimated 1-2 ng of DNA in each distribution kit well, so if you are using our recommended protocol, assume that you are transforming with 100-200 pg/µL. 
 
 Lastly, you may have noticed that there is a positive control in the table.
 That device, BBa_I20270 in pSB1C3, has been used as a positive control for past Interlabs.
-We will not be using this as a control for transformations or assembly, but as a control for the [Test Module]() experiment. 
-We will be transforming it now, so you will not need to do that later.
+We will not be using this as a control for transformations or assembly, but as a control for the [Test Module](/3_test/3_test.md) experiment. 
+We will transform it now, so you will not need to do that later.
 
 You may also have noticed that there is not a negative control listed.
 That's because we will use the pTi plasmid backbone with RFP drop-out as our negative control in the Test Module.
@@ -244,9 +253,9 @@ Too many freeze and thaw cycles will degrade its usability and may introduce mor
 
 ### Make minipreps
 Plasmid DNA can be extracted from _E. coli_ cells at different scales. 
-For this procedure you will be using the **miniprep** scale as this provides enough DNA for characterization and use in a number of GGA reactions. 
+For this procedure you will use the **miniprep** scale as this provides enough DNA for characterization and use in a number of GGA reactions. 
 
-You will be using silica columns to bind the plasmid DNA from the lysed and neutralized extract. 
+You will use silica columns to bind the plasmid DNA from the lysed and neutralized extract. 
 All modern plasmid extraction methods/kits use a three step procedure for creating the neutralized lysate that will be added to the silica containing spin column. 
 We have some tips on this process, but you should adhere to the protocols of the kit that you are using.
 
@@ -274,7 +283,7 @@ UV absorbance is one of the most common ways to quantify DNA.
 Fluorometry is more sensitive, allowing measurement of nanogram quantities of DNA. 
 You want to have the quantity of your plasmids expressed in ng/µL.
 
-Follow the instructions for the instrument you will be using to quantify your plasmid DNA
+Follow the instructions for the instrument you will use to quantify your plasmid DNA
 
 **Example instruments:**
 - Nanodrop
@@ -299,11 +308,6 @@ You should start by making 50nM stock solutions of your parts and plasmids.
 
 For the assembly reactions, we recommend using 25 fmol for each part in plasmid, and half as much (12.5 fmol) for the plasmid backbone with drop-out, to reduce religation.
 
-
-| BBa_ name | description | part type | Plasmid Backbone | Total Plasmid length (bp) |
-| --- | --- | --- | --- | --- |
-| BBa_J23106 | Anderson promoter | promoter | pSB1C3SA | 2467 |
-
 #### Protocols
 - [Golden Gate Assembly (Bennett Lab)](https://wiki.rice.edu/confluence/display/BIODESIGN/Golden+Gate+Assembly)
 
@@ -325,7 +329,7 @@ The RFP-expressing cells contain the unaltered plasmid backbone with drop-out wh
 [Content needed: UV lightbox & promoter strength for weakly green colonies]
 
 At this stage you will pick (with sterile toothpicks or pipette tips) well isolated individual GFP colonies from the plate and grow them overnight (16 hours max) in LB broth with kanamycin. 
-Picking four colonies for each assembly will be sufficient. 
+Picking four colonies for each assembly is sufficient. 
 
 These overnight cultures will be used on Day 6, to perform minipep plasmid DNA extractions and make glycerol stocks. 
 
@@ -351,7 +355,7 @@ However plasmid sequencing can be expensive, so you may want to restriction map 
 
 ## Build Alternative: Interlab Devices
 
-### Workflow Overview
+### ALT Workflow Overview
 - **Day 1**
     - Transform plasmids from Distribution Kit
 - **Day 2**
@@ -361,47 +365,58 @@ However plasmid sequencing can be expensive, so you may want to restriction map 
     - Miniprep plasmids
     - Confirm plasmid sequences
 
-## Day 1
-### Transform plasmids from Distribution Kit
+### ALT Day 1
+#### Transform plasmids from Distribution Kit
 
-The following table contains the locations, and basic information for the Interlab Devices you will need to transform from the [2024 iGEM Distribution Kit](https://technology.igem.org/distribution/handbook).
+The following table contains the basic information for the Interlab Devices you will need to transform from the [2024 iGEM Distribution Kit](https://technology.igem.org/distribution/handbook).
 
 For this Bootcamp we specifically selected parts (or variants of parts) that were used in these Interlab devices.
 They will all use the same Anderson promoter set that you selected from in the Design Module, so you can choose the Interlab Devices you would like to transform based on your promoter choice.
 
 However, these constructs will differ from the ones you _in silico_ assembled in the Design Module, as they were assembled with BioBrick assembly into the pSB1C3 plasmid backbone.
 
-From this you will be doing **five** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
+From this you will do **five** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
+- Transform 3 Interlab Test Devices
+- Transform the Positive and Negative Controls
 
-| BBa_ name | description | part type | Plasmid Backbone | AbR | Total Plasmid length (bp) | Plate | Well |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| BBa_I20270 | Positive control | device | pSB1C3 | CmR | 5337 | 1 | 17L |
-| BBa_J23100 | Anderson promoter | promoter | pSB1C3 | CmR | 2424 | 1 | 5A |
-| BBa_J23101 | Anderson promoter | promoter | pSB1C3 | CmR | 2467 | 1 | 18A |
-| BBa_J23106 | Anderson promoter | promoter | pSB1C3 | CmR | 2467 | 1 | 18C |
-| BBa_J23116 | Anderson promoter | promoter | pSB1C3 | CmR | 2424 | 1 | 5K |
-| BBa_J23117 | Anderson promoter | promoter | pSB1C3 | CmR | 2467 | 1 | 18E |
-| BBa_J428038 | BBa_B0034 Type IIS variant | rbs | pSB1C3 | CmR | 2411 | 1 | 19I |
-| BBa_J119040 | BBa_E0040 Type IIS variant | cds | pSB1C5C | CmR | 2766 | 1 | 17J |
-| BBa_J428092 | BBa_B0015 Type IIS variant | terminator | pSB1C5SD | CmR | 2520 | 1 | 1C |
+| BBa_ name | Promoter | description | part type | Plasmid Backbone | AbR |
+| --- | --- | --- | --- | --- | --- |
+| BBa_I20270 | BBa_J23151 | Interlab 2018 Positive Control | device | pSB1C3 | CmR |
+| BBa_J364000 | BBa_J23101 | Interlab 2018 Test Device 1 | device | pSB1C3 | CmR | 
+| BBa_J364001 | BBa_J23106 | Interlab 2018 Test Device 2 | device | pSB1C3 | CmR | 
+| BBa_J364002 | BBa_J23117 | Interlab 2018 Test Device 3 | device | pSB1C3 | CmR | 
+| BBa_J364007 | BBa_J23100 | Interlab 2018 Test Device 4 | device | pSB1C3 | CmR | 
+| BBa_J364008 | BBa_J23104* | Interlab 2018 Test Device 5 | device | pSB1C3 | CmR | 
+| BBa_J364009 | BBa_J23116 | Interlab 2018 Test Device 6 | device | pSB1C3 | CmR | 
+| BBa_J428100 | BBa_J23101 | Interlab_NegC (luxR) | device | pSB1C3 | CmR |
 
+These are all available in the following iGEM Distributions, and we have included their locations as separate csv files:
+- [2024 Distribution Interlab Locations](./assets/platemaps/2024-distribution-bootcamp-interlab-devices.csv)
+- 2025 Distribution (TBD)
 
 _CmR = chloramphenicol resistant_
 
 **Key things to know:** 
-- the antibiotic resistances of the plasmid backbones, as these will be the antiobiotic stocks you need: chloramphenicol
+- the antibiotic resistances of the plasmid backbones, as these are the antiobiotic stocks you need: chloramphenicol
 - there is an estimated 1-2 ng of DNA in each distribution kit well, so if you are using our recommended protocol, assume that you are transforming with 100-200 pg/µL. 
 
 Lastly, you may have noticed that there are positive and negative controls in the table.
-These devices, BBa_I20270 in pSB1C3, has been used as controls in past Interlabs.
-We will not be using this as a control for transformations or assembly, but as a control for the [Test Module]() experiment. 
-We will be transforming it now, so you will not need to do that later.
+These devices, BBa_I20270 and BBa_J428100, have been used as controls in past Interlabs.
+We will not be using them as a controls for transformations or assembly, but as a control for the [Test Module](/3_test/3_test.md) experiment, so we will transform them now, so you will not need to do that later.
 
-You may also have noticed that there is not a negative control listed.
-That's because we will use the pTi plasmid backbone with RFP drop-out as our negative control in the Test Module.
-
-#### Protocols
+##### Protocols
 - [Distribution Kit Transformations](/protocol-distribution-transformation.md)
 
-#### Additional Resources
+##### Additional Resources
 - [Bacterial Transformation (Addgene)](https://www.addgene.org/protocols/bacterial-transformation/)
+
+### ALT Day 2 & 3
+For the following protocols, please refer to the [Day 2](#day-2) and [Day 3](#day-3) of the normal workflow, adjusting for differences in the transformations (count, antibiotic, etc.).
+
+
+## Test Module
+Once you have followed a workflow and produced and validated your assembled constructs, you are ready to proceed on to the [Test Module](/3_test/3_test.md). 
+
+In the Test Module, you will use the GFP constructs to measure fluorescence using a standard protocol, calibrants, and a plate reader. 
+
+This module will also introduce good measurement practices, experimental design principles, and key questions to consider before proceeding to the Test stage of your project.
