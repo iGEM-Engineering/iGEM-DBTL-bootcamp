@@ -32,3 +32,8 @@ The final step is to neutralize the lysate by adding the neutralization buffer (
 
 ## Wash
 Follow your protocol on the two wash steps but make sure to remove all of the ethanol with a final spin. Transferring any ethanol from the wash step will inhibit the enzymes used for GGA. Elute your miniprep DNA in a clean 1.5mL tube. Some centrifuges have tight spacing on the tube holes in the rotor so it might be easier to cut the cap of the collection tube and then transfer the DNA to a new tube for storage.
+
+To remove any last residual traces of ethanol, the spin column in the clean 1.5 mL tube can be be heated to 70°C for a few minutes with the lid open.
+
+## Elution
+To increase the amount of DNA eluted, the elution buffer can be heated to 50 or 70°C before being applied on the column. If this is done, do take care that the lid is closed as to not let the warm buffer evaporate
