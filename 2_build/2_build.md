@@ -83,7 +83,8 @@ Depending on your level of experience and/or available time, you may be able to 
     - Pick colonies and inoculate overnight cultures
 - **[Day 3](#day-3)**
     - Make glycerol stocks
-    - Make minipreps
+    - Make minipreps and quantify DNA
+    - Setup Assembly reaction
 - **[Day 4](#day-4)**
     - Transform assembly reaction
 - **[Day 5](#day-5)**
@@ -211,10 +212,10 @@ If your transformations were successful, you will have colonies to pick from!
 **Note:** With the exception of the pTi plasmid backbone with drop-out (RFP) and the BBa_I20270 positive control (GFP), none of your transformations should have fluorescent colonies.
 
 Beforehand, set up the culture tubes with LB media with the appropriate antibiotic. We recommend the following:
--  Grow two colonies (so two tubes) for each transformed plasmid in case of a problem with the overnight culture or low yield.
-- Use 14 mL snap cap tubes or cover the tubes with sterile aluminum foil, rather than screw cap tubes, as you want to allow for air exchange when growing in a shaking incubator.
+- Grow two colonies in separate tubes for each transformed plasmid in case of a problem with the overnight culture or low yield.
+- If possible, use 14 mL snap cap tubes or cover the tubes with sterile aluminum foil, rather than screw cap tubes, as _E. coli_ will grow better if there is air exchange when growing in a shaking incubator.
 - Pre-label all your tubes, with the part/plasmid and the antibiotic
-- Each tube should have 2-4 mL of LB media, but for this workflow we will use 4 mL.
+- Each tube should have 4 mL of LB media + antibiotics (see table below).
 
 <br />
 
@@ -226,10 +227,10 @@ Beforehand, set up the culture tubes with LB media with the appropriate antibiot
 <br />
 
 For the inoculations:
-- Pick a single colony with a sterile toothpick or pipette tip, drop in to the appropriately labeled tube, and cover.
-- Incubate your inoculated cultures at 37°C for 16 hr in a shaking incubator. Do not grow more than 16 hours as this may reduce yields when extracting DNA.
+- Pick a single colony with a sterile toothpick or pipette tip, drop it into the appropriately labeled tube, and cover.
+- Incubate your inoculated cultures at 37°C for 16-18 hours in a shaking incubator (200-250 rpm,reciprocal shaking). Do not grow more than 18 hours as this may reduce yields when extracting DNA.
 
-The following day (after 16hrs), the cultures should be cloudy.
+The following day (after 16-18 hours), the cultures should be cloudy.
 Measuring the OD600 of your culture is always good practice, and will also help troubleshoot if you have issues with minipreps and glycerol stocks.
 
 #### Additional Resources
@@ -328,10 +329,10 @@ The RFP-expressing cells contain the unaltered plasmid backbone with drop-out wh
 
 [Content needed: UV lightbox & promoter strength for weakly green colonies]
 
-At this stage you will pick (with sterile toothpicks or pipette tips) well isolated individual GFP colonies from the plate and grow them overnight (16 hours max) in LB broth with kanamycin. 
+At this stage you will pick (with sterile toothpicks or pipette tips) well isolated individual GFP colonies from the plate and grow them overnight (16-18 hours max) in LB broth with kanamycin. 
 Picking four colonies for each assembly is sufficient. 
 
-These overnight cultures will be used on Day 6, to perform minipep plasmid DNA extractions and make glycerol stocks. 
+These overnight cultures will be used on Day 6, to perform miniprep plasmid DNA extractions and make glycerol stocks. 
 
 
 ## Day 6
