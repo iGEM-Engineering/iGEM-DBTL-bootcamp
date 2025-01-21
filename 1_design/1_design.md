@@ -100,7 +100,7 @@ Before we start modeling GFP expression, we will look at some previous data on t
 The data above is a subset of a larger characterization effort by the [2006 Berkeley iGEM Team](https://2006.igem.org/wiki/index.php/University_of_California_Berkeley_2006).
 From this data, you can already see which promoters are the highest (BBa_J23100) and lowest (BBa_J23117) strength.
 
-We will use this data to [model]() the effect of all five promoters on GFP expression, but we should consider and address some important questions!
+We will use this data to [model](#modeling) the effect of all five promoters on GFP expression, but we should consider and address some important questions!
 
 ### What exactly do we mean by promoter strength?
 By promoter strength, we mean the effect on transcription rate: a strong promoter would increase the transcription rate and, presumably, the expression of a protein.
@@ -372,7 +372,7 @@ Keep in mind that we will measure fluorescence (protein expression) and not the 
 
 ### Additional Resources
 - Webinar: [Modeling for SynBio: from ODEs to Gene expression](https://video.igem.org/w/nPrjzXYqVpAxRjCRCx4Mi9)
-- [R script for the ODE](const_expression_ODE.R)
+- [R script for the ODE](./const_expression_ODE.R)
 
 ## Assemble your constructs _in silico_
 Based on your modeling, you have selected the two promoters (one strong and one weak) along with BBa_J231006, which you will use as your medium strength promoter. 
@@ -406,7 +406,7 @@ This is possible because we have clearly defined inputs and processes, which wil
 You will want to export and share your designs, whether for collaboration, publication, or additional workflows.
 
 ### Design Tool Workflows
-- [Benchling](/1_design/benchling-design-workflow) 
+- [Benchling](./benchling-design-workflow.md) 
 - Kernel from [Asimov](https://www.asimov.com/): While not dedicated to this DBTL Bootcamp, Asimov has a Kernel [webinar](https://video.igem.org/w/mYnmcrQjQJxJtyf1kzT1KW), _Mastering genetic design, a case study with Kernel_, that covers this topic, and would enable you to create these constructs _in silico_.
 - Open source option (TBD)
 

@@ -1,7 +1,7 @@
 # Competent Cell Efficiency
 
 ## Overview
-You will transform control plasmid DNA into the competent cells you have purchased or [made](/protocol-preparing-competent-cells.md) in the lab to calculate their efficiency.
+You will transform control plasmid DNA into the competent cells you have purchased or [made](./protocol-preparing-competent-cells.md) in the lab to calculate their efficiency.
 
 The protocol below is adapted from iGEM's [Competent Cell Test Kit protocol](https://parts.igem.org/Help:Competent_Cell_Test_Kit).
 The Competent Cell Test Kit is no longer offered by iGEM, but the protocol can still be used if you have access to 10 pg/µL and 100 pg/µL control plasmids.

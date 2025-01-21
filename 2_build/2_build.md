@@ -120,8 +120,8 @@ These commercial competent cells are validated so it can make troubleshooting ea
 If you are unable to purchase competent cells, we have provided a protocol below so you can make your own cells and test their efficiency. 
 
 #### Protocols
-- [Preparing Competent Cells](/protocol-preparing-competent-cells.md)
-- [Competent Cell Efficiency](/protocol-competent-cell-efficiency.md)
+- [Preparing Competent Cells](./protocol-preparing-competent-cells.md)
+- [Competent Cell Efficiency](./protocol-competent-cell-efficiency.md)
 
 #### Additional Resources
 - [Bacterial Transformation (Addgene)](https://www.addgene.org/protocols/bacterial-transformation/)
@@ -158,7 +158,7 @@ The following table contains the basic information for the parts and plasmid bac
 </center>
 
 
-From this list you will do **eight** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
+From this list you will do **eight** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module](/1_design/1_design.md).
 
 **Transform**
 - 3 Anderson Promoters
@@ -187,7 +187,7 @@ These are all available in the following iGEM Distributions, and we have include
 **Key things to know:** 
 - which three promoters did you select for your _in silico_ assemblies?
 - the antibiotic resistances of the plasmid backbones, as these are the antiobiotic stocks you need: kanamycin and chloramphenicol
-- the sizes in bp of the plasmids, as we will use this to calculate the molar concentration for the [assembly reaction]().
+- the sizes in bp of the plasmids, as we will use this to calculate the molar concentration for the [assembly reaction](#set-up-assembly-reaction).
 - there is an estimated 1-2 ng of DNA in each distribution kit well, so if you are using our recommended protocol, assume that you are transforming with 100-200 pg/µL. 
 
 Lastly, you may have noticed that there is a positive control in the table.
@@ -199,7 +199,7 @@ You may also have noticed that there is not a negative control listed.
 That's because we will use the pTi plasmid backbone with RFP drop-out as our negative control in the Test Module.
 
 #### Protocols
-- [Distribution Kit Transformations](/protocol-distribution-transformation.md)
+- [Distribution Kit Transformations](./protocol-distribution-transformation.md)
 
 #### Additional Resources
 - [Bacterial Transformation (Addgene)](https://www.addgene.org/protocols/bacterial-transformation/)
@@ -272,7 +272,7 @@ This is always good practice though: mistakes and mutations happen!
 - [Coleman Lab protocol](https://coleman-lab.org/lab-protocols/#labprotocols) ([make your own](https://coleman-lab.org/wp-content/uploads/2021/07/plasmid-miniprep-5-ml-spin-column-.pdf))
 
 #### Protocols
-- [Miniprep Tips]()
+- [Miniprep Tips](./tips-miniprep.md)
 
 
 ### Quantify Plasmid preps
@@ -300,7 +300,7 @@ As mentioned you want to have equal-molar amounts of all parts in plasmid in an 
 
 > moles dsDNA (mol) = mass of dsDNA (g)/((length of dsDNA (bp) x 615.96 g/mol/bp) + 36.04 g/mol)
 
-You will need to know the length of the dsDNA (bp), which we have included in the Distribution Location table from [Day 1](). 
+You will need to know the length of the dsDNA (bp), which we have included in the Distribution table from [Day 1](#day-1). 
 Note, this is the total plasmid size (bp) not just the size of the part by itself.
 
 You should start by making 50nM stock solutions of your parts and plasmids.
@@ -314,10 +314,10 @@ For the assembly reactions, we recommend using 25 fmol for each part in plasmid,
 ## Day 4
 ### Transform assembly reaction
 Once you have your assembly reactions, you can transform them into your competent cells.
-The protocol we recommend below has some key differences compared to the [distribution kit transformations protocol](/protocol-distribution-transformation.md).
+The protocol we recommend below has some key differences compared to the [distribution kit transformations protocol](./protocol-distribution-transformation.md).
 
 #### Protocols
-- [Assembly Reaction Transformations](/protocol-assembly-transformation.md)
+- [Assembly Reaction Transformations](./protocol-assembly-transformation.md)
 
 
 ## Day 5
@@ -349,7 +349,7 @@ Sequencing will usually involve:
 3. receiving data back and using a sequence alignment tool
 
 If possible, we encourage you to use sequencing to confirm the constructs you have assembled for this bootcamp.
-For sequence alignment, you will use the [GenBank files](../genbank_files/part%20in%20backbone/Validation/) for your _in silico_ assemblies.
+For sequence alignment, you will use the [GenBank files](/genbank_files/part%20in%20backbone/Validation/) for your _in silico_ assemblies.
 
 However plasmid sequencing can be expensive, so you may want to restriction map your individual clones beforehand and select one or two clones for sequencing. 
 
@@ -375,7 +375,7 @@ They will all use the same Anderson promoter set that you selected from in the D
 
 However, these constructs will differ from the ones you _in silico_ assembled in the Design Module, as they were assembled with BioBrick assembly into the pSB1C3 plasmid backbone.
 
-From this you will do **five** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module]().
+From this you will do **five** transformations, as you do _not_ need to transform all five promoters, only the ones you selected for your _in silico_ assemblies in the [Design Module](/1_design/1_design.md).
 - Transform 3 Interlab Test Devices
 - Transform the Positive and Negative Controls
 
@@ -405,7 +405,7 @@ These devices, BBa_I20270 and BBa_J428100, have been used as controls in past In
 We will not be using them as a controls for transformations or assembly, but as a control for the [Test Module](/3_test/3_test.md) experiment, so we will transform them now, so you will not need to do that later.
 
 ##### Protocols
-- [Distribution Kit Transformations](/protocol-distribution-transformation.md)
+- [Distribution Kit Transformations](./protocol-distribution-transformation.md)
 
 ##### Additional Resources
 - [Bacterial Transformation (Addgene)](https://www.addgene.org/protocols/bacterial-transformation/)
