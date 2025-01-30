@@ -15,12 +15,12 @@ This is all described in the [Introduction](/0_intro/0_intro.md) and in further 
 </figure>
 </center>
 
-You will use those basic parts, the plasmid backbone with drop-out, and Golden Gate Assembly (GGA) to create a series of transcription units in a backbone. Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
+You will use those basic parts, the plasmid backbone with drop-out, and Golden Gate Assembly (GGA) to create several different constructs with different transcriptional expression levels. Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
 
 While this module includes a fairly standard workflow to get to this point, it does take 5/6-days with several steps which we have elaborated on in the [Workflow Overview section](#workflow-overview).
 
 
-**IMPORTANT:** As with all experimental procedures, preparation is of key importance. 
+> **IMPORTANT:** As with all experimental procedures, preparation is of key importance. 
 Before starting in the lab, read through the entire module: familiarize yourself with the protocols, the materials, and the equipment needed.
 
 ### Can't Build? Don't worry!
@@ -39,7 +39,7 @@ Before you start any work in the lab, make sure you have completed ALL of your i
 ## Resources Needed
 The following are the resources needed for the Build Module. 
 
-- Chemically competent _E. coli_ cells, preferably DH5alpha or strains with recA1 and endA1 mutations
+- Chemically competent _E. coli_ cells, preferably DH5a and DH10b, or strains with recA1 and endA1 mutations
 - Miniprep DNA extraction kit to isolate plasmid DNA from transformed cells
 - Media: 
     - LB broth
@@ -63,7 +63,7 @@ The following are the resources needed for the Build Module.
     - ice bucket and ice or cold block
     - iGEM Distribution Kit
 
-**Note** that this list is not completely exhaustive as there are some things that we assume your lab has access to, from small things (lab pens, glassware) to larger ones (-80°C freezer, centrifuge).
+>**Note** that this list is not completely exhaustive as there are some things that we assume your lab has access to, from small things (lab pens, glassware) to larger ones (-80°C freezer, centrifuge).
 We have also not included quantities, it is important for you to understand the workflow, read through the protocols, and keep track of those yourself. 
 
 ## Workflow Overview
@@ -73,6 +73,11 @@ You or your lab may have your preferred protocols (and workflow) for all of the 
 However, we have also included recommended protocols and tips from iGEM and the iGEM Engineering Committee, which in case of issues, we are more adept at providing troubleshooting help for.
 
 Depending on your level of experience and/or available time, you may be able to combine the Day 4 work (transform assembly reaction) with Day 3, to shorten this workflow to 5 days.
+
+> **IMPORTANT:** All parts from the distribution kit MUST first be transformed into competent cells. 
+Once these cells are growing, you can make glycerol stocks and miniprep the plasmids from overnight cultures. 
+These miniprepped plasmids are what you will use for the assembly reactions. 
+DO NOT use DNA from the distribution kit directly in an assembly reaction.
 
 - **[Day 0](#day-0)** (Before you start)
     - Competent cells
@@ -94,15 +99,9 @@ Depending on your level of experience and/or available time, you may be able to 
     - Miniprep plasmids
     - Confirm plasmid sequences
 
-Note: This plan does not include time for the following:
-- preparing & testing competent cells
-- sequence confirmation of parts/constructs
-
-***IMPORTANT:** All parts from the distribution kit MUST first be transformed into competent cells. 
-Once these cells are growing, you can make glycerol stocks and miniprep the plasmids from overnight cultures. 
-These miniprepped plasmids are what you will use for the assembly reactions. 
-DO NOT use DNA from the distribution kit directly in an assembly reaction.
-
+> **Note:** This plan does not include time for the following:
+> - preparing & testing competent cells
+> - sequence confirmation of parts/constructs
 
 ## Day 0
 Day 0 includes materials and reagents that you will need before you start.
@@ -246,7 +245,7 @@ Do not let it unthaw.
 Too many freeze and thaw cycles will degrade its usability and may introduce more mutations.
 
 #### Protocols
-- [Glycerol Stock Protocol]()
+- [Glycerol Stock Protocol](./protocol-glycerol-stocks.md)
 
 #### Additional Resources
 - [Creating Bacterial Glycerol Stocks (Addgene)](https://www.addgene.org/protocols/create-glycerol-stock/)
@@ -261,7 +260,7 @@ We have some tips on this process, but you should adhere to the protocols of the
 
 Plasmid DNA can then be stored long term at -20°C. 
 
-**Important:** Due to time (and resource cost) we have not included a step here for sequence confirming these transformants. 
+> **Important:** Due to time (and resource cost) we have not included a step here for sequence confirming these transformants. 
 This is always good practice though: mistakes and mutations happen!
 
 **Examples of miniprep kits:**
