@@ -124,7 +124,7 @@ To properly characterize our constructs, we need a sufficiently robust data set 
 And that is just for one time point! 
 
 As you can see, the number of samples and measurements increases quickly with additional constructs, replicates, conditions, or time points.
-Your projects will likely exceed this number of samples in a single 
+Your projects will likely exceed this number of samples in a single experiment. 
 To manage this scale efficiently, we need a high-throughput method for measuring OD and fluorescence. 
 
 Plate readers are well-suited for this purpose. They are commonly available in most academic labs or as shared equipment between labs.
