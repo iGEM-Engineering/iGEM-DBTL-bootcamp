@@ -1,7 +1,16 @@
 # GitHub workflow and best practices
 
 ## Workflow
+**Quick**
+Create a branch
+Make changes on your branch
+Commit changes to your branch
+Create pull request for review
+Merge your branch to main
+Delete your branch
+Reopen or close issue if needed
 
+**Detailed**
 Here’s a description of a workflow to make changes to documents. There are multiple ways to go about this, but I think the one described here will be easiest for people new to GitHub. The sandbox.md document in the repo was created solely to practice making changes without worrying about anything, so feel free to play in that as much as you like to get comfortable!  
 
 Since we want to track things using Issues, we will start from there. I created a ‘sandbox’ issue so we can practice with the linking, so if you don’t see it immediately under the ‘Issues’ tab check under ‘Closed’ and reopen it if it’s there. If you go through this completely and close the issue merging your pull request please try to remember to reopen the issue when you are finished. For actual changes, click on the issue you would like to address with a change in one of the documents. On the right, under ‘Development’ there is a link ‘Create a branch’ for this issue. Clicking on this will allow you to create a branch to make the changes you want to make. A ‘branch’ is git nomenclature [about branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches) for a place where you can make changes to documents without having to worry about changing the current version of the shared documents until you are ready. Clicking the link to create a branch will open a window with some options. At the top is ‘Branch name’; making the branch from the issue will automatically put the issue number and title, please keep those for ease of tracking, and add to the end some words to describe the changes you intend to make. Below that is a ‘Repository destination’, you shouldn’t have to do anything to this, it should read ‘iGEM-Engineering/iGEM-DBTL-bootcamp’. Below that is ‘Branch source’, this should be ‘main’. Main is the current version of the shared documents we are all working on. If you click on it you can see all the other branches that are currently open, which represent changes that other people are making that have not yet been added to the shared documents. We could use this to collaboratively make big changes if needed, but it can get very complicated very fast, so for now I think making all branches from ‘main’ will be easiest. The last thing in this window is ‘What’s next?’, with ‘Checkout locally’ or ‘Open branch with GitHub Desktop’. I’ll assume most people will be working through the website so you’ll want the ‘Checkout locally’ option selected. These options should autopopulate, so all you should have to do is add some description of the changes you intend to make to the Branch name. When you are happy with the options there click the green ‘Create branch’ button at the bottom. It will present a window with some git commands to use on a local repo, you can just close this window and not worry about it if you are working on the website. 
