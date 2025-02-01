@@ -1,6 +1,23 @@
 # GitHub workflow and best practices
 
 ## Workflow
+**Quick**
+
+Create a branch
+
+Make changes on your branch
+
+Commit changes to your branch
+
+Create pull request for review
+
+Merge your branch to main
+
+Delete your branch
+
+Reopen or close issue if needed
+
+**Detailed**
 
 Here’s a description of a workflow to make changes to documents. There are multiple ways to go about this, but I think the one described here will be easiest for people new to GitHub. The sandbox.md document in the repo was created solely to practice making changes without worrying about anything, so feel free to play in that as much as you like to get comfortable!  
 
