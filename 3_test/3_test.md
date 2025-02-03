@@ -194,8 +194,8 @@ We have also not included quantities, it will be important for you to understand
 
 ## Workflow Overview
 There are two protocols associated with this Test Module, 
-- the [Calibration Protocol](/protocol-calibration-fluorescein.md) and 
-- the [Cell Fluorescence Protocol](/protocol-cell-fluorescence.md). 
+- the [Calibration Protocol](./protocol-calibration-fluorescein.md) and 
+- the [Cell Fluorescence Protocol](./protocol-cell-fluorescence.md). 
 
 Additionally, each of these protocols has a corresponding datasheet, in which you will enter your results.
 
@@ -223,7 +223,7 @@ This protocol only needs to be completed once.
 It involves preparing stock and working solutions, creating serial dilutions of the GFP calibrant dye and microspheres calibrant, and measuring their properties.
 The report is needed to record your instrument and also track your protocol.
 
-- [Calibration Protocol](/protocol-calibration-fluorescein.md)
+- [Calibration Protocol](./protocol-calibration-fluorescein.md)
 - [Calibration Protocol Report]()
 
 The calibrants you need (and provided by iGEM headquarters within the Distribution Kit) are:
@@ -262,7 +262,7 @@ same settings (e.g., filters or excitation and emission wavelengths) that you us
 calibration measurements. If you do not use the same type of plates, volumes, and
 settings, the measurements will not be valid.
 
-- [Cell Fluorescence Protocol](/protocol-cell-fluorescence.md)
+- [Cell Fluorescence Protocol](./protocol-cell-fluorescence.md)
 
 Once you've completed the protocol, you will enter the data into the [datasheet-cell-fluorescence.xlsx](./assets/protocol-cell-fluorescence/datasheet-cell-fluorescence.xlsx).
 

@@ -1,9 +1,9 @@
 # Assembly Transformations
 
 ## Overview
-To use the DNA in the Assembly reaction, we recommend the protocol below.
+When you have completed your assembly reaction, you will need to transform it into competent cells.
 
-The protocol below is adapted from iGEM's [Transformation Protocol](https://parts.igem.org/Help:Protocols/Transformation)
+The protocol below is adapted from iGEM's [Distribution Handbook](https://technology.igem.org/distribution/handbook) and [Transformation Protocol](https://parts.igem.org/Help:Protocols/Transformation)
 
 ## Materials needed
 ### Equipment
@@ -24,12 +24,11 @@ The protocol below is adapted from iGEM's [Transformation Protocol](https://part
 - Ice
 - Competent cell aliquot(s)
 - SOC media (warmed to room temperature)
-- Agar plates with appropriate antibiotic
+- Agar plates with appropriate antibiotic (Kan)
 
 ## Protocol
-
 1. **Prepare tubes and ice bucket:** 
-Label 1.5 ml tubes with part name or well location. 
+Label 1.5 ml tubes with assembly (construct) name. 
 Fill the lab ice bucket with ice, and pre-chill 1.5 ml tubes (one tube for each transformation) in a floating foam tube rack.
 
 2. **Thaw competent cells on ice:** 
@@ -41,8 +40,8 @@ Do not refreeze unused thawed cells, as it will drastically reduce transformatio
 Tubes should be labeled, pre-chilled, and in a floating tube rack for support. 
 Keep all tubes on ice. 
 
-4. **Pipette 1 µl of Assembly reaction DNA into 1.5 ml tube:** 
-Pipette from well into appropriately labeled tube. 
+4. **Pipette 2 µl of assembly reaction into 1.5 ml tube:** 
+Pipette from reaction tube into appropriately labeled tube. 
 Gently pipette up and down a few times. Keep all tubes on ice.
 
 5. **Close 1.5 ml tubes, incubate on ice for 30 min:** 
@@ -77,5 +76,5 @@ If incubated for too long, colonies may overgrow and the antibiotics may start t
 13. **Pick single colonies:** 
 Pick single colonies from transformations to grow up cell cultures overnight. 
 Grow a single colony in 3-5 mLs of LB media plus the appropriate antibiotic and grow for 16-18 hours at 37°C shaking at 200-300 rpm. 
-Use the resulting culture to [miniprep the DNA]() and make your own [glycerol stock](). 
+Use the resulting culture to [miniprep the DNA](./tips-miniprep.md) and make your own [glycerol stock](./protocol-glycerol-stocks.md). 
 We recommend using the miniprepped DNA to run QC tests, such as restriction digests and sequencing.

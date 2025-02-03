@@ -3,7 +3,7 @@
 ## Overview
 To use the DNA in the Distribution Kit, we recommend the protocol below.
 
-_Note:_ There is an estimated 1-2 ng of DNA in each well. When following this protocol, assume that you are transforming with 100-200 pg/µL. This is also why it is important to [test the efficiency](/protocol-competent-cell-efficiency.md) of your competent cells.
+_Note:_ There is an estimated 1-2 ng of DNA in each well. When following this protocol, assume that you are transforming with 100-200 pg/µL. This is also why it is important to [test the efficiency](./protocol-competent-cell-efficiency.md) of your competent cells.
 
 The protocol below is adapted from iGEM's [Distribution Handbook](https://technology.igem.org/distribution/handbook) and [Transformation Protocol](https://parts.igem.org/Help:Protocols/Transformation)
 
@@ -89,5 +89,5 @@ If incubated for too long, colonies may overgrow and the antibiotics may start t
 15. **Pick single colonies:** 
 Pick single colonies from transformations to grow up cell cultures overnight. 
 Grow a single colony in 3-5 mLs of LB media plus the appropriate antibiotic and grow for 16-18 hours at 37°C shaking at 200-300 rpm. 
-Use the resulting culture to [miniprep the DNA]() and make your own [glycerol stock](). 
+Use the resulting culture to [miniprep the DNA](./tips-miniprep.md) and make your own [glycerol stock](./protocol-glycerol-stocks.md). 
 We recommend using the miniprepped DNA to run QC tests, such as restriction digests and sequencing.
