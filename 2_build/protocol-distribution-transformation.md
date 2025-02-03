@@ -89,5 +89,5 @@ If incubated for too long, colonies may overgrow and the antibiotics may start t
 15. **Pick single colonies:** 
 Pick single colonies from transformations to grow up cell cultures overnight. 
 Grow a single colony in 3-5 mLs of LB media plus the appropriate antibiotic and grow for 16-18 hours at 37°C shaking at 200-300 rpm. 
-Use the resulting culture to [miniprep the DNA](./tips-miniprep.md) and make your own [glycerol stock](./protocol-glycerol-stocks.md). 
+Use the resulting culture to [miniprep the DNA](./tips-miniprep.md) and make your own [glycerol stock](./protocol-glycerol-stock.md).  
 We recommend using the miniprepped DNA to run QC tests, such as restriction digests and sequencing.

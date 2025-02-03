@@ -246,7 +246,7 @@ Do not let it unthaw.
 Too many freeze and thaw cycles will degrade its usability and may introduce more mutations.
 
 #### Protocols
-- [Glycerol Stock Protocol](./protocol-glycerol-stocks.md)
+- [Glycerol Stock Protocol](./protocol-glycerol-stock.md)
 
 #### Additional Resources
 - [Creating Bacterial Glycerol Stocks (Addgene)](https://www.addgene.org/protocols/create-glycerol-stock/)
