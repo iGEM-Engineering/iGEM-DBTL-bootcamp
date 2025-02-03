@@ -15,12 +15,12 @@ This is all described in the [Introduction](/0_intro/0_intro.md) and in further 
 </figure>
 </center>
 
-You will use those basic parts, the plasmid backbone with drop-out, and Golden Gate Assembly (GGA) to create a series of transcription units in a backbone. Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
+You will use those basic parts, the plasmid backbone with drop-out, and Golden Gate Assembly (GGA) to create several different constructs with different transcriptional expression levels. Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
 
 While this module includes a fairly standard workflow to get to this point, it does take 5/6-days with several steps which we have elaborated on in the [Workflow Overview section](#workflow-overview).
 
 
-**IMPORTANT:** As with all experimental procedures, preparation is of key importance. 
+> **IMPORTANT:** As with all experimental procedures, preparation is of key importance. 
 Before starting in the lab, read through the entire module: familiarize yourself with the protocols, the materials, and the equipment needed.
 
 ### Can't Build? Don't worry!
@@ -39,7 +39,7 @@ Before you start any work in the lab, make sure you have completed ALL of your i
 ## Resources Needed
 The following are the resources needed for the Build Module. 
 
-- Chemically competent _E. coli_ cells, preferably DH5alpha or strains with recA1 and endA1 mutations
+- Chemically competent _E. coli_ cells, preferably DH5a and DH10b, or strains with recA1 and endA1 mutations
 - Miniprep DNA extraction kit to isolate plasmid DNA from transformed cells
 - Media: 
     - LB broth
@@ -63,7 +63,7 @@ The following are the resources needed for the Build Module.
     - ice bucket and ice or cold block
     - iGEM Distribution Kit
 
-**Note** that this list is not completely exhaustive as there are some things that we assume your lab has access to, from small things (lab pens, glassware) to larger ones (-80°C freezer, centrifuge).
+>**Note** that this list is not completely exhaustive as there are some things that we assume your lab has access to, from small things (lab pens, glassware) to larger ones (-80°C freezer, centrifuge).
 We have also not included quantities, it is important for you to understand the workflow, read through the protocols, and keep track of those yourself. 
 
 ## Workflow Overview
@@ -74,6 +74,11 @@ However, we have also included recommended protocols and tips from iGEM and the 
 
 Depending on your level of experience and/or available time, you may be able to combine the Day 4 work (transform assembly reaction) with Day 3, to shorten this workflow to 5 days.
 
+> **IMPORTANT:** All parts from the distribution kit MUST first be transformed into competent cells. 
+Once these cells are growing, you can make glycerol stocks and miniprep the plasmids from overnight cultures. 
+These miniprepped plasmids are what you will use for the assembly reactions. 
+DO NOT use DNA from the distribution kit directly in an assembly reaction.
+
 - **[Day 0](#day-0)** (Before you start)
     - Competent cells
     - Antibiotic stocks and media
@@ -83,7 +88,8 @@ Depending on your level of experience and/or available time, you may be able to 
     - Pick colonies and inoculate overnight cultures
 - **[Day 3](#day-3)**
     - Make glycerol stocks
-    - Make minipreps
+    - Make minipreps and quantify DNA
+    - Setup Assembly reaction
 - **[Day 4](#day-4)**
     - Transform assembly reaction
 - **[Day 5](#day-5)**
@@ -94,15 +100,9 @@ Depending on your level of experience and/or available time, you may be able to 
     - Miniprep plasmids
     - Confirm plasmid sequences
 
-Note: This plan does not include time for the following:
-- preparing & testing competent cells
-- sequence confirmation of parts/constructs
-
-***IMPORTANT:** All parts from the distribution kit MUST first be transformed into competent cells. 
-Once these cells are growing, you can make glycerol stocks and miniprep the plasmids from overnight cultures. 
-These miniprepped plasmids are what you will use for the assembly reactions. 
-DO NOT use DNA from the distribution kit directly in an assembly reaction.
-
+> **Note:** This plan does not include time for the following:
+> - preparing & testing competent cells
+> - sequence confirmation of parts/constructs
 
 ## Day 0
 Day 0 includes materials and reagents that you will need before you start.
@@ -211,10 +211,10 @@ If your transformations were successful, you will have colonies to pick from!
 **Note:** With the exception of the pTi plasmid backbone with drop-out (RFP) and the BBa_I20270 positive control (GFP), none of your transformations should have fluorescent colonies.
 
 Beforehand, set up the culture tubes with LB media with the appropriate antibiotic. We recommend the following:
--  Grow two colonies (so two tubes) for each transformed plasmid in case of a problem with the overnight culture or low yield.
-- Use 14 mL snap cap tubes or cover the tubes with sterile aluminum foil, rather than screw cap tubes, as you want to allow for air exchange when growing in a shaking incubator.
+- Grow two colonies in separate tubes for each transformed plasmid in case of a problem with the overnight culture or low yield.
+- If possible, use 14 mL snap cap tubes or cover the tubes with sterile aluminum foil, rather than screw cap tubes, as _E. coli_ will grow better if there is air exchange when growing in a shaking incubator.
 - Pre-label all your tubes, with the part/plasmid and the antibiotic
-- Each tube should have 2-4 mL of LB media, but for this workflow we will use 4 mL.
+- Each tube should have 4 mL of LB media + antibiotics (see table below).
 
 <br />
 
@@ -226,10 +226,10 @@ Beforehand, set up the culture tubes with LB media with the appropriate antibiot
 <br />
 
 For the inoculations:
-- Pick a single colony with a sterile toothpick or pipette tip, drop in to the appropriately labeled tube, and cover.
-- Incubate your inoculated cultures at 37°C for 16 hr in a shaking incubator. Do not grow more than 16 hours as this may reduce yields when extracting DNA.
+- Pick a single colony with a sterile toothpick or pipette tip, drop it into the appropriately labeled tube, and cover.
+- Incubate your inoculated cultures at 37°C for 16-18 hours in a shaking incubator (200-250 rpm,reciprocal shaking). Do not grow more than 18 hours as this may reduce yields when extracting DNA.
 
-The following day (after 16hrs), the cultures should be cloudy.
+The following day (after 16-18 hours), the cultures should be cloudy.
 Measuring the OD600 of your culture is always good practice, and will also help troubleshoot if you have issues with minipreps and glycerol stocks.
 
 #### Additional Resources
@@ -246,7 +246,7 @@ Do not let it unthaw.
 Too many freeze and thaw cycles will degrade its usability and may introduce more mutations.
 
 #### Protocols
-- [Glycerol Stock Protocol]()
+- [Glycerol Stock Protocol](./protocol-glycerol-stock.md)
 
 #### Additional Resources
 - [Creating Bacterial Glycerol Stocks (Addgene)](https://www.addgene.org/protocols/create-glycerol-stock/)
@@ -261,7 +261,7 @@ We have some tips on this process, but you should adhere to the protocols of the
 
 Plasmid DNA can then be stored long term at -20°C. 
 
-**Important:** Due to time (and resource cost) we have not included a step here for sequence confirming these transformants. 
+> **Important:** Due to time (and resource cost) we have not included a step here for sequence confirming these transformants. 
 This is always good practice though: mistakes and mutations happen!
 
 **Examples of miniprep kits:**
@@ -328,10 +328,10 @@ The RFP-expressing cells contain the unaltered plasmid backbone with drop-out wh
 
 [Content needed: UV lightbox & promoter strength for weakly green colonies]
 
-At this stage you will pick (with sterile toothpicks or pipette tips) well isolated individual GFP colonies from the plate and grow them overnight (16 hours max) in LB broth with kanamycin. 
+At this stage you will pick (with sterile toothpicks or pipette tips) well isolated individual GFP colonies from the plate and grow them overnight (16-18 hours max) in LB broth with kanamycin. 
 Picking four colonies for each assembly is sufficient. 
 
-These overnight cultures will be used on Day 6, to perform minipep plasmid DNA extractions and make glycerol stocks. 
+These overnight cultures will be used on Day 6, to perform miniprep plasmid DNA extractions and make glycerol stocks. 
 
 
 ## Day 6
