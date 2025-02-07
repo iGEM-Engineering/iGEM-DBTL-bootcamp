@@ -372,7 +372,9 @@ Keep in mind that we will measure fluorescence (protein expression) and not the 
 
 ### Additional Resources
 - Webinar: [Modeling for SynBio: from ODEs to Gene expression](https://video.igem.org/w/nPrjzXYqVpAxRjCRCx4Mi9)
-- [R script for the ODE](./const_expression_ODE.R)
+- [Matlab Live script for the ODEs](./const_expression_ODE.mlx)
+- [Python Notebook for the ODEs](./const_expression_ODE.ipynb)
+- [R script for the ODEs](./const_expression_ODE.R)
 
 ## Assemble your constructs _in silico_
 Based on your modeling, you have selected the two promoters (one strong and one weak) along with BBa_J231006, which you will use as your medium strength promoter. 
