@@ -55,7 +55,7 @@ This includes how a constitutive promoter, transcription, translation, etc, work
     - [Golden Gate Assembly](https://technology.igem.org/assembly/golden-gate)
     - [2021 Webinar Series: DNA Assembly Strategies](https://video.igem.org/w/f7BMdpnAfQA4rp1HvS2AeX?start=18m15s)
 - familiarity with [SBOL Visual](https://sbolstandard.org/visual-about/) for genetic design representation.
-- some terminology! Terminology can differ across labs, and that can cause confusion when communicating assembly plans, we recommend having a look at some past work on [this topic](https://easychair.org/publications/preprint_open/kRPr) from the iGEM Engineering Committee.
+- some terminology! Terminology can differ across labs, and that can cause confusion when communicating assembly plans, we recommend having a look at some past work on [this topic](/additional%20resources/papers/EasyChair-Preprint-9046-2.pdf) from the iGEM Engineering Committee.
 - Keeping a good notebook! Make sure to follow best practices and any guidelines from your lab group, but [here](/2_build/tips-notebook.md) are some general tips.
 - **IMPORTANT:** 
 Before you start any work in the lab related to this bootcamp, make sure you have completed ALL of your institution's safety requirements.
@@ -74,7 +74,7 @@ In the [Design Module](/1_design/1_design.md), you will model the level of GFP b
 _No lab work is needed!_
 
 #### Build Module
-In the [Build Module](/2_build/2_build.md), you will assemble three GFP reporter constructs in the lab with Golden Gate Assembly. 
+In the [Build Module](/2_build/2_build.md), you will assemble three GFP reporter constructs in the lab with Golden Gate Assembly, specifically using the iGEM Type IIS Assembly Standard. 
 You will be introduced and taken through our recommended protocols required to do this. 
 By the end of this module, you will have the physical samples of your constructs.
 
@@ -84,7 +84,7 @@ Using the constructs you assembled (or previous InterLab constructs) you will fo
 
 #### Learn Module
 Finally, in the [Learn Module](/4_learn/4_learn.md), you will analyze the data produced in the Test Module.
-You will use that data to inform your model, choose the right construct for your project's goals, and/or iterate on your initial designs.
+You will use that data to inform your model, choose the right construct for your project's goals, and how you would enter the next DBTL cycle.
 
 
 ## How do I get started?
@@ -108,6 +108,7 @@ The diagram uses <a href="https://sbolstandard.org/visual-about/">SBOL Visual</a
 You will assemble constitutively expressing GFP devices as a transcription unit in a plasmid. 
 We have included introductions to the parts: constitutive promoters, ribosome binding site (RBS), coding sequence (CDS) for GFP, and terminator, and the plasmid backbone (destination vector). 
 
+
 ## The Parts (& Plasmid)
 We have provided the parts and their sequences needed to complete the DBTL Bootcamp, both as the **part** itself and as a **part in backbone**. 
 These have all been added to the [iGEM Registry](https://parts.igem.org/) (Registry for short), so we have included links to their respective part pages. We will use the [SBOL visual standard](https://sbolstandard.org/visual-about/) for representing designs, singular parts, and even interactions.
@@ -118,6 +119,19 @@ We have ensured that everything is correct for these sequences and their associa
 - _Is the part's sequence documented correctly?_
 - _Will the sequence work for the assembly approach you have chosen?_
 - _Is the sample of this part fully sequence confirmed?_
+
+### Golden Gate Assembly
+
+For the DBTL Bootcamp, we will use [Golden Gate Assembly](https://technology.igem.org/assembly/golden-gate), which allows for the efficient and precise assembly of multiple DNA fragments into a single construct using Type IIS restriction enzymes and T4 DNA ligase.
+
+But more specifically, we will be using the [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis) Assembly Standard for building a transcription unit. 
+The assembly standard is what defines the rules for DNA part constructions: which Type IIS restriction enzyme(s) are needed, what are the defined fusion site overhangs of all parts in the schema (syntax), etc.
+We will go into that in more [detail below](#moclo--igem-type-iis-assembly-standards), as the choice of assembly standard will also impact **Design Considerations**.
+
+> **NOTE:** Golden Gate & Type IIS Assembly<br /> 
+Sometimes in iGEM documentation and resources the term "Golden Gate Assembly" and "Type IIS Assembly" are used interchangeably. 
+This may be confusing because we have also have an **assembly standard** called [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis). 
+In this Bootcamp dcoumentation we will refrain from using the more general Type IIS Assembly term, but it may pop-up elsewhere.
 
 ### Design Considerations
 You will see **Design Considerations** for some of the parts below. 
@@ -135,7 +149,7 @@ These are high-copy Chloramphenicol resistant plasmid backbones, with widespread
 
 #### What's the difference?
 The only difference between the pSB1C3 and pSB1C5 is that the pSB1C3 series maintains the BioBrick prefix and suffix.
-For the purposes of this bootcamp, this is not useful (or usable) as we will use Golden Gate Assembly.
+For the purposes of this bootcamp, this is not useful (or usable) as we will use the iGEM Type IIS Assembly Standard.
 
 <hr />
 
@@ -175,14 +189,14 @@ The ribsome binding site (RBS) you will use is a variant of [BBa_B0034](https://
 
 #### Design Considerations
 A key difference here is that BBa_J428038 also includes an extra 6bp downstream (see diagram below).
-Along with the Type IIS fusion site for CDS parts (`AATG`), this will create a 8bp spacer between the [Shine-Dalgarno](https://en.wikipedia.org/wiki/Shine%E2%80%93Dalgarno_sequence) sequence and the `ATG`.
+Along with the fusion site for CDS parts (`AATG`), this will create a 8bp spacer between the [Shine-Dalgarno](https://en.wikipedia.org/wiki/Shine%E2%80%93Dalgarno_sequence) sequence and the `ATG`.
 
 <center>
 <figure>
 <img src="assets/images/b0034-rbs-spacing.png" width=75% />
 <figcaption>
 <i>BBa_J428038 includes extra flanking bases when compared to BBa_B0034. 
-These extra bases are meant to mimic a BBa_B0034 assembled with BioBrick RFC 10 to a Type IIS format.</i>
+These extra bases are meant to mimic a BBa_B0034 assembled with BioBrick RFC 10 to a iGEM Type IIS format.</i>
 </figcaption>
 </figure>
 </center>
@@ -192,7 +206,7 @@ These extra bases are meant to mimic a BBa_B0034 assembled with BioBrick RFC 10 
 <hr />
 
 ### CDS: Green Fluorescent Protein
-The green fluorescent protein (GFP) coding sequence (CDS) you will use is a Type IIS variant of [BBa_E0040](https://parts.igem.org/Part:BBa_E0040), BBa_J119040. 
+The green fluorescent protein (GFP) coding sequence (CDS) you will use is a iGEM Type IIS variant of [BBa_E0040](https://parts.igem.org/Part:BBa_E0040), BBa_J119040. 
 
 <center>
 
@@ -225,7 +239,7 @@ The terminator you will use is a variant of [BBa_B0015](https://parts.igem.org/P
 [BBa_B0015](https://parts.igem.org/Part:BBa_B0015) is the most used terminator in the Registry. 
 This variant includes a `5’ AA` sequence, that when taken with the `5’` fusion site for terminators (`GCTT`) would create a stop codon preceding the terminator (`5' GCT TAA BBa_B0015`).
 
-While the CDS we will use, [BBa_J119040](https://parts.igem.org/Part:BBa_J119040), has a stop codon (two in fact!), some Type IIS assembly schemes or samples, may not have the stop codon at the end of the CDS sequence.
+While the CDS we will use, [BBa_J119040](https://parts.igem.org/Part:BBa_J119040), has a stop codon (two in fact!), some Golden Gate Assembly Standards or samples, may not have the stop codon at the end of the CDS sequence.
 This design allows this terminator to include a stop codon in those cases.
 
 <hr /> 
@@ -270,10 +284,9 @@ For the [Build](/1_build/1_build.md) and [Test Module](/1_test/1_test.md), you w
 </center>
 
 
-## MoClo / iGEM Type IIS
+## MoClo / iGEM Type IIS Assembly Standards
 
-For the DBTL Bootcamp, we will use [Golden Gate Assembly](https://technology.igem.org/assembly/golden-gate). 
-Specifically, the parts and backbone you will use have the overhangs (fusion sites) that adhere to the Modular Cloning (MoClo) and [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis) assembly standards for building a transcription unit.
+The parts and backbone you will use have the overhangs (fusion sites) that adhere to the Modular Cloning (MoClo) and [iGEM Type IIS](https://technology.igem.org/assembly/igem-type-iis) Assembly Standards for building a transcription unit.
 
 <figure>
 <center>
@@ -340,6 +353,6 @@ In visual representations these are usually not included, but we have provided t
 
 ### Hierarchical Assemblies
 
-Finally, Golden Gate Assembly is an extremely powerful assembly technique and can be made more complex with when an GGA-based standard supports hierarchical assemblies, where you would be able to assemble multiple transcription units to create larger genetic circuits. 
+Finally, Golden Gate Assembly is an extremely powerful assembly technique and can be made more complex with when an GGA-based assembly standard supports hierarchical assemblies, where you would be able to assemble multiple transcription units to create larger genetic circuits. 
 This may be a consideration for your own project which you will need to include in your Design process. 
 But for this bootcamp, all you will need to be prepared for is the above!
