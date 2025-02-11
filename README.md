@@ -17,11 +17,11 @@ They may also have additional supplementary documentation, folders, assets, and 
 
 This github repository contains documentation, assets, and files for the bootcamp, however, several external resources and tools are linked to, referenced, and/or recommended.
 
-[Introduction](./0_intro/0_intro.md)
-[Design](./1_design/1_design.md)
-[Build](./2_build/2_build.md)
-[Test](./3_test/3_test.md)
-[Learn](./4_learn/4_learn.md)
+0. [Introduction](./0_intro/0_intro.md)
+1. [Design](./1_design/1_design.md)
+2. [Build](./2_build/2_build.md)
+3. [Test](./3_test/3_test.md)
+4. [Learn](./4_learn/4_learn.md)
 
 ## Contributing
 Currently, only iGEM Engineering Committee members can contribute to the DBTL Bootcamp. 
