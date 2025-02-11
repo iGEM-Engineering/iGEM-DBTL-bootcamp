@@ -1,3 +1,5 @@
+*Disclaimer: This bootcamp is designed to provide participants with valuable skills and knowledge in engineering biology. However, completion of the bootcamp does not guarantee job placement, salary increases, or career advancement. We do not offer refunds once the bootcamp has commenced. Participants are responsible for their own job search and career development efforts. While we strive to provide accurate and up-to-date information, we are not responsible for errors or omissions. The curriculum and instructors are subject to change without notice.*
+
 # The iGEM Engineering DBTL Bootcamp
 
 The **D**esign-**B**uild-**T**est-**L**earn (DBTL) Bootcamp is an open-source bootcamp in development by the [iGEM Engineering Committee](https://technology.igem.org/engineering-committee). 
