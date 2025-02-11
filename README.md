@@ -1,8 +1,3 @@
----
-permalink: README.html
-use_math: true
----
-
 *Disclaimer: This bootcamp is designed to provide participants with valuable skills and knowledge in engineering biology. However, completion of the bootcamp does not guarantee job placement, salary increases, or career advancement. We do not offer refunds once the bootcamp has commenced. Participants are responsible for their own job search and career development efforts. While we strive to provide accurate and up-to-date information, we are not responsible for errors or omissions. The curriculum and instructors are subject to change without notice.*
 
 # The iGEM Engineering DBTL Bootcamp
@@ -36,36 +31,3 @@ But for now, if you would like to contribute, please join the [iGEM Engineering 
 
 If you would like to adapt this bootcamp, please refer to the [license](/LICENSE).
 
----
-
-The equation $3x^2 + 5x +1 = 0$ has the solutions
-
-$$
-x_{1,2} = \frac{-5 \pm \sqrt{5^2-12}}{6}
-$$
-\\[p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))\\]
-
-$$
-\begin{aligned} 
-a^2 + b^2 &= c^2 \\ 
-E &= M \cdot C^2 \\ 
-&= xy + \mathbb{E} 
-\end{aligned}
-$$
-
-
-$$ 
-{X}_{0}  \\
-  X_0 (working) \\
-  \hat{a}_{b}   \\
-  \hat{a}_b  \\
-  \hat{a}_{b+c} \\
-$$
-
-$$
-    f(n) =
-      \begin{cases}
-      n/2,  & \text{if $n$ is even} \\
-      3n+1, & \text{if $n$ is odd}
-      \end{cases}
-$$
