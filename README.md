@@ -1,4 +1,5 @@
 ---
+permalink: README.html
 use_math: true
 ---
 
