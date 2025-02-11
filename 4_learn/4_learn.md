@@ -1,7 +1,6 @@
----
-use_math: true
----
-
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 # Learn Module
 
@@ -10,6 +9,17 @@ use_math: true
 ## Overview
 
 ---
+
+## Mathematical Expressions
+
+Inline math: $E = mc^2$
+
+Block math:
+$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+$$
+
+
 
 The equation $3x^2 + 5x +1 = 0$ has the solutions
 
