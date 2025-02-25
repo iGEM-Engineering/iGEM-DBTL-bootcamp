@@ -31,7 +31,7 @@ In this Build module, you will start by transforming and miniprepping those prom
 </figure>
 </center>
  
-Once you have miniprepped the basic parts and the plasmid backbone with drop-out, you will use [Golden Gate Assembly (GGA)](https://technology.igem.org/assembly/golden-gate) reactions to build the three constitutively expressing GFP constructs that you designed and _in silico_ assembled in the [Design Module](/1_design/1_design.md).
+Once you have miniprepped the basic parts and the plasmid backbone with drop-out, you will use [Golden Gate Assembly (GGA)](https://technology.igem.org/assembly/golden-gate) to build the three constitutively expressing GFP constructs that you designed and _in silico_ assembled in the [Design Module](/1_design/1_design.md).
 Within each reaction, all plasmids will be digested with a Type IIS restriction enzyme, allowing for the complementary overhangs flanking the parts and the plasmid backbone to ligate together.
 
 <center>
@@ -111,7 +111,7 @@ DO NOT use DNA from the distribution kit directly in an assembly reaction.
     - Competent cells
     - Antibiotic stocks and media
 - **[Day 1](#day-1)**
-    - Transform plasmids from Distribution Kit*
+    - Transform plasmids from Distribution Kit
 - **[Day 2](#day-2)**
     - Pick colonies and inoculate overnight cultures
 - **[Day 3](#day-3)**
@@ -131,6 +131,111 @@ DO NOT use DNA from the distribution kit directly in an assembly reaction.
 > **Note:** This plan does not include time for the following:
 > - preparing & testing competent cells
 > - sequence confirmation of parts/constructs
+
+### Example Calendar
+The following calendar is an example for conducting the tasks above over the course of two weeks.
+Storing transformed bacteria on agar plates for a few days at 4°C is a great way to pause the workflow and not have to come in on the weekend!
+
+<style>
+    .calendar-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .calendar-table th, .calendar-table td {
+        vertical-align: top;
+        text-align: left;
+        width: 20%;
+        border: 1px solid black;
+    }
+    .calendar-table ol {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+    .custom-table li {
+        margin: 0; /* Removes extra spacing between list items */
+        padding: px 0; /* Adjusts spacing between bullet points and text */
+    }
+    .lowlight {
+        background-color: lightgrey;
+    }
+</style>
+
+<table class="calendar-table">
+    <thead>
+        <tr>
+            <th>Mon (Day 1)</th>
+            <th>Tue (Day 2)</th>
+            <th>Wed (Day 3)</th>
+            <th>Thu (Day 4)</th>
+            <th class="lowlight">Fri (Pause!)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <ol>
+                    <li>Transform plasmids from Distribution Kit</li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                    <li>Pick colonies and inoculate overnight cultures</li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                    <li>Make glycerol stocks</li>
+                    <li>Make minipreps & quantify DNA</li>
+                    <li>Setup assembly reaction</li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                    <li>Transform assembly reaction</li>
+                </ol>
+            </td>
+            <td class="lowlight">
+                <i>Refrigerate transformations at 4°C</i>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="calendar-table">
+  <thead>
+    <tr>
+      <th>Mon (Day 5)</th>
+      <th>Tue (Day 6)</th>
+      <th class="lowlight">Wed</th>
+      <th class="lowlight">Thu</th>
+      <th class="lowlight">Fri</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <ol>
+          <li>Screen colonies</li>
+          <li>Select GFP-positive colonies</li>
+          <li>Inoculate overnight cultures</li>
+        </ol>
+      </td>
+      <td>
+        <ol>
+          <li>Make glycerol stocks</li>
+          <li>Miniprep plasmids</li>
+          <li>Confirm plasmid sequences</li>
+        </ol>
+      </td>
+      <td class="lowlight">
+      </td>
+      <td class="lowlight">
+      </td>
+      <td class="lowlight">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Day 0
 Day 0 includes materials and reagents that you will need before you start.
