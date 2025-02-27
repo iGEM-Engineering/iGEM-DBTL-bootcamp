@@ -1,3 +1,9 @@
+---
+title: 0. Introduction
+layout: default
+nav_enabled: true
+---
+
 # Introduction to the DBTL Bootcamp
 [Introduction](/0_intro/0_intro.md) >> [Design](/1_design/1_design.md) >> [Build](/2_build/2_build.md) >> [Test](/3_test/3_test.md) >> [Learn](/4_learn/4_learn.md)
 
@@ -12,6 +18,10 @@ They ask how might you actually test the components of your design, what expecta
 > 
 > All of these questions might be a bit disheartening, but they are important ones, and there are so many tools and resources available to address these challenges. 
 And the Design > Build > Test > Learn (DBTL) cycle can help you address these in a systematic way.
+
+
+![DBTL cycle](assets/images/iGEM-DBTL-cycle.png)
+*The DBTL cycle*
 
 <figure>
 <center>
@@ -94,6 +104,9 @@ This will give you the best overview of what this Bootcamp offers, and where you
 We do recommend starting with the [Design Module](/1_design/1_design.md) though!
 
 ### What exactly am I designing/building/testing/learning?
+
+![TU](assets/images/transcription-unit-labeled.png)
+*A simplified diagram of the kind of transcription units you will build: promoter, ribosome binding site (rbs), coding sequence (cds), terminator, in a plasmid backbone.*
 
 <center>
 <figure>

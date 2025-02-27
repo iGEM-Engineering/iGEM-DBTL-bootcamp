@@ -1,3 +1,9 @@
+---
+title: 1. Design Module
+layout: default
+nav_enabled: true
+---
+
 # Design Module
 [Introduction](/0_intro/0_intro.md) >> [Design](/1_design/1_design.md) >> [Build](/2_build/2_build.md) >> [Test](/3_test/3_test.md) >> [Learn](/4_learn/4_learn.md)
 

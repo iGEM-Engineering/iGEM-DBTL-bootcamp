@@ -1,3 +1,8 @@
+---
+title: 4. Learn
+layout: default
+nav_enabled: true
+---
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
@@ -12,7 +17,7 @@
 
 ## Mathematical Expressions
 
-Inline math: $E = mc^2$
+Inline math: $$E = mc^2$$
 
 Block math:
 $$
@@ -21,7 +26,7 @@ $$
 
 
 
-The equation $3x^2 + 5x +1 = 0$ has the solutions
+The equation $$3x^2 + 5x +1 = 0$$ has the solutions
 
 $$
 x_{1,2} = \frac{-5 \pm \sqrt{5^2-12}}{6}

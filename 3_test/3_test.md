@@ -1,3 +1,9 @@
+---
+title: 3. Test Module
+layout: default
+nav_enabled: true
+---
+
 # Test Module
 
 **The Test Module is currently under development.**

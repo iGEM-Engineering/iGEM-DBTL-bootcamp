@@ -1,3 +1,17 @@
-#theme: minima
-# Conversion
-#markdown: kramdown
+title: iGEM DBTL Bootcamp
+description: The Design-Build-Test-Learn (DBTL) Bootcamp goal  is to help teams familiarize themselves with the DBTL cycle for engineering biological systems
+
+theme: just-the-docs
+
+url: https://igem-engineering.github.io/iGEM-DBTL-bootcamp/
+
+favicon_ico: "/assets/images/favicon.ico"
+
+aux_links:
+  iGEM Technology: https://technology.igem.org
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+
