@@ -4,18 +4,46 @@
 **The Build Module is currently under development.**
 
 ## Overview
-This Build Module is a hands-on lab component of the DBTL Bootcamp. 
-In this module you will prepare all the required basic parts and the plasmid backbone with drop-out from your [iGEM Distribution Kit](https://technology.igem.org/distribution/introduction) to build the constitutively expressing GFP constructs that you designed and _in silico_ assembled in the Design Module. 
-
-This is all described in the [Introduction](/0_intro/0_intro.md) and in further detail in the [Design Module](/1_design/1_design.md), so please read and understand those sections before starting the Build Module. 
+This Build Module is a hands-on lab component of the DBTL Bootcamp, where you will assemble constitutively expressing GFP devices as a transcription unit in a plasmid.
+ 
 
 <center>
 <figure>
-<img src="assets/images/GGA-MoClo.png" width=100% />
+<img src="../0_intro/assets/images/transcription-unit-labeled.png" width=30% />
+<figcaption>
+<i>A simplified diagram of the kind of transcription units you will build: promoter, ribosome binding site (RBS), coding sequence (CDS), terminator, in a plasmid backbone. 
+The diagram uses <a href="https://sbolstandard.org/visual-about/">SBOL Visual</a> glyphs.</i>
+</figcaption>
 </figure>
 </center>
 
-You will use those basic parts, the plasmid backbone with drop-out, and Golden Gate Assembly (GGA) to create several different constructs with different transcriptional expression levels. Once you have validated that your assembled constructs match your _in silico_ assemblies, you can proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
+
+As part of the [Design Module](/1_design/1_design.md), you selected three promoters from the Anderson promoter library to use in your constructs. 
+In this Build module, you will start by transforming and miniprepping those promoters, along with the other required basic parts and the plasmid backbone with drop-out, from your [iGEM Distribution Kit](https://technology.igem.org/distribution/introduction).
+
+
+<center>
+<figure>
+<img src="assets/images/GGA-Transformations.png" width=75% />
+<figcaption>
+<i>Visualization of the basic parts and plasmid backbone needed for the assembly of transcriptional units. The three promoters are those selected in the Design Module.</i>
+</figcaption>
+</figure>
+</center>
+ 
+Once you have miniprepped the basic parts and the plasmid backbone with drop-out, you will use [Golden Gate Assembly (GGA)](https://technology.igem.org/assembly/golden-gate) to build the three constitutively expressing GFP constructs that you designed and _in silico_ assembled in the [Design Module](/1_design/1_design.md).
+Within each reaction, all plasmids will be digested with a Type IIS restriction enzyme, allowing for the complementary overhangs flanking the parts and the plasmid backbone to ligate together.
+
+<center>
+<figure>
+<img src="assets/images/GGA-Assembly-Reaction.png" width=75% />
+<figcaption>
+<i>Simplified diagram of a single GGA reaction after BsaI has excised the basic parts from their plasmid backbone. Not pictured: the excised plasmid backbones and RFP drop-out.</i>
+</figcaption>
+</figure>
+</center>
+
+Finally, after the reactions have been transformed, you can can validate that your assembled constructs match your _in silico_ assemblies, and proceed to the [Test Module](/3_test/3_test.md), where you will characterize them. 
 
 While this module includes a fairly standard workflow to get to this point, it does take 5/6-days with several steps which we have elaborated on in the [Workflow Overview section](#workflow-overview).
 
@@ -83,7 +111,7 @@ DO NOT use DNA from the distribution kit directly in an assembly reaction.
     - Competent cells
     - Antibiotic stocks and media
 - **[Day 1](#day-1)**
-    - Transform plasmids from Distribution Kit*
+    - Transform plasmids from Distribution Kit
 - **[Day 2](#day-2)**
     - Pick colonies and inoculate overnight cultures
 - **[Day 3](#day-3)**
@@ -103,6 +131,17 @@ DO NOT use DNA from the distribution kit directly in an assembly reaction.
 > **Note:** This plan does not include time for the following:
 > - preparing & testing competent cells
 > - sequence confirmation of parts/constructs
+
+### Example Calendar
+The following calendar is an example for conducting the tasks above over the course of two weeks.
+Storing transformed bacteria on agar plates for a few days at 4°C is a great way to pause the workflow and not have to come in on the weekend!
+
+<center>
+<figure>
+<img src="assets/images/build-calendar-simple.png" width=100% />
+</figure>
+</center>
+
 
 ## Day 0
 Day 0 includes materials and reagents that you will need before you start.
@@ -162,7 +201,7 @@ From this list you will do **eight** transformations, as you do _not_ need to tr
 
 **Transform**
 - 3 Anderson Promoters
-- the rbs, cds, and terminator
+- the RBS, CDS, and terminator
 - the Positive and Negative Controls
 
 | BBa_ name | description | part type | Plasmid Backbone | AbR | Total Plasmid length (bp) |
@@ -173,8 +212,8 @@ From this list you will do **eight** transformations, as you do _not_ need to tr
 | BBa_J23106 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 |
 | BBa_J23116 | Anderson promoter | promoter | pSB1C5SA | CmR | 2424 |
 | BBa_J23117 | Anderson promoter | promoter | pSB1C3SA | CmR | 2467 |
-| BBa_J428038 | BBa_B0034 Type IIS variant | rbs | pSB1C5SB | CmR | 2411 |
-| BBa_J119040 | BBa_E0040 Type IIS variant | cds | pSB1C5C | CmR | 2766 |
+| BBa_J428038 | BBa_B0034 Type IIS variant | RBS | pSB1C5SB | CmR | 2411 |
+| BBa_J119040 | BBa_E0040 Type IIS variant | CDS | pSB1C5C | CmR | 2766 |
 | BBa_J428092 | BBa_B0015 Type IIS variant | terminator | pSB1C5SD | CmR | 2520 |
 | BBa_J434151 | pTi plasmid backbone with RFP drop-out (and negative control) | plasmid backbone | BBa_J434150 | KanR | 5484 |
 
@@ -296,20 +335,20 @@ Follow the instructions for the instrument you will use to quantify your plasmid
 ### Set up assembly reaction
 Before you start your assembly make sure that you have all of your plasmids prepared and the DNA quantified using the methods listed above.
 
-As mentioned you want to have equal-molar amounts of all parts in plasmid in an assembly reaction. You can use the following equation or an [online calculator](https://nebiocalculator.neb.com/#!/dsdnaamt) to calculate this. 
+As mentioned you want to have equal-molar amounts of all plasmids in an assembly reaction. You can use the following equation, an [online calculator](https://nebiocalculator.neb.com/#!/dsdnaamt), or the [Wetlab Calculator](https://github.com/shyambhakta/wetlabcalc) (Bennett Lab) to calculate this. 
 
 > moles dsDNA (mol) = mass of dsDNA (g)/((length of dsDNA (bp) x 615.96 g/mol/bp) + 36.04 g/mol)
 
 You will need to know the length of the dsDNA (bp), which we have included in the Distribution table from [Day 1](#day-1). 
 Note, this is the total plasmid size (bp) not just the size of the part by itself.
 
-You should start by making 50nM stock solutions of your parts and plasmids.
+You should start by making 50nM stock solutions of your parts in plasmid and 25nM stock solutions of your destination vector.
 
 
 For the assembly reactions, we recommend using 25 fmol for each part in plasmid, and half as much (12.5 fmol) for the plasmid backbone with drop-out, to reduce religation.
 
 #### Protocols
-- [Golden Gate Assembly (Bennett Lab)](https://wiki.rice.edu/confluence/display/BIODESIGN/Golden+Gate+Assembly)
+- [Golden Gate Assembly Protocol](./protocol-assembly-reaction.md)
 
 ## Day 4
 ### Transform assembly reaction
@@ -326,7 +365,15 @@ On your transformation plates you should see a mixture of GFP and RFP positive c
 
 The RFP-expressing cells contain the unaltered plasmid backbone with drop-out whereas the GFP-expressing cells contain candidates of your assembled constructs.
 
-[Content needed: UV lightbox & promoter strength for weakly green colonies]
+<center>
+<figure>
+<img src="assets/images/gfp-plate-uv.jpeg" width=75% />
+<figcaption>
+<i>Under a UV light box GFP and RFP will be more distinct. This will help you pick the best candidates of your assembled constructs.
+<strong>Note:</strong> The image above shows a transformation of an GFP-expressing Interlab Device plasmid, <a href="https://parts.igem.org/Part:BBa_J364000">BBa_J364000</a>, under UV. For assemblies you will have background (RFP-expressing colonies) as well.</i>
+</figcaption>
+</figure>
+</center>
 
 At this stage you will pick (with sterile toothpicks or pipette tips) well isolated individual GFP colonies from the plate and grow them overnight (16-18 hours max) in LB broth with kanamycin. 
 Picking four colonies for each assembly is sufficient. 
@@ -336,7 +383,7 @@ These overnight cultures will be used on Day 6, to perform miniprep plasmid DNA 
 
 ## Day 6
 ### Make glycerol stocks and miniprep your constructs
-Read through the documentation from Day 3 if you need to!
+Read through the documentation from [Day 3](#day-3) if you need to!
 
 ### Confirm plasmid sequences
 Mutations and mistakes happen!
@@ -349,9 +396,26 @@ Sequencing will usually involve:
 3. receiving data back and using a sequence alignment tool
 
 If possible, we encourage you to use sequencing to confirm the constructs you have assembled for this bootcamp.
-For sequence alignment, you will use the [GenBank files](/genbank_files/part%20in%20backbone/Validation/) for your _in silico_ assemblies.
+For sequence alignment, you will use the [GenBank files](/genbank_files/part%20in%20backbone/Validation/) from your _in silico_ assemblies as your reference sequences.
 
 However plasmid sequencing can be expensive, so you may want to restriction map your individual clones beforehand and select one or two clones for sequencing. 
+
+#### Sanger Sequencing
+For Sanger sequencing, you will need primer sites from where the reads will prime and start.
+The pTi destination vector has recommended sites flanking its cloning site:
+- U1F: CATTACTCGCATCCATTCTCAGGCTG
+- UXR: GGTGGAAGGGCTCGGAGTTGTGG
+
+Reference: [Reclone's pTi documentation](https://forum.reclone.org/t/pti-plasmid-backbone/797)
+
+
+#### Alignment Tools
+After you receive sequencing results back, you will use an alignment tool to compare it to your reference sequence.
+At this time we cannot provide sequence alignment support or documentation, but if you have access to the tools below, we have linked to their help documentation for sequencing alignment.
+
+- [Benchling](https://help.benchling.com/hc/en-us/articles/9684245367821-DNA-Sequencing)
+- [SnapGene](https://support.snapgene.com/hc/en-us/sections/10384334349588-Assembly-and-Alignment)
+
 
 ## Build Alternative: Interlab Devices
 
