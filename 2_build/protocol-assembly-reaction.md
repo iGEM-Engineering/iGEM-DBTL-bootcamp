@@ -64,7 +64,7 @@ Enzymes must be added after at least buffer and water are mixed.
 | 10x BSA or rAlbumin |1.5 ul | 6 ul | --- |
 | BsaI | 0.5 ul | 2 ul | --- |
 | T<sub>4</sub> DNA Ligase | 0.5 ul | 2 ul | --- |
-| **Total** | 12.5 ul | 50 ul | --- |
+| **Total** (without DNA) | 12.5 ul | 50 ul | --- |
 
 2. Add the common basic parts and the destination vector using the volumes from the 4x column to your master mix.
 
@@ -74,7 +74,7 @@ Enzymes must be added after at least buffer and water are mixed.
 | CDS | 0.5 ul | 2 ul | --- |
 | Terminator | 0.5 ul | 2 ul | --- |
 | Destination Vector | 0.5 ul | 2 ul | --- |
-| **Grand Total** | 14 ul | 58 ul | --- |
+| **Grand Total** (without unique promoter) | 14.5 ul | 58 ul | --- |
 
 3. After adding the last common component, mix the master mix by pipetting or by flicking and centrifuging the tube to recollect liquid at bottom.
 
