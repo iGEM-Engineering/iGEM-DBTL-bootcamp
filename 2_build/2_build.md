@@ -365,7 +365,15 @@ On your transformation plates you should see a mixture of GFP and RFP positive c
 
 The RFP-expressing cells contain the unaltered plasmid backbone with drop-out whereas the GFP-expressing cells contain candidates of your assembled constructs.
 
-[Content needed: UV lightbox & promoter strength for weakly green colonies]
+<center>
+<figure>
+<img src="assets/images/gfp-plate-uv.jpeg" width=75% />
+<figcaption>
+<i>Under a UV light box GFP and RFP will be more distinct. This will help you pick the best candidates of your assembled constructs.
+<strong>Note:</strong> The image above shows a transformation of an GFP-expressing Interlab Device plasmid, <a href="https://parts.igem.org/Part:BBa_J364000">BBa_J364000</a>, under UV. For assemblies you will have background (RFP-expressing colonies) as well.</i>
+</figcaption>
+</figure>
+</center>
 
 At this stage you will pick (with sterile toothpicks or pipette tips) well isolated individual GFP colonies from the plate and grow them overnight (16-18 hours max) in LB broth with kanamycin. 
 Picking four colonies for each assembly is sufficient. 
@@ -388,9 +396,26 @@ Sequencing will usually involve:
 3. receiving data back and using a sequence alignment tool
 
 If possible, we encourage you to use sequencing to confirm the constructs you have assembled for this bootcamp.
-For sequence alignment, you will use the [GenBank files](/genbank_files/part%20in%20backbone/Validation/) for your _in silico_ assemblies.
+For sequence alignment, you will use the [GenBank files](/genbank_files/part%20in%20backbone/Validation/) from your _in silico_ assemblies as your reference sequences.
 
 However plasmid sequencing can be expensive, so you may want to restriction map your individual clones beforehand and select one or two clones for sequencing. 
+
+#### Sanger Sequencing
+For Sanger sequencing, you will need primer sites from where the reads will prime and start.
+The pTi destination vector has recommended sites flanking its cloning site:
+- U1F: CATTACTCGCATCCATTCTCAGGCTG
+- UXR: GGTGGAAGGGCTCGGAGTTGTGG
+
+Reference: [Reclone's pTi documentation](https://forum.reclone.org/t/pti-plasmid-backbone/797)
+
+
+#### Alignment Tools
+After you receive sequencing results back, you will use an alignment tool to compare it to your reference sequence.
+At this time we cannot provide sequence alignment support or documentation, but if you have access to the tools below, we have linked to their help documentation for sequencing alignment.
+
+- [Benchling](https://help.benchling.com/hc/en-us/articles/9684245367821-DNA-Sequencing)
+- [SnapGene](https://support.snapgene.com/hc/en-us/sections/10384334349588-Assembly-and-Alignment)
+
 
 ## Build Alternative: Interlab Devices
 
