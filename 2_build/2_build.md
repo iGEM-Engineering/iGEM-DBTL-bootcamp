@@ -136,106 +136,12 @@ DO NOT use DNA from the distribution kit directly in an assembly reaction.
 The following calendar is an example for conducting the tasks above over the course of two weeks.
 Storing transformed bacteria on agar plates for a few days at 4°C is a great way to pause the workflow and not have to come in on the weekend!
 
-<style>
-    .calendar-table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    .calendar-table th, .calendar-table td {
-        vertical-align: top;
-        text-align: left;
-        width: 20%;
-        border: 1px solid black;
-    }
-    .calendar-table ol {
-        padding-left: 0;
-        list-style-position: inside;
-    }
-    .custom-table li {
-        margin: 0; /* Removes extra spacing between list items */
-        padding: px 0; /* Adjusts spacing between bullet points and text */
-    }
-    .lowlight {
-        background-color: lightgrey;
-    }
-</style>
+<center>
+<figure>
+<img src="assets/images/build-calendar-simple.png" width=100% />
+</figure>
+</center>
 
-<table class="calendar-table">
-    <thead>
-        <tr>
-            <th>Mon (Day 1)</th>
-            <th>Tue (Day 2)</th>
-            <th>Wed (Day 3)</th>
-            <th>Thu (Day 4)</th>
-            <th class="lowlight">Fri (Pause!)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <ol>
-                    <li>Transform plasmids from Distribution Kit</li>
-                </ol>
-            </td>
-            <td>
-                <ol>
-                    <li>Pick colonies and inoculate overnight cultures</li>
-                </ol>
-            </td>
-            <td>
-                <ol>
-                    <li>Make glycerol stocks</li>
-                    <li>Make minipreps & quantify DNA</li>
-                    <li>Setup assembly reaction</li>
-                </ol>
-            </td>
-            <td>
-                <ol>
-                    <li>Transform assembly reaction</li>
-                </ol>
-            </td>
-            <td class="lowlight">
-                <i>Refrigerate transformations at 4°C</i>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<table class="calendar-table">
-  <thead>
-    <tr>
-      <th>Mon (Day 5)</th>
-      <th>Tue (Day 6)</th>
-      <th class="lowlight">Wed</th>
-      <th class="lowlight">Thu</th>
-      <th class="lowlight">Fri</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <ol>
-          <li>Screen colonies</li>
-          <li>Select GFP-positive colonies</li>
-          <li>Inoculate overnight cultures</li>
-        </ol>
-      </td>
-      <td>
-        <ol>
-          <li>Make glycerol stocks</li>
-          <li>Miniprep plasmids</li>
-          <li>Confirm plasmid sequences</li>
-        </ol>
-      </td>
-      <td class="lowlight">
-      </td>
-      <td class="lowlight">
-      </td>
-      <td class="lowlight">
-      </td>
-    </tr>
-  </tbody>
-</table>
 
 ## Day 0
 Day 0 includes materials and reagents that you will need before you start.
@@ -429,20 +335,20 @@ Follow the instructions for the instrument you will use to quantify your plasmid
 ### Set up assembly reaction
 Before you start your assembly make sure that you have all of your plasmids prepared and the DNA quantified using the methods listed above.
 
-As mentioned you want to have equal-molar amounts of all parts in plasmid in an assembly reaction. You can use the following equation or an [online calculator](https://nebiocalculator.neb.com/#!/dsdnaamt) to calculate this. 
+As mentioned you want to have equal-molar amounts of all plasmids in an assembly reaction. You can use the following equation, an [online calculator](https://nebiocalculator.neb.com/#!/dsdnaamt), or the [Wetlab Calculator](https://github.com/shyambhakta/wetlabcalc) (Bennett Lab) to calculate this. 
 
 > moles dsDNA (mol) = mass of dsDNA (g)/((length of dsDNA (bp) x 615.96 g/mol/bp) + 36.04 g/mol)
 
 You will need to know the length of the dsDNA (bp), which we have included in the Distribution table from [Day 1](#day-1). 
 Note, this is the total plasmid size (bp) not just the size of the part by itself.
 
-You should start by making 50nM stock solutions of your parts and plasmids.
+You should start by making 50nM stock solutions of your parts in plasmid and 25nM stock solutions of your destination vector.
 
 
 For the assembly reactions, we recommend using 25 fmol for each part in plasmid, and half as much (12.5 fmol) for the plasmid backbone with drop-out, to reduce religation.
 
 #### Protocols
-- [Golden Gate Assembly (Bennett Lab)](https://wiki.rice.edu/confluence/display/BIODESIGN/Golden+Gate+Assembly)
+- [Golden Gate Assembly Protocol](./protocol-assembly-reaction.md)
 
 ## Day 4
 ### Transform assembly reaction
@@ -469,7 +375,7 @@ These overnight cultures will be used on Day 6, to perform miniprep plasmid DNA 
 
 ## Day 6
 ### Make glycerol stocks and miniprep your constructs
-Read through the documentation from Day 3 if you need to!
+Read through the documentation from [Day 3](#day-3) if you need to!
 
 ### Confirm plasmid sequences
 Mutations and mistakes happen!
