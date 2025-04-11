@@ -12,7 +12,7 @@ In OpenCloning, you can import sequences from files, but also from repositories 
 
 Let's start by importing the backbone plasmid sequence from the file `destination_pTi_RFP.gb`. Simply drag and drop the file into the OpenCloning cloning tab:
 
-<img src="assets/images/workflows/opencloning/oc-drag-and-drop.gif" alt="Import sequence" width="400"/>
+<img src="assets/images/workflows/opencloning/oc-drag-and-drop.gif" alt="Import sequence" width="500"/>
 
 You can now explore the sequence in the editor, by clicking on the eye icon at the top right of the plasmid map:
 
@@ -20,13 +20,13 @@ You can now explore the sequence in the editor, by clicking on the eye icon at t
 
 In the editor, you can use different types of views to explore the sequence (switch between them using the `Linear Map`, `Sequence Map` and `Circular Map` tabs on top). To customise the display cutsites in the sequence, click on the scissors icon on the top.
 
-<img src="assets/images/workflows/opencloning/oc-plasmid-map.png" alt="Plasmid map" width="400"/>
+<img src="assets/images/workflows/opencloning/oc-plasmid-map.png" alt="Plasmid map" width="500"/>
 
 ### 🌐 Loading sequences from the iGEM Distribution
 
 You can load the rest of the sequences from the files in the repository, as before by dragging and dropping them into the cloning tab. However, if you want to document your workflow indicating that they come from the iGEM distribution, you can also directly load them.
 
-<img src="assets/images/workflows/opencloning/oc-load-from-igem-distribution.gif" alt="Load from iGEM Distribution" width="400"/>
+<img src="assets/images/workflows/opencloning/oc-load-from-igem-distribution.gif" alt="Load from iGEM Distribution" width="500"/>
 
 In this example, we are loading the plasmid with the promoter (part `BBA_J23100`), but you would want to load the rest of the parts for the first assembly:
 
@@ -49,18 +49,35 @@ To design the first assembly, click on the `+` sign bottom below either of the p
   * The other one: contains all ligated backbones and the RFP.
 * We keep the one with the construct
 * You can rename the output plasmids by clicking on the pencil icon on the top right of the plasmid map.
-* You are done!
 
-![assembly video](assets/images/workflows/opencloning/oc-assemble-and-download.mp4)
+<video src='assets/images/workflows/opencloning/oc-assemble-and-download.mp4' width=500 controls></video>
+
+* You are done! You can double-check that things look right by going to the sequence editor and verifying that your construct is there (you can see the parts as features):
+
+<img src="assets/images/workflows/opencloning/oc-check-in-editor.png" alt="Check sequence" width="500"/>
+
+
+### 🔍 Validate your construct
+
+In real-life, once you have built your plasmid, you would want to validate it has the correct sequence. To do so, you would align your _in silico_ generated sequence to the sequencing result.
+
+In this case, we will use the file `genbank_files/part in backbone/Validation/validation_J23100_GFP_Expression.gb` as a validation sequence.
+
+For that, click on the validation icon on the top right of the plasmid map, and upload the validation sequence:
+
+<img src="assets/images/workflows/opencloning/oc-alignment.gif" alt="Validate construct" width="500"/>
+
 
 ### 📥 Download the design
 
-You can download the design by clicking on the download icon on the top right of the plasmid map. You can download the design as:
+You can download the design by clicking on the download icon on the top right of the plasmid map (see video above). You can download the design as:
 * fasta: contains only the sequence of the plasmid
 * genbank: contains the plasmid sequence with all the annotations
 * json: contains the full cloning strategy (all plasmids used). You can use to recreate your workflow in the website by dragging and dropping the json file into the cloning tab.
+* zip: contains the same as the json file, but also the sequencing data that you added for validation (only available if you added sequencing data).
 
-### 🔄 Design the rest of assemblies
+
+## 🔄 Design the rest of assemblies
 
 Since you are only changing the promoter, you can simply delete the sequence with the promoter you already used (`J23100`) by clicking on the red trash icon. Then, load the next promoter (`J23101`) as previously, and do the assembly again.
 
