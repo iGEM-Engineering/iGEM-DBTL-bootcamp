@@ -38,7 +38,9 @@ Great! Now you have all the parts for the first assembly.
 
 ## 🔬 Design the first assembly
 
-> You can follow along with [this video](./assets/images/workflows/opencloning/oc-assemble-and-download.mp4)
+> You can follow along with [this video](./assets/images/workflows/opencloning/oc-assemble-and-download.mp4) (click on the link and select "view raw" to download it)
+
+<video src="https://user-images.githubusercontent.com/126239/151127893-5c98ba8d-c431-4a25-bb1f-e0b33645a2b6.mp4"></video>
 
 To design the first assembly, click on the `+` sign bottom below either of the plasmids:
 
