@@ -38,6 +38,8 @@ Great! Now you have all the parts for the first assembly.
 
 ## 🔬 Design the first assembly
 
+> You can follow along with [this video](./assets/images/workflows/opencloning/oc-assemble-and-download.mp4)
+
 To design the first assembly, click on the `+` sign bottom below either of the plasmids:
 
 * This will open a new "source", which represents a manipulation or cloning step.
@@ -49,11 +51,6 @@ To design the first assembly, click on the `+` sign bottom below either of the p
   * The other one: contains all ligated backbones and the RFP.
 * We keep the one with the construct
 * You can rename the output plasmids by clicking on the pencil icon on the top right of the plasmid map.
-
-<video src='https://raw.githubusercontent.com/iGEM-Engineering/iGEM-DBTL-bootcamp/main/1_design/assets/images/workflows/opencloning/oc-assemble-and-download.mp4' width=500 controls></video>
-
-<video src='https://raw.githubusercontent.com/manulera/iGEM-DBTL-bootcamp/opencloning-workflow/1_design/assets/images/workflows/opencloning/oc-assemble-and-download.mp4' width=500 controls></video>
-
 * You are done! You can double-check that things look right by going to the sequence editor and verifying that your construct is there (you can see the parts as features):
 
 <img src="assets/images/workflows/opencloning/oc-check-in-editor.png" alt="Check sequence" width="500"/>
