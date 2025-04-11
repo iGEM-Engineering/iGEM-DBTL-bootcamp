@@ -52,6 +52,8 @@ To design the first assembly, click on the `+` sign bottom below either of the p
 
 <video src='https://github.com/user-attachments/assets/47dee92c-087a-47e2-b437-c7563c290716'></video>
 
+> If this video does not load, it's [here](./assets/images/workflows/opencloning/oc-assemble-and-download.mp4)
+
 * You are done! You can double-check that things look right by going to the sequence editor and verifying that your construct is there (you can see the parts as features):
 
 <img src="assets/images/workflows/opencloning/oc-check-in-editor.png" alt="Check sequence" width="500"/>
