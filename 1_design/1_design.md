@@ -415,6 +415,7 @@ You will want to export and share your designs, whether for collaboration, publi
 ### Design Tool Workflows
 - [Benchling](./benchling-design-workflow.md) 
 - Kernel from [Asimov](https://www.asimov.com/): While not dedicated to this DBTL Bootcamp, Asimov has a Kernel [webinar](https://video.igem.org/w/mYnmcrQjQJxJtyf1kzT1KW), _Mastering genetic design, a case study with Kernel_, that covers this topic, and would enable you to create these constructs _in silico_.
+- [Open cloning](./opencloning-design-workflow.md)
 - Open source option (TBD)
 
 ## Storing, Sharing, and Presenting your Constructs
